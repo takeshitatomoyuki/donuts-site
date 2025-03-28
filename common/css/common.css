@@ -6,7 +6,9 @@
   width: 100vw;
 }
 
-.main_header img {}
+.main_header img {
+  width: 100vw;
+}
 
 .sub_header {
   margin-left: auto;
