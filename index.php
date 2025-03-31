@@ -9,6 +9,7 @@
 
 <body>
 
+<main>
 <!-- 画像 -->
   <section class="images">
   <img src="common/images/sp_main.jpg" alt="メイン画像">
@@ -18,12 +19,11 @@
     <img src="common/images/sp_sub2.jpg" alt="サブ画像２">
     <img src="common/images/sp_sub3.jpg" alt="サブ画像３">
   </div>
-  </section>
-
+ 
 <!-- 私達の信念 -->
- <section class="philosophy_box">
+
   <div class="philosophy_content">
-    <h1>Philosophy</h1>
+    <h2>Philosophy</h2>
     <p>私たちの信念</p>
     <p>"Creating Connections"</p>
     <p>ドーナッツでつながる</p>
@@ -42,104 +42,98 @@ media="(min-width: 768px)" type="image/png"class="back_pc">
 <section class="ranking">
 <h2>人気ランキング</h2>
 
-<!-- 第１位 -->
+<ol>
+  <!-- 第１位 -->
+<li class="linkbox1">
 <!-- div要素全体にリンクをつける -->
 <a href="#">
  <!-- ////////////////////////////////////////////// -->
-<div class="linkbox1">
   <img src="common/images/sp_rank1.jpg" alt="１位">
   <img src="common/images/sp_1donuts.jpg" alt="１位画像">
-  <p>CCドーナッツ 当店オリジナル(５個入り)</p>
-  <p>税込　￥１,５００<span class="heart">　　　
+  <p>CCドーナツ 当店オリジナル（5個入り）</p>
+  <p>税込  ￥1,500<span class="heart">　　　
     <img src="common/images/sp_heart.jpg" alt="ハート"></span></p>
   <form action="" method="">
-    <p><input type="submit" value="カートに入れる"></p>
+    <input type="submit" value="カートに入れる">
   </form>
-</div>
 <!-- div要素全体にリンクをつける -->
 </a>
 <!-- /////////////////////////////////////////////// -->
+</li>
 
-<!-- 第２位 -->
+<li class="linkbox2">
+  <!-- 第２位 -->
 <a href="#">
-
-<div class="linkbox2">
   <img src="common/images/sp_rank2.jpg" alt="２位">
   <img src="common/images/sp_7donuts.jpg" alt="２位画像">
-  <p>フルーツドーナッツセット(１２個入り)</p>
-  <p>税込　￥３,５００<span class="heart">　　　
+  <p>フルーツドーナッツセット(12個入り)</p>
+  <p>税込  ￥3,500<span class="heart">　　　
   <img src="common/images/sp_heart.jpg" alt="ハート"></span></p>
   <form action="" method="">
-    <p><input type="submit" value="カートに入れる"></p>
+    <input type="submit" value="カートに入れる">
   </form>
-</div>
-
 </a>
+</li>
 
-<!-- 第３位 -->
+<li class="linkbox3">
+  <!-- 第３位 -->
 <a href="#">
- 
-<div class="linkbox3">
   <img src="common/images/sp_rank3.jpg" alt="３位">
   <img src="common/images/sp_8donuts.jpg" alt="３位画像">
-  <p>フルーツドーナッツセット(１４個入り)</p>
-  <p>税込　￥４,０００<span class="heart">　　　
+  <p>フルーツドーナッツセット(14個入り)</p>
+  <p>税込  ￥4,000<span class="heart">　　　
   <img src="common/images/sp_heart.jpg" alt="ハート"></span></p>
   <form action="" method="">
-    <p><input type="submit" value="カートに入れる"></p>
+    <input type="submit" value="カートに入れる">
   </form>
-</div>
-
 </a>
+</li>
 
-<!-- 第４位 -->
+<li class="linkbox4">
+  <!-- 第４位 -->
 <a href="#">
- 
-<div class="linkbox4">
   <img src="common/images/sp_rank4.jpg" alt="４位">
   <img src="common/images/sp_2donuts.jpg" alt="４位画像">
-  <p>チョコレートデライト(５個入り)</p>
-  <p>税込　￥１,６００<span class="heart">　　　
+  <p>チョコレートデライト(5個入り)</p>
+  <p>税込  ￥1,500<span class="heart">　　　
   <img src="common/images/sp_heart.jpg" alt="ハート"></span></p>
   <form action="" method="">
-    <p><input type="submit" value="カートに入れる"></p>
+    <input type="submit" value="カートに入れる">
   </form>
-</div>
-
 </a>
+</li>
 
-<!-- 第５位 -->
+<li class="linkbox5">
+  <!-- 第５位 -->
 <a href="#">
-
-<div class="linkbox5">
   <img src="common/images/sp_rank5.jpg" alt="５位">
   <img src="common/images/sp_9donuts.jpg" alt="５位画像">
-  <p>ベストセレクションボックス(４個入り)</p>
-  <p>税込　￥１,２００<span class="heart">　　　
+  <p>ベストセレクションボックス(4個入り)</p>
+  <p>税込  ￥1,200<span class="heart">　　　
   <img src="common/images/sp_heart.jpg" alt="ハート"></span></p>
   <form action="" method="">
-    <p><input type="submit" value="カートに入れる"></p>
+    <input type="submit" value="カートに入れる">
   </form>
-</div>
-
 </a>
+</li>
 
-<!-- 第６位 -->
+<li class="linkbox6">
+  <!-- 第６位 -->
 <a href="#">
- 
-<div class="linkbox6">
   <img src="common/images/sp_rank6.jpg" alt="６位">
   <img src="common/images/sp_6donuts.jpg" alt="６位画像">
-  <p>ストロベリークラッシュ(５個入り)</p>
-  <p>税込　￥１,８００<span class="heart">　　　
+  <p>ストロベリークラッシュ(5個入り)</p>
+  <p>税込  ￥1,800<span class="heart">　　　
   <img src="common/images/sp_heart.jpg" alt="ハート"></span></p>
   <form action="" method="">
-    <p><input type="submit" value="カートに入れる"></p>
+    <input type="submit" value="カートに入れる">
   </form>
-</div>
-
 </a>
+</li>
+</ol>
+
 </section>
 
+</main>
 </body>
 </html>
