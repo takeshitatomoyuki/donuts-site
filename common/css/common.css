@@ -217,6 +217,37 @@ hr {
   /* 元 -10px */
 }
 
+/* ヘッダー */
+
+
+footer {
+  background-color: #EDE0D4;
+}
+
+footer ul {
+  display: flex;
+  width: 50vw;
+  margin: 20px;
+}
+
+.nav_text {
+  border-left: 1px solid black;
+  margin: 10px 80px;
+  width: 300px;
+}
+
+li img {
+  width: 64px;
+  height: 64px;
+  margin: 20px 80px;
+}
+
+
+footer p {
+  text-align: center;
+  padding: 20px;
+}
+
 
 @media screen and (min-width:770px) {
   .header_search {
