@@ -18,7 +18,7 @@ $name=$address=$login=$password='';
  } 
  ?>
 <h1>会員登録</h1>
-  <form action="customer-confirm" method="post">
+  <form action="customer-confirm.php" method="post">
 <ul>
   <li>
     <p>お名前<span>(必須)</span><input type="text" name="user_name1"></p>
