@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <button type="submit">確定</button>
     </form>
-    <form action="input.php" method="post">
+    <form action="customer-input.php" method="post">
         <!-- 戻るボタンで再入力 -->
         <input type="hidden" name="user_name1" value="<?php echo $user_name1; ?>">
         <input type="hidden" name="user_name2" value="<?php echo $user_name2; ?>">
