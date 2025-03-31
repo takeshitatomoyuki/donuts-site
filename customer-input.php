@@ -8,6 +8,15 @@
 </head>
 <body>
 
+<?php session_start(); ?>
+<?php
+$name=$address=$login=$password='';
+ if(isset($_SESSION['customer'])) {
+  $name=$_SESSION['customer']['name'];
+  $address=$_SESSION['customer']['login'];
+  $password=$_SESSION['customer']['password'];
+ } 
+ ?>
 <h1>会員登録</h1>
   <form action="customer-confirm" method="post">
 <ul>
