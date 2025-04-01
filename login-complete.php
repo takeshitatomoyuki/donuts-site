@@ -1,6 +1,6 @@
 <?php
 unset($_SESSION['customer']);
-$pdo=new PDO('mysql:host=localhost;dbname=shop;charset=utf8', 
+$pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 
 	'staff', 'password');
 $sql=$pdo->prepare('select * from customer where mail=? and password=?');
 $sql->execute([$_REQUEST['mail'], $_REQUEST['password']]);
