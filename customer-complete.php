@@ -5,11 +5,11 @@ $pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8',
 'staff','password');
 if(isset($_SESSION['customer'])) {
   $id=$_SESSION['customer']['id'];
-  $sql=$pdo->prepare('select * from customer where id!=? and login=?');
-  $sql->execute([$id, $_REQUEST['login']]);
+  $sql=$pdo->prepare('select * from customer where id!=? and mail=?');
+  $sql->execute([$id, $_REQUEST['mail']]);
 } else {
-  $sql=$pdo->prepare('select * from customer where login=?');
-  $sql->execute([$_REQUEST['login']]);
+  $sql=$pdo->prepare('select * from customer where mail=?');
+  $sql->execute([$_REQUEST['mail']]);
 }
 if(empty($sql->fetchAll())) {
   if(isset($_REQUEST['customer'])) {
