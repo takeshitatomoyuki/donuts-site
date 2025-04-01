@@ -2,12 +2,12 @@
 unset($_SESSION['customer']);
 $pdo=new PDO('mysql:host=localhost;dbname=shop;charset=utf8', 
 	'staff', 'password');
-$sql=$pdo->prepare('select * from customer where login=? and password=?');
-$sql->execute([$_REQUEST['login'], $_REQUEST['password']]);
+$sql=$pdo->prepare('select * from customer where mail=? and password=?');
+$sql->execute([$_REQUEST['mail'], $_REQUEST['password']]);
 foreach ($sql as $row) {
 	$_SESSION['customer']=[
-		'id'=>$row['id'], 'name'=>$row['name'], 
-		'address'=>$row['address'], 'login'=>$row['login'], 
+		'id'=>$row['id'], 'name'=>$row['name'], 'kana'=>$row['kana'], 'post_code'=>$row['post_code'], 
+		'address'=>$row['address'], 'mail'=>$row['mail'], 
 		'password'=>$row['password']];
 }
 if (isset($_SESSION['customer'])) {
