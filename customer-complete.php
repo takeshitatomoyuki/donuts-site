@@ -44,7 +44,7 @@ if(empty($sql->fetchAll())) {
       '<h2>会員登録完了</h2>
       <div>
         <p>会員登録が完了しました</p>。
-        <a href="">ログイン画面へ進む</a>
+        <a href="login-input.php">ログイン画面へ進む</a>
       </div>';
   }
 } else {
