@@ -1,2 +1,3 @@
+<h1>ログアウト</h1>
 <p>ログアウトしますか？</p>
-<a href="logout-complete.php">ログアウト</a>
+<a href="logout-complete.php">ログアウトする</a>

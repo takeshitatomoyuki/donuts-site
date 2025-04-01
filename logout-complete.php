@@ -6,3 +6,4 @@ if (isset($_SESSION['customer'])) {
 	echo 'すでにログアウトしています。';
 }
 ?>
+<a href="index.php">トップページへ戻る</a>;

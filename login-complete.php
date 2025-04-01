@@ -16,3 +16,4 @@ if (isset($_SESSION['customer'])) {
 	echo 'ログイン名またはパスワードが違います。';
 }
 ?>
+<a href="index.php">トップページへ戻る</a>;
