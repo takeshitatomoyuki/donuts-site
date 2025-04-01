@@ -1,3 +1,4 @@
+<?php require '../header.php'; ?>
 <h1>ログイン</h1>
 <form action="login-complete.php" method="post">
 メールアドレス<input type="text" name="mail"><br>
@@ -5,3 +6,4 @@
 <input type="submit" value="ログインする">
 </form>
 <a href="customer-input">会員登録がお済みでない方はこちら</a>
+<?php require '../footer.php'; ?>
