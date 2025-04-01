@@ -6,37 +6,37 @@
   <title>donuts-site</title>
   <link rel="stylesheet" href="common/css/reset.css">
   <link rel="stylesheet" href="common/css/index.css">
+  <link rel="stylesheet" href="common/css/common.css">
 </head>
-
+<?php require 'includes/header.php';?>
 <body>
-
 <main>
 <!-- 画像 -->
   <section class="images">
-  <img src="common/images/sp_main.jpg" alt="メイン画像">
+  <img class="main_img" src="common/images/sp_main.jpg" alt="メイン画像">
  
-  <div class="sub_images">
-    <img src="common/images/sp_sub1.jpg" alt="サブ画像１">
-    <img src="common/images/sp_sub2.jpg" alt="サブ画像２">
-    <img src="common/images/sp_sub3.jpg" alt="サブ画像３">
+  <div class="sub_img">
+    <img class="item1" src="common/images/sp_sub1.jpg" alt="サブ画像１">
+    <img class="item2" src="common/images/sp_sub2.jpg" alt="サブ画像２">
+    <img class="item3" src="common/images/sp_sub3.jpg" alt="サブ画像３">
   </div>
  
 <!-- 私達の信念 -->
 
   <div class="philosophy_content">
     <h2>Philosophy</h2>
-    <p>私たちの信念</p>
-    <p>"Creating Connections"</p>
-    <p>ドーナッツでつながる</p>
+    <p class="belief">私たちの信念</p>
+    <p class="create">"Creating Connections"</p>
+    <p class="connect">ドーナッツでつながる</p>
   </div>
-<picture>
+ <!-- <picture> -->
    <!-- ブラウザ幅1023～768pxまでsampleの画像が表示 -->
-<source srcset="common/images/pc_backgroud.jpg" 
-media="(min-width: 768px)" type="image/png"class="back_pc">
+<!-- <source srcset="common/images/pc_backgroud.jpg" 
+media="(min-width: 768px)" type="image/png"class="back_pc"> -->
  <!-- ブラウザ幅767px～から最小幅までsample2の画像が表示 -->
- <img src="common/images/sp_backgroud.jpg" alt="背景画像" 
+ <!-- <img src="common/images/sp_backgroud.jpg" alt="背景画像" 
  class="back_sp">
-</picture>
+</picture> -->
 </section>
 
 <!-- ランキング -->
