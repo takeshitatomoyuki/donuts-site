@@ -45,6 +45,6 @@ $name=$address=$login=$password='';
 
 <input type="submit" value="ご入力内容を確認する">
 </form>
-
+コンニチハ
 </body>
 </html>
