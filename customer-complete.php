@@ -32,7 +32,7 @@ if(empty($sql->fetchAll())) {
       'password'=>$_REQUEST['password']];
     echo 'お客様情報を更新しました。';
   } else {
-    $sql=$pdo->prepare('insert into customer values(null,?,?,?,?)');
+    $sql=$pdo->prepare('insert into customer values(null,?,?,?,?,?,?)');
     $sql->execute([
       $_REQUEST['name'],
       $_REQUEST['kana'],
