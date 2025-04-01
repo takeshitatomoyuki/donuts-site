@@ -17,27 +17,27 @@ $name=$address=$login=$password='';
   $password=$_SESSION['customer']['password'];
  } 
  ?>
-<h1>会員登録</h1>
+<h2>会員登録</h2>
   <form action="customer-confirm.php" method="post">
 <ul>
   <li>
-    <p>お名前<span>(必須)</span><input type="text" name="name" value=""></p>
+    <p>お名前 <span>(必須)</span><input type="text" name="name" value=""></p>
   </li>
   <li>
     <p>お名前 (フリガナ)<span>(必須)</span><input type="text" name="kana" value=""></p>
   </li>
   <li>
-    <p>郵便番号<span>(必須)</span></p><input type="text" name="post_code" value="">
+    <p>郵便番号 <span>(必須)</span></p><input type="text" name="post_code" value="">
   </li>
   <li>
-    <p>住所<span>(必須)</span></p><input type="text" name="address" value="">
+    <p>住所 <span>(必須)</span></p><input type="text" name="address" value="">
   </li>
   <li>
-    <p>メールアドレス<span>(必須)</span></p>
+    <p>メールアドレス <span>(必須)</span></p>
     <input type="email" name="mail" value="">
   </li>
   <li>
-    <p>パスワード<span>(必須)</span></p>
+    <p>パスワード <span>(必須)</span></p>
     <p>A-Z、a-z、0-9を少なくとも各1つは含めて8文字以上で入力してください。</p>
     <input type="password" name="password" value="">
 </li>
