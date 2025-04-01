@@ -1,2 +1,2 @@
 <p>ログアウトしますか？</p>
-<a href="logout-output.php">ログアウト</a>
+<a href="logout-complete.php">ログアウト</a>
