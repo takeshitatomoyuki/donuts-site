@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewp"ort" content="width=device-width, initial-scale=1.0">
   <title>donuts-site</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="stylesheet" href="common/css/index.css">
 </head>
 
 <body>
@@ -45,20 +46,20 @@ media="(min-width: 768px)" type="image/png"class="back_pc">
 <ol>
   <!-- 第１位 -->
 <li class="linkbox1">
-<!-- div要素全体にリンクをつける -->
+<!-- li要素にリンクをつける -->
 <a href="#">
  <!-- ////////////////////////////////////////////// -->
   <img src="common/images/sp_rank1.jpg" alt="１位">
   <img src="common/images/sp_1donuts.jpg" alt="１位画像">
   <p>CCドーナツ 当店オリジナル（5個入り）</p>
-  <p>税込  ￥1,500<span class="heart">　　　
-    <img src="common/images/sp_heart.jpg" alt="ハート"></span></p>
+  <p>税込  ￥1,500</p>
+<!-- li要素にリンクをつける -->
+  </a>
+<!-- /////////////////////////////////////////////// -->
+  <img src="common/images/sp_heart.jpg" alt="ハート">
   <form action="" method="">
     <input type="submit" value="カートに入れる">
   </form>
-<!-- div要素全体にリンクをつける -->
-</a>
-<!-- /////////////////////////////////////////////// -->
 </li>
 
 <li class="linkbox2">
@@ -67,12 +68,12 @@ media="(min-width: 768px)" type="image/png"class="back_pc">
   <img src="common/images/sp_rank2.jpg" alt="２位">
   <img src="common/images/sp_7donuts.jpg" alt="２位画像">
   <p>フルーツドーナッツセット(12個入り)</p>
-  <p>税込  ￥3,500<span class="heart">　　　
-  <img src="common/images/sp_heart.jpg" alt="ハート"></span></p>
+  <p>税込  ￥3,500</p>
+  </a>
+  <img src="common/images/sp_heart.jpg" alt="ハート">
   <form action="" method="">
     <input type="submit" value="カートに入れる">
   </form>
-</a>
 </li>
 
 <li class="linkbox3">
@@ -81,12 +82,12 @@ media="(min-width: 768px)" type="image/png"class="back_pc">
   <img src="common/images/sp_rank3.jpg" alt="３位">
   <img src="common/images/sp_8donuts.jpg" alt="３位画像">
   <p>フルーツドーナッツセット(14個入り)</p>
-  <p>税込  ￥4,000<span class="heart">　　　
-  <img src="common/images/sp_heart.jpg" alt="ハート"></span></p>
+  <p>税込  ￥4,000</p>
+  </a>
+  <img src="common/images/sp_heart.jpg" alt="ハート">
   <form action="" method="">
     <input type="submit" value="カートに入れる">
   </form>
-</a>
 </li>
 
 <li class="linkbox4">
@@ -95,12 +96,12 @@ media="(min-width: 768px)" type="image/png"class="back_pc">
   <img src="common/images/sp_rank4.jpg" alt="４位">
   <img src="common/images/sp_2donuts.jpg" alt="４位画像">
   <p>チョコレートデライト(5個入り)</p>
-  <p>税込  ￥1,500<span class="heart">　　　
-  <img src="common/images/sp_heart.jpg" alt="ハート"></span></p>
+  <p>税込  ￥1,500</p>
+  </a>
+  <img src="common/images/sp_heart.jpg" alt="ハート">
   <form action="" method="">
     <input type="submit" value="カートに入れる">
   </form>
-</a>
 </li>
 
 <li class="linkbox5">
@@ -109,12 +110,12 @@ media="(min-width: 768px)" type="image/png"class="back_pc">
   <img src="common/images/sp_rank5.jpg" alt="５位">
   <img src="common/images/sp_9donuts.jpg" alt="５位画像">
   <p>ベストセレクションボックス(4個入り)</p>
-  <p>税込  ￥1,200<span class="heart">　　　
-  <img src="common/images/sp_heart.jpg" alt="ハート"></span></p>
+  <p>税込  ￥1,200</p>
+  </a>
+  <img src="common/images/sp_heart.jpg" alt="ハート">
   <form action="" method="">
     <input type="submit" value="カートに入れる">
   </form>
-</a>
 </li>
 
 <li class="linkbox6">
@@ -123,12 +124,12 @@ media="(min-width: 768px)" type="image/png"class="back_pc">
   <img src="common/images/sp_rank6.jpg" alt="６位">
   <img src="common/images/sp_6donuts.jpg" alt="６位画像">
   <p>ストロベリークラッシュ(5個入り)</p>
-  <p>税込  ￥1,800<span class="heart">　　　
-  <img src="common/images/sp_heart.jpg" alt="ハート"></span></p>
+  <p>税込  ￥1,800</p>
+  </a>
+  <img src="common/images/sp_heart.jpg" alt="ハート">
   <form action="" method="">
     <input type="submit" value="カートに入れる">
   </form>
-</a>
 </li>
 </ol>
 
