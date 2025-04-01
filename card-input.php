@@ -25,7 +25,9 @@ $name=$address=$login=$password='';
   </li>
   <li>
     <p>カード会社 <span>(必須)</span></p>
-    <input type="radio" name="card_type">
+    <label><input type="radio" name="card_type" value="JCB" checked="checked"> JCB</label>
+    <label><input type="radio" name="card_type" value="Visa"> Visa</label>
+    <label><input type="radio" name="card_type" value="Mastercard"> Mastercard</label>
   </li>
   <li>
     <p>カード番号 <span>(必須)</span></p>
