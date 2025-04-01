@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 
 <?php
-$pdo=new PDO('mysql:host=localhost;dbname=donuts-site;charset=utf8',
+$pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8',
 'staff','password');
 if(isset($_SESSION['customer'])) {
   $id=$_SESSION['customer']['id'];
