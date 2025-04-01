@@ -9,8 +9,8 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../common/css/reset.css">
-  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="stylesheet" href="common/css/common.css">
 </head>
 
 <body>
@@ -31,8 +31,8 @@ session_start();
       <ul class="menu">
         <!-- ！！！！！！！！！！！！！！！！！！ -->
         <!-- 自分のページのみ先頭の「../」消して下さい -->
-        <li><a href="../index.php">TOP</a></li>
-        <li><a href="../product.php">商品一覧</a></li>
+        <li><a href="index.php">TOP</a></li>
+        <li><a href="product.php">商品一覧</a></li>
         <li><a href="#">よくある質問</a></li>
         <li><a href="#">問い合わせ</a></li>
         <li><a href="#">当サイトのポリシー</a></li>
@@ -47,16 +47,16 @@ session_start();
 
 
     <div class="main_header">
-      <img src="../common/images/logo.svg" alt="">
+      <img src="common/images/logo.svg" alt="">
       <div class="sub_header">
         <?php if(isset($_SESSION['user'])):?>
 
-        <a href="../logout-input.php"><img src="../common/images/logout.svg" alt=""></a>
-        <a href="../cart.php"><img src="../common/images/cart.svg" alt=""></a>
+        <a href="logout-input.php"><img src="common/images/logout.svg" alt=""></a>
+        <a href="cart.php"><img src="common/images/cart.svg" alt=""></a>
 
         <?php else: ?>
-          <a href="../login-input.php"><img src="../common/images/login.svg" alt=""></a>
-        <a href="../cart.php"><img src="../common/images/cart.svg" alt=""></a>
+          <a href="login-input.php"><img src="common/images/login.svg" alt=""></a>
+        <a href="cart.php"><img src="common/images/cart.svg" alt=""></a>
         
         <?php endif; ?>
       </div>

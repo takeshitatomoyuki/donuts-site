@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../common/css/reset.css">
-  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="stylesheet" href="common/css/common.css">
 </head>
 
 <body>
@@ -27,18 +27,18 @@
     </div>
     <ul class="footer_sns">
       <a href="#">
-        <li><img src="../common/images/instagram.png" alt="インスタグラムアイコン"></li>
+        <li><img src="common/images/instagram.png" alt="インスタグラムアイコン"></li>
       </a>
       <a href="#">
-        <li><img src="../common/images/facebook.png" alt="フェイスブックアイコン"></li>
+        <li><img src="common/images/facebook.png" alt="フェイスブックアイコン"></li>
       </a>
       <a href="#">
-        <li><img src="../common/images/x.png" alt="ツイッターアイコン" class="x_anime"></li>
+        <li><img src="common/images/x.png" alt="ツイッターアイコン" class="x_anime"></li>
       </a>
     </ul>
 
     <div class="logo_area">
-      <img src="../common/images/footer-logo.svg" alt="" class="footer_logo">
+      <img src="common/images/footer-logo.svg" alt="" class="footer_logo">
     </div>
     <p>Copyright (C) c.c.donuts All Rights Reserved</p>
   </footer>
