@@ -18,4 +18,4 @@ if (isset($_SESSION['customer'])) {
 }
 ?>
 <a href="index.php">トップページへ戻る</a>;
-<?php require '../footer.php'; ?>
+<?php require 'includes/footer.php'; ?>

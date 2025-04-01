@@ -6,4 +6,4 @@
 <input type="submit" value="ログインする">
 </form>
 <a href="customer-input">会員登録がお済みでない方はこちら</a>
-<?php require '../footer.php'; ?>
+<?php require 'includes/footer.php'; ?>
