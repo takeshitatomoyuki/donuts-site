@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
     <h2>入力内容の確認</h2>
     <p>以下の内容で登録しますか？</p>
-    <form action="complete.php" method="post">
+    <form action="customer-complete.php" method="post">
         <p>お名前: <?php echo $name; ?></p>
         <p>お名前 (フリガナ): <?php echo $kana; ?></p>
         <p>郵便番号: <?php echo $post_code; ?></p>
