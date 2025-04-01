@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="jp">
 
@@ -27,11 +31,11 @@
       <ul class="menu">
         <!-- ！！！！！！！！！！！！！！！！！！ -->
         <!-- 自分のページのみ先頭の「../」消して下さい -->
-        <li><a href="../index.html">TOP</a></li>
-        <li><a href="../taipei/index.html">商品一覧</a></li>
-        <li><a href="../taichung/index.html">よくある質問</a></li>
-        <li><a href="tainan/index.html">問い合わせ</a></li>
-        <li><a href="">当サイトのポリシー</a></li>
+        <li><a href="../index.php">TOP</a></li>
+        <li><a href="../product.php">商品一覧</a></li>
+        <li><a href="#">よくある質問</a></li>
+        <li><a href="#">問い合わせ</a></li>
+        <li><a href="#">当サイトのポリシー</a></li>
       </ul>
     </nav>
 
@@ -45,8 +49,16 @@
     <div class="main_header">
       <img src="../common/images/logo.svg" alt="">
       <div class="sub_header">
-        <a href=""><img src="../common/images/login.svg" alt=""></a>
-        <a href=""><img src="../common/images/cart.svg" alt=""></a>
+        <?php if(isset($_SESSION['user'])):?>
+
+        <a href="../logout-input.php"><img src="../common/images/logout.svg" alt=""></a>
+        <a href="../cart.php"><img src="../common/images/cart.svg" alt=""></a>
+
+        <?php else: ?>
+          <a href="../login-input.php"><img src="../common/images/login.svg" alt=""></a>
+        <a href="../cart.php"><img src="../common/images/cart.svg" alt=""></a>
+        
+        <?php endif; ?>
       </div>
     </div>
 

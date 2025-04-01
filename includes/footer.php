@@ -14,25 +14,25 @@
   <footer>
     <div class="link_area">
       <ul class="footer_link">
-        <a href="">
+        <a href="#">
           <li class="nav_text">よくある質問</li>
         </a>
-        <a href="">
+        <a href="#">
           <li class="nav_text">お問い合わせ</li>
         </a>
-        <a href="">
+        <a href="#">
           <li class="nav_text">当サイトのポリシー</li>
         </a>
       </ul>
     </div>
     <ul class="footer_sns">
-      <a href="">
+      <a href="#">
         <li><img src="../common/images/instagram.png" alt="インスタグラムアイコン"></li>
       </a>
-      <a href="">
+      <a href="#">
         <li><img src="../common/images/facebook.png" alt="フェイスブックアイコン"></li>
       </a>
-      <a href="">
+      <a href="#">
         <li><img src="../common/images/x.png" alt="ツイッターアイコン" class="x_anime"></li>
       </a>
     </ul>
