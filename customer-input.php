@@ -21,25 +21,25 @@ $name=$address=$login=$password='';
   <form action="customer-confirm.php" method="post">
 <ul>
   <li>
-    <p>お名前<span>(必須)</span><input type="text" name="user_name1"></p>
+    <p>お名前<span>(必須)</span><input type="text" name="user_name1" value="', $user_name1,'"></p>
   </li>
   <li>
-    <p>お名前 (フリガナ)<span>(必須)</span><input type="text" name="user_name2"></p>
+    <p>お名前 (フリガナ)<span>(必須)</span><input type="text" name="user_name2" value="', user_name2,'"></p>
   </li>
   <li>
-    <p>郵便番号<span>(必須)</span></p><input type="text" name="postcode">
+    <p>郵便番号<span>(必須)</span></p><input type="text" name="postcode" value="', postcode,'">
   </li>
   <li>
-    <p>住所<span>(必須)</span></p><input type="text" name="address">
+    <p>住所<span>(必須)</span></p><input type="text" name="address" value="', address,'">
   </li>
   <li>
     <p>メールアドレス<span>(必須)</span></p>
-    <input type="email" name="user_mail">
+    <input type="email" name="user_mail" value="', user_mail,'">
   </li>
   <li>
     <p>パスワード<span>(必須)</span></p>
     <p>A-Z、a-z、0-9を少なくとも各1つは含めて8文字以上で入力してください。</p>
-    <input type="password" name="password">
+    <input type="password" name="password" value="', password,'">
 </li>
 </ul>
 
