@@ -1,4 +1,4 @@
-<?php require '../includes/header.php'; ?>
+<?php require 'includes/header.php'; ?>
 <?php
 unset($_SESSION['customer']);
 $pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 
