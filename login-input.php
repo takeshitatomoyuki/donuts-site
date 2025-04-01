@@ -1,4 +1,4 @@
-<?php require '../header.php'; ?>
+<?php require 'includes/header.php'; ?>
 <h1>ログイン</h1>
 <form action="login-complete.php" method="post">
 メールアドレス<input type="text" name="mail"><br>
