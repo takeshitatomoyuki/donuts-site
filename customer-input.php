@@ -21,20 +21,20 @@ $name=$address=$login=$password='';
   <form action="customer-confirm.php" method="post">
 <ul>
   <li>
-    <p>お名前<span>(必須)</span><input type="text" name="user_name1" value="', $user_name1,'"></p>
+    <p>お名前<span>(必須)</span><input type="text" name="name" value="', $name,'"></p>
   </li>
   <li>
-    <p>お名前 (フリガナ)<span>(必須)</span><input type="text" name="user_name2" value="', user_name2,'"></p>
+    <p>お名前 (フリガナ)<span>(必須)</span><input type="text" name="kana" value="', kana,'"></p>
   </li>
   <li>
-    <p>郵便番号<span>(必須)</span></p><input type="text" name="postcode" value="', postcode,'">
+    <p>郵便番号<span>(必須)</span></p><input type="text" name="post_code" value="', post_code,'">
   </li>
   <li>
     <p>住所<span>(必須)</span></p><input type="text" name="address" value="', address,'">
   </li>
   <li>
     <p>メールアドレス<span>(必須)</span></p>
-    <input type="email" name="user_mail" value="', user_mail,'">
+    <input type="email" name="mail" value="', mail,'">
   </li>
   <li>
     <p>パスワード<span>(必須)</span></p>
@@ -45,6 +45,6 @@ $name=$address=$login=$password='';
 
 <input type="submit" value="ご入力内容を確認する">
 </form>
-コンニチハ
+
 </body>
 </html>
