@@ -5,5 +5,5 @@
 パスワード<input type="password" name="password"><br>
 <input type="submit" value="ログインする">
 </form>
-<a href="customer-input">会員登録がお済みでない方はこちら</a>
+<a href="customer-input.php">会員登録がお済みでない方はこちら</a>
 <?php require 'includes/footer.php'; ?>
