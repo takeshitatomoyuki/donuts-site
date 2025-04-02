@@ -10,10 +10,10 @@
 
 <?php session_start(); ?>
 <?php
-$name=$address=$login=$password='';
+$name=$address=$address=$password='';
  if(isset($_SESSION['customer'])) {
   $name=$_SESSION['customer']['name'];
-  $address=$_SESSION['customer']['login'];
+  $address=$_SESSION['customer']['address'];
   $password=$_SESSION['customer']['password'];
  } 
  ?>
