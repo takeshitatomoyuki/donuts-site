@@ -25,12 +25,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <h2>ご入力内容の確認</h2>
 
     <form action="card-complete.php" method="post">
-        <p>お名前: <?php echo $card_name; ?></p>
-        <p>カード会社 <?php echo $card_type; ?></p>
-        <p>カード番号 <?php echo $card_no; ?></p>
-        <p>有効期限 <?php echo $card_month; ?></p>
-        <!-- ここから -->
-        <p>メールアドレス: <?php echo $mail; ?></p>
+        <p>お名前</p>
+        <p><?php echo $card_name; ?></p>
+        <p>カード会社</p>
+        <p><?php echo $card_type; ?></p>
+        <p>カード番号</p>
+        <p><?php echo $card_no; ?></p>
+        <p>有効期限</p>
+        <p><?php echo $card_month,'/',echo  ?></p>
+        <p>メールアドレ<?php echo $mail; ?></p>
         <p>パスワード: <?php echo $password; ?></p>
 
         <!-- hidden フィールドでデータを complete.php に渡す -->
