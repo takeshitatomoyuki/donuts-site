@@ -9,7 +9,7 @@ if (isset($_SESSION['customer'])) {
   echo 'ようこそ ゲストさん。';
 }
 ?>
-<?php require 'includes/footer.php'; ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -64,15 +64,14 @@ if (isset($_SESSION['customer'])) {
 
   <nav>
     <ol class="breadcrumb">
-      <li><a href="index.html">TOP</a></li>
-      <li id="category"><a href="category.html">商品一覧</a></li>
+      <li><a href="index.php">TOP</a></li>
+      <li id="category"><a href="product.php">商品一覧</a></li>
       <li id="product">商品名</li>
     </ol>
   </nav>
 
   <main>
-    <h2>ページコンテンツ</h2>
-    <p>ここにページのメインコンテンツが入ります。</p>
+    
   </main>
 
   <script>
@@ -105,3 +104,4 @@ if (isset($_SESSION['customer'])) {
 </body>
 
 </html>
+<?php require 'includes/footer.php'; ?>
