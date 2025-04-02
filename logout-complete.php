@@ -1,4 +1,4 @@
-<?php require '../header.php'; ?>
+<?php require 'includes/header.php'; ?>
 <?php
 if (isset($_SESSION['customer'])) {
 	unset($_SESSION['customer']);
@@ -8,4 +8,4 @@ if (isset($_SESSION['customer'])) {
 }
 ?>
 <a href="index.php">トップページへ戻る</a>;
-<?php require '../footer.php'; ?>
+<?php require 'includes/footer.php'; ?>

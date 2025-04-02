@@ -1,4 +1,4 @@
-<?php require '../includes/header.php'; ?>
+<?php require 'includes/header.php'; ?>
 <?php
 unset($_SESSION['customer']);
 $pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 
@@ -18,4 +18,4 @@ if (isset($_SESSION['customer'])) {
 }
 ?>
 <a href="index.php">トップページへ戻る</a>;
-<?php require '../footer.php'; ?>
+<?php require 'includes/footer.php'; ?>
