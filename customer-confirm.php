@@ -23,14 +23,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
     <h2>入力内容の確認</h2>
-    <p>以下の内容で登録しますか？</p>
     <form action="customer-complete.php" method="post">
-        <p>お名前: <?php echo $name; ?></p>
-        <p>お名前 (フリガナ): <?php echo $kana; ?></p>
-        <p>郵便番号: <?php echo $post_code; ?></p>
-        <p>住所: <?php echo $address; ?></p>
-        <p>メールアドレス: <?php echo $mail; ?></p>
-        <p>パスワード: <?php echo $password; ?></p>
+        <p>お名前</p>
+        <p><?php echo $name; ?></p>
+        <p>お名前 (フリガナ)</p>
+        <p><?php echo $kana; ?></p>
+        <p>郵便番号</p>
+        <p><?php echo $post_code; ?></p>
+        <p>住所</p>
+        <p><?php echo $address; ?></p>
+        <p>メールアドレス</p>
+        <p><?php echo $mail; ?></p>
+        <p>パスワード</p>
+        <p><?php echo $password; ?></p>
 
         <!-- hidden フィールドでデータを complete.php に渡す -->
         <input type="hidden" name="name" value="<?php echo $name; ?>">
@@ -40,10 +45,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="hidden" name="mail" value="<?php echo $mail; ?>">
         <input type="hidden" name="password" value="<?php echo $password; ?>">
 
-        <button type="submit">確定</button>
+        <button type="submit">この内容で登録する</button>
     </form>
     <form action="customer-input.php" method="post">
-        <!-- 戻るボタンで再入力 -->
+        <!-- 修正ボタンで再入力 -->
         <input type="hidden" name="name" value="<?php echo $name; ?>">
         <input type="hidden" name="kana" value="<?php echo $kana; ?>">
         <input type="hidden" name="post_code" value="<?php echo $post_code; ?>">
