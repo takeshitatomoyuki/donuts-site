@@ -1,6 +1,16 @@
 @charset "utf-8";
 
+/* * {
+  font-family: Noto Sans JP;
+} */
+
+/* ///////商品一覧///////// */
 h2 {
   font-size: 20px;
-  text-decoration: underline;
+  text-align: center;
+  margin-top: 32px;
+  border-bottom: solid 4px #FFD233;
+  display: inline;
 }
+
+/* //////CCドーナツ/////// */
