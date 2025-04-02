@@ -19,7 +19,10 @@ h2 {
   text-align: center;
   margin-top: 32px;
   border-bottom: solid 4px #FFD233;
-  width: 40vw;
+  width: 30vw;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* //////CCドーナツ/////// */
@@ -49,6 +52,7 @@ img.heart_logo {
   width: 5.3vw;
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 20%;
 }
 
 .flex_price {
@@ -62,4 +66,55 @@ img.heart_logo {
   background-color: #7F5539;
   border: none;
   height: 7vh;
+  text-align: center;
+}
+
+/* /////////商品一覧grid ///////////*/
+.grid_syouhin {
+  height: 240vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+}
+
+.item01 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.item02 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.item03 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.item04 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.item05 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.item06 {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+/* //////バラエティーセットgrid/////// */
+.h2_2 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 32px;
+  border-bottom: solid 4px #FFD233;
+  width: 60vw;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
