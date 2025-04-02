@@ -1,14 +1,5 @@
 <?php require 'includes/header.php'; ?>
-<?php
-if (session_status() == PHP_SESSION_NONE) {
-	session_start();
-}
-if (isset($_SESSION['customer'])) {
-    echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
-} else{
-  echo 'ようこそ ゲストさん。';
-}
-?>
+
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -58,9 +49,7 @@ if (isset($_SESSION['customer'])) {
 </head>
 
 <body class="product-page"> <!-- ページに応じてクラスを変更: top-page, category-page, product-page -->
-  <header>
-    <h1>ECサイト</h1>
-  </header>
+  
 
   <nav>
     <ol class="breadcrumb">
@@ -69,7 +58,16 @@ if (isset($_SESSION['customer'])) {
       <li id="product">商品名</li>
     </ol>
   </nav>
-
+  <?php
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}
+if (isset($_SESSION['customer'])) {
+    echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
+} else{
+  echo 'ようこそ ゲストさん。';
+}
+?>
   <main>
     
   </main>
