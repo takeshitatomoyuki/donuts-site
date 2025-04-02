@@ -17,14 +17,21 @@ if (isset($_SESSION['customer'])) {
   <title>Document</title>
   <link rel="stylesheet" href="common/css/reset.css">
   <link rel="stylesheet" href="common/css/common.css">
+  <link rel="stylesheet" href="common/css/login.css">
 </head>
 <body>
 <h1>ログイン</h1>
 <form action="login-complete.php" method="post">
-メールアドレス<input type="text" name="mail"><br>
-パスワード<input type="password" name="password"><br>
-<input type="submit" value="ログインする">
-</form>
+        <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="mail" required>
+        </div>
+        <div class="form-group">
+            <label for="password">パスワード</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <input type="submit" value="ログインする">
+    </form>
 <a href="customer-input.php">会員登録がお済みでない方はこちら</a>
 </body>
 </html>
