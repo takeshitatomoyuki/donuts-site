@@ -30,7 +30,9 @@ if (isset($_SESSION['customer'])) {
             <label for="password">パスワード</label>
             <input type="password" id="password" name="password" required>
         </div>
+        <div class="login_button">
         <input type="submit" value="ログインする">
+        </div>
     </form>
 <a href="customer-input.php">会員登録がお済みでない方はこちら</a>
 </body>
