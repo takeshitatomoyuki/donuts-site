@@ -32,28 +32,29 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <p>カード番号</p>
         <p><?php echo $card_no; ?></p>
         <p>有効期限</p>
-        <p><?php echo $card_month,'/',echo  ?></p>
-        <p>メールアドレ<?php echo $mail; ?></p>
-        <p>パスワード: <?php echo $password; ?></p>
+        <p><?php echo $card_month,'/',$card_year; ?></p>
+        <p>セキュリティコード</p>
+        <p><?php echo $card_security_code; ?></p>
 
         <!-- hidden フィールドでデータを complete.php に渡す -->
-        <input type="hidden" name="name" value="<?php echo $name; ?>">
-        <input type="hidden" name="kana" value="<?php echo $kana; ?>">
-        <input type="hidden" name="post_code" value="<?php echo $post_code; ?>">
-        <input type="hidden" name="address" value="<?php echo $address; ?>">
-        <input type="hidden" name="mail" value="<?php echo $mail; ?>">
-        <input type="hidden" name="password" value="<?php echo $password; ?>">
+        <input type="hidden" name="card_name" value="<?php echo $card_name; ?>">
+        <input type="hidden" name="card_type" value="<?php echo $card_type; ?>">
+        <input type="hidden" name="card_no" value="<?php echo $card_no; ?>">
+        <input type="hidden" name="card_month" value="<?php echo $card_month; ?>">
+        <input type="hidden" name="card_year" value="<?php echo $card_year; ?>">
+        <input type="hidden" name="card_security_code" value="<?php echo $card_security_code; ?>">
 
-        <button type="submit">確定</button>
+        <button type="submit">この内容で確認する</button>
     </form>
-    <form action="customer-input.php" method="post">
+    <form action="card-input.php" method="post">
         <!-- 戻るボタンで再入力 -->
-        <input type="hidden" name="name" value="<?php echo $name; ?>">
-        <input type="hidden" name="kana" value="<?php echo $kana; ?>">
+        <input type="hidden" name="card_name" value="<?php echo $card_name; ?>">
+        <input type="hidden" name="card_type" value="<?php echo $card_type; ?>">
         <input type="hidden" name="post_code" value="<?php echo $post_code; ?>">
-        <input type="hidden" name="address" value="<?php echo $address; ?>">
-        <input type="hidden" name="mail" value="<?php echo $mail; ?>">
-        <input type="hidden" name="password" value="<?php echo $password; ?>">
+        <input type="hidden" name="card_no" value="<?php echo $card_no; ?>">
+        <input type="hidden" name="card_month" value="<?php echo $card_month; ?>">
+        <input type="hidden" name="card_year" value="<?php echo $card_year; ?>">
+        <input type="hidden" name="card_security_code" value="<?php echo $card_security_code; ?>">
         <button type="submit">修正する</button>
     </form>
 </body>
