@@ -1,16 +1,65 @@
 @charset "utf-8";
 
-/* * {
+* {
   font-family: Noto Sans JP;
-} */
+  line-height: 1.6;
+  font-size: 4.26vw;
+}
+
+.main_padding {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 
 /* ///////商品一覧///////// */
+
 h2 {
   font-size: 20px;
   text-align: center;
   margin-top: 32px;
   border-bottom: solid 4px #FFD233;
-  display: inline;
+  width: 40vw;
 }
 
 /* //////CCドーナツ/////// */
+.list {
+  width: 42vw;
+  height: 86.4vw;
+}
+
+.photo_donuts {
+  width: 42vw;
+}
+
+.syoihin {
+  color: #7F5539;
+  padding-top: 19.5px;
+}
+
+
+.price {
+  color: #BF0000;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+img.heart_logo {
+  display: block;
+  width: 5.3vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.flex_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit {
+  width: 42vw;
+  color: #FFFFFF;
+  background-color: #7F5539;
+  border: none;
+  height: 7vh;
+}
