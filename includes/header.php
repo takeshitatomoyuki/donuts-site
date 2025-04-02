@@ -27,15 +27,18 @@ session_start();
       <label class="menu_icon" for="menu_btn">
         <!-- border -->
         <span class="navicon"></span>
-      </label>
-      <ul class="menu">
+      </label>  
+      
         <!-- ！！！！！！！！！！！！！！！！！！ -->
         <!-- 自分のページのみ先頭の「../」消して下さい -->
-        <li><a href="index.php">TOP</a></li>
-        <li><a href="product.php">商品一覧</a></li>
-        <li><a href="#">よくある質問</a></li>
-        <li><a href="#">問い合わせ</a></li>
-        <li><a href="#">当サイトのポリシー</a></li>
+    
+      <ul class="menu">
+               <a href="#" ><img src="common/images/logo.svg" alt=""class="drawer_img"></a>
+        <li class="drawer_textlink"><a href="index.php">TOP</a></li>
+        <li class="drawer_textlink"><a href="product.php">商品一覧</a></li>
+        <li class="drawer_textlink"><a href="#">よくある質問</a></li>
+        <li class="drawer_textlink"><a href="#">問い合わせ</a></li>
+        <li class="drawer_textlink"><a href="#">当サイトのポリシー</a></li>
       </ul>
     </nav>
 
@@ -47,8 +50,8 @@ session_start();
 
 
     <div class="main_header">
-      <img src="common/images/logo.svg" alt="">
-      <div class="sub_header">
+      <h1 class="header_main_logo"><img src="common/images/logo.svg" alt="" class="header_logo_img"></h1>
+      <div class="header_sub_header">
         <?php if(isset($_SESSION['user'])):?>
 
         <a href="logout-input.php"><img src="common/images/logout.svg" alt=""></a>
@@ -63,11 +66,11 @@ session_start();
     </div>
 
     <div class="header_search">
-      <div class="search_flex">
+      <div class="header_search_flex">
 
-        <form action="">
-          <input type="submit" class="search_btn">
-          <input type="text">
+        <form action="" class="header_form">
+          <input type="submit" class="header_search_btn">
+          <input type="text" id="header_input_text">
         </form>
       </div>
     </div>
