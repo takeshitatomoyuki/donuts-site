@@ -1,0 +1,35 @@
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  padding: 10px 16px;
+  margin: 0;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  font-family: sans-serif;
+}
+
+.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+
+.breadcrumb li+li:before {
+  padding: 8px;
+  color: #666;
+  content: ">";
+}
+
+.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+/* TOPページでは非表示 */
+body.top-page .breadcrumb {
+  display: none;
+}
