@@ -18,4 +18,5 @@ if (isset($_SESSION['customer'])) {
 }
 ?>
 <a href="index.php">トップページへ戻る</a>;
+<a href="card-input.php">カード情報登録</a>;
 <?php require 'includes/footer.php'; ?>
