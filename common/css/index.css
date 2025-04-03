@@ -230,13 +230,48 @@ li {
 }
 
 
-@media screen and(min-width:769px) {
+@media screen and (min-width:769px) {
 
-  .index_philosophy_content {
-    background-image:
-      url(../images/pc_backgroud.jpg);
-
+  body {
+    max-width: 1200px;
   }
 
+  /* 画像 */
+  .index_philosophy_content {
+    width: 100%;
+    height: 49vw;
+    background-image:
+      url(../images/pc_backgroud.jpg);
+  }
+
+  .index_up_sub_img {
+    display: flex;
+  }
+
+  .index_item1 {
+    width: 36.6%;
+    height: 36.6%;
+    margin: 5.8% 1.4% 1.4% 12%;
+  }
+
+  .index_item2 {
+    width: 36.6%;
+    height: 36.6%;
+    margin: 5.8% 12% 1.4% 1.4%;
+  }
+
+  .index_item3 {
+    width: 76%;
+    height: 18.8%;
+    margin: 1.4% 12% 5.8% 12%;
+  }
+
+  /* 私達の信念 */
+
+  .index_philosophy_content h2 {
+    font-size: 2.64vw;
+    padding-top: 14.6vw;
+    padding-bottom: 1.5vw;
+  }
 
 }
