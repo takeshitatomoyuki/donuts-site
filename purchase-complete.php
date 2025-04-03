@@ -29,5 +29,5 @@ try {
   echo '購入手続き中にエラーが発生しました。申し訳ございません。';
   error_log('購入エラー: ' . $e->getMessage()); // エラーログを出力
 }
-
+?>
 <?php require 'includes/footer.php'; ?>
