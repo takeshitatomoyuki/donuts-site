@@ -33,7 +33,7 @@ if (isset($_SESSION['customer'])) {
 ?>
   <main>
   <?php
-$pdo=new PDO('mysql:host=localhost;dbname=shop;charset=utf8', 
+$pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 
 	'staff', 'password');
 $sql=$pdo->prepare('select * from product where id=?');
 $sql->execute([$_REQUEST['id']]);
