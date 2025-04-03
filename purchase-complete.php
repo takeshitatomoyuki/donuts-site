@@ -1,23 +1,33 @@
 <?php
+
 if (session_status() == PHP_SESSION_NONE) {
-	session_start();
+  session_start();
 }
-$pdo=new PDO('mysql:host=localhost;dbname=shop;charset=utf8', 
-	'staff', 'password');
-$purchase_id=1;
-foreach ($pdo->query('select max(id) from purchase') as $row) {
-	$purchase_id=$row['max(id)']+1;
+
+$pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'staff', 'password');
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+try {
+  $pdo->beginTransaction(); // トランザクション開始
+
+  // 購入情報を purchase テーブルに追加
+  $sql = $pdo->prepare('INSERT INTO purchase (customer_id) VALUES (?)');
+  $sql->execute([$_SESSION['customer']['id']]);
+  $purchase_id = $pdo->lastInsertId();
+
+  // 購入商品の詳細を purchase_detail に追加
+  foreach ($_SESSION['product'] as $product_id => $product) {
+      $sql = $pdo->prepare('INSERT INTO purchase_detail (purchase_id, product_id, count) VALUES (?, ?, ?)');
+      $sql->execute([$purchase_id, $product_id, $product['count']]);
+  }
+
+  $pdo->commit(); // すべて成功したら確定
+  unset($_SESSION['product']);
+  echo '購入手続きが完了しました。ありがとうございます。';
+} catch (Exception $e) {
+  $pdo->rollBack(); // エラーがあれば元に戻す
+  echo '購入手続き中にエラーが発生しました。申し訳ございません。';
+  error_log('購入エラー: ' . $e->getMessage()); // エラーログを出力
 }
-$sql=$pdo->prepare('insert into purchase values(?,?)');
-if ($sql->execute([$purchase_id, $_SESSION['customer']['id']])) {
-	foreach ($_SESSION['product'] as $product_id=>$product) {
-		$sql=$pdo->prepare('insert into purchase_detail values(?,?,?)');
-		$sql->execute([$purchase_id, $product_id, $product['count']]);
-	}
-	unset($_SESSION['product']);
-	echo '購入手続きが完了しました。ありがとうございます。';
-} else {
-	echo '購入手続き中にエラーが発生しました。申し訳ございません。';
-}
-?>
+
 <?php require 'includes/footer.php'; ?>
