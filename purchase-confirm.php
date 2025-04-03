@@ -19,8 +19,8 @@ else {
     // 現在のログインユーザーの ID
     $customer_id = $_SESSION['customer']['id'];
 
-    // `card` テーブルの `d` カラムに customer_id が存在するか確認
-    $sql = $pdo->prepare('SELECT COUNT(*) FROM card WHERE d = ?');
+    // `card` テーブルの `id` カラムに customer_id が存在するか確認
+    $sql = $pdo->prepare('SELECT COUNT(*) FROM card WHERE id = ?');
     $sql->execute([$customer_id]);
     $card_exists = $sql->fetchColumn() > 0;
 
