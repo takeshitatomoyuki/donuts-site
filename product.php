@@ -38,6 +38,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 <!-- カートに入れるボタン -->
 <form action="detail.php" method="post">
+  <input type="hidden" name="id" value="1">
   <input type="submit" value="カートに入れる" class="submit" id="1"> 
 </form>
 </li>
