@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="jp">
 
@@ -5,8 +9,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../common/css/reset.css">
-  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="stylesheet" href="common/css/common.css">
 </head>
 
 <body>
@@ -23,15 +27,18 @@
       <label class="menu_icon" for="menu_btn">
         <!-- border -->
         <span class="navicon"></span>
-      </label>
-      <ul class="menu">
+      </label>  
+      
         <!-- ！！！！！！！！！！！！！！！！！！ -->
         <!-- 自分のページのみ先頭の「../」消して下さい -->
-        <li><a href="../index.html">TOP</a></li>
-        <li><a href="../taipei/index.html">商品一覧</a></li>
-        <li><a href="../taichung/index.html">よくある質問</a></li>
-        <li><a href="tainan/index.html">問い合わせ</a></li>
-        <li><a href="">当サイトのポリシー</a></li>
+    
+      <ul class="menu">
+               <a href="#" ><img src="common/images/logo.svg" alt=""class="drawer_img"></a>
+        <li class="drawer_textlink"><a href="index.php">TOP</a></li>
+        <li class="drawer_textlink"><a href="product.php">商品一覧</a></li>
+        <li class="drawer_textlink"><a href="#">よくある質問</a></li>
+        <li class="drawer_textlink"><a href="#">問い合わせ</a></li>
+        <li class="drawer_textlink"><a href="#">当サイトのポリシー</a></li>
       </ul>
     </nav>
 
@@ -43,19 +50,27 @@
 
 
     <div class="main_header">
-      <img src="../common/images/logo.svg" alt="">
-      <div class="sub_header">
-        <a href=""><img src="../common/images/login.svg" alt=""></a>
-        <a href=""><img src="../common/images/cart.svg" alt=""></a>
+      <h1 class="header_main_logo"><img src="common/images/logo.svg" alt="" class="header_logo_img"></h1>
+      <div class="header_sub_header">
+        <?php if(isset($_SESSION['user'])):?>
+
+        <a href="logout-input.php"><img src="common/images/logout.svg" alt=""></a>
+        <a href="cart.php"><img src="common/images/cart.svg" alt=""></a>
+
+        <?php else: ?>
+          <a href="login-input.php"><img src="common/images/login.svg" alt=""></a>
+        <a href="cart.php"><img src="common/images/cart.svg" alt=""></a>
+        
+        <?php endif; ?>
       </div>
     </div>
 
     <div class="header_search">
-      <div class="search_flex">
+      <div class="header_search_flex">
 
-        <form action="">
-          <input type="submit" class="search_btn">
-          <input type="text">
+        <form action="" class="header_form">
+          <input type="submit" class="header_search_btn">
+          <input type="text" id="header_input_text">
         </form>
       </div>
     </div>
