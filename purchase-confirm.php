@@ -1,3 +1,4 @@
+<?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -18,28 +19,28 @@ else {
     // 現在のログインユーザーの ID
     $customer_id = $_SESSION['customer']['id'];
 
-    // `card` テーブルの `id` カラムに customer_id が存在するか確認し、情報を取得
-    $sql = $pdo->prepare('SELECT * FROM card WHERE id = ?');
+    // `card` テーブルの `id` カラムに customer_id が存在するか確認
+    $sql = $pdo->prepare('SELECT COUNT(*) FROM card WHERE id = ?');
     $sql->execute([$customer_id]);
-    $card = $sql->fetch(PDO::FETCH_ASSOC);
+    $card_exists = $sql->fetchColumn() > 0;
 
-    if (!$card) {
+    if (!$card_exists) {
         echo '<p>カード情報を登録してください。</p>';
         echo '<a href="card-input.php">カード情報を登録する</a>';
     } else {
-        // カード情報をセッションに保存
-        $_SESSION['card'] = $card;
-
+        $sql = $pdo->prepare('SELECT * FROM card WHERE id = ?');
+    $sql->execute([$customer_id]);
+    $card = $sql->fetch(PDO::FETCH_ASSOC);
+    // カード情報をセッションに保存
+    $_SESSION['card'] = $card;
         echo '<hr>';
         require 'cart.php';
         echo '<hr>';
-        
-        // 購入手続きの表示
-        echo '<p>お名前：', htmlspecialchars($_SESSION['customer']['name'], ENT_QUOTES, 'UTF-8'), '</p>';
-        echo '<p>ご住所：', htmlspecialchars($_SESSION['customer']['address'], ENT_QUOTES, 'UTF-8'), '</p>';
-        
-        // ここでカード情報を表示
-        echo '<p>カード名義：', htmlspecialchars($_SESSION['card']['card_name'], ENT_QUOTES, 'UTF-8'), '</p>';
+         // 購入手続きの表示
+         echo '<p>お名前：', htmlspecialchars($_SESSION['customer']['name'], ENT_QUOTES, 'UTF-8'), '</p>';
+         echo '<p>ご住所：', htmlspecialchars($_SESSION['customer']['address'], ENT_QUOTES, 'UTF-8'), '</p>';
+
+         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_name'], ENT_QUOTES, 'UTF-8'), '</p>';
          echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_type'], ENT_QUOTES, 'UTF-8'), '</p>';
          echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_no'], ENT_QUOTES, 'UTF-8'), '</p>';
          echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_month'], ENT_QUOTES, 'UTF-8'), '</p>';
