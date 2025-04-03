@@ -13,7 +13,7 @@ elseif (empty($_SESSION['product'])) {
 } 
 else {
     // データベース接続
-    $pdo = new PDO('mysql:host=localhost;dbname=shop;charset=utf8', 'staff', 'password');
+    $pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'staff', 'password');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // 現在のログインユーザーの ID
@@ -26,7 +26,7 @@ else {
 
     if (!$card_exists) {
         echo '<p>カード情報を登録してください。</p>';
-        echo '<a href="card-register.php">カード情報を登録する</a>';
+        echo '<a href="card-input.php">カード情報を登録する</a>';
     } else {
         // 購入手続きの表示
         echo '<p>お名前：', htmlspecialchars($_SESSION['customer']['name'], ENT_QUOTES, 'UTF-8'), '</p>';
