@@ -39,7 +39,7 @@ $sql=$pdo->prepare('select * from product where id=?');
 $sql->execute([$_REQUEST['id']]);
 foreach ($sql as $row) {
 	echo '<p><img alt="image" src="image/', $row['id'], '.jpg"></p>';
-	echo '<form action="cart-insert.php" method="post">';
+	echo '<form action="cart-input.php" method="post">';
 	echo '<p>商品番号：', $row['id'], '</p>';
 	echo '<p>商品名：', $row['name'], '</p>';
 	echo '<p>価格：', $row['price'], '</p>';
@@ -53,8 +53,7 @@ foreach ($sql as $row) {
 	echo '<input type="hidden" name="price" value="', $row['price'], '">';
 	echo '<p><input type="submit" value="カートに追加"></p>';
 	echo '</form>';
-	echo '<p><a href="favorite-insert.php?id=', $row['id'], 
-		'">お気に入りに追加</a></p>';
+	
 ?>
   </main>
 
