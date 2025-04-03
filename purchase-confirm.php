@@ -1,74 +1,61 @@
 <?php
-try {
-  $pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8',
-  'staff','password');
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+// 未ログインなら購入不可
+if (!isset($_SESSION['customer'])) {
+    echo '購入手続きを行うにはログインしてください。';
+} 
+// カートが空ならエラーメッセージ
+elseif (empty($_SESSION['product'])) {
+    echo 'カートに商品がありません。';
+} 
+else {
+    // データベース接続
+    $pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'staff', 'password');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-    $customer_id = 1; // 取得する顧客ID（仮の値）
-    
-    // 商品情報と購入詳細を取得
-    $sql = "SELECT p.name AS product_name, pd.count AS quantity, (p.price * pd.count) AS subtotal
-            FROM purchase_detail pd
-            JOIN product p ON pd.product_id = p.id
-            WHERE pd.customer_id = :customer_id";
-    $stmt = $pdo->prepare($sql);
-    $stmt->bindParam(':customer_id', $customer_id, PDO::PARAM_INT);
-    $stmt->execute();
-    $purchases = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    
-    // 顧客情報を取得
-    $sql = "SELECT name, address FROM customer WHERE id = :customer_id";
-    $stmt = $pdo->prepare($sql);
-    $stmt->bindParam(':customer_id', $customer_id, PDO::PARAM_INT);
-    $stmt->execute();
-    $customer = $stmt->fetch(PDO::FETCH_ASSOC);
-    
-    // カード情報を取得
-    $sql = "SELECT card_type, card_no FROM card WHERE customer_id = :customer_id";
-    $stmt = $pdo->prepare($sql);
-    $stmt->bindParam(':customer_id', $customer_id, PDO::PARAM_INT);
-    $stmt->execute();
-    $card = $stmt->fetch(PDO::FETCH_ASSOC);
-    
-    // 合計金額を計算
-    $total = array_sum(array_column($purchases, 'subtotal'));
-    
-} catch (PDOException $e) {
-    echo "エラー: " . $e->getMessage();
-    exit;
+
+    // 現在のログインユーザーの ID
+    $customer_id = $_SESSION['customer']['id'];
+
+    // `card` テーブルの `id` カラムに customer_id が存在するか確認
+    $sql = $pdo->prepare('SELECT COUNT(*) FROM card WHERE id = ?');
+    $sql->execute([$customer_id]);
+    $card_exists = $sql->fetchColumn() > 0;
+
+    if (!$card_exists) {
+        require 'cart.php';
+        echo '<p>お名前：', htmlspecialchars($_SESSION['customer']['name'], ENT_QUOTES, 'UTF-8'), '</p>';
+        echo '<p>ご住所：', htmlspecialchars($_SESSION['customer']['address'], ENT_QUOTES, 'UTF-8'), '</p>';
+        echo '<p>お支払方法が登録されておりません。</p>';
+        echo '<p>クレジットカード情報を登録してください。</p>';
+        echo '<a href="card-input.php">カード情報を登録する</a>';
+    } else {
+        $sql = $pdo->prepare('SELECT * FROM card WHERE id = ?');
+    $sql->execute([$customer_id]);
+    $card = $sql->fetch(PDO::FETCH_ASSOC);
+    // カード情報をセッションに保存
+    $_SESSION['card'] = $card;
+        echo '<hr>';
+        require 'cart.php';
+        echo '<hr>';
+         // 購入手続きの表示
+         echo '<p>お名前：', htmlspecialchars($_SESSION['customer']['name'], ENT_QUOTES, 'UTF-8'), '</p>';
+         echo '<p>ご住所：', htmlspecialchars($_SESSION['customer']['address'], ENT_QUOTES, 'UTF-8'), '</p>';
+
+         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_name'], ENT_QUOTES, 'UTF-8'), '</p>';
+         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_type'], ENT_QUOTES, 'UTF-8'), '</p>';
+         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_no'], ENT_QUOTES, 'UTF-8'), '</p>';
+         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_month'], ENT_QUOTES, 'UTF-8'), '</p>';
+         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_year'], ENT_QUOTES, 'UTF-8'), '</p>';
+         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_security_code'], ENT_QUOTES, 'UTF-8'), '</p>';
+        
+
+        echo '<p>内容をご確認いただき、購入を確定してください。</p>';
+        echo '<a href="purchase-complete.php">購入を確定する</a>';
+    }
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>購入情報</title>
-</head>
-<body>
-    <h2>購入情報</h2>
-    <table border="1">
-        <tr>
-            <th>商品名</th>
-            <th>数量</th>
-            <th>小計</th>
-        </tr>
-        <?php foreach ($purchases as $purchase): ?>
-            <tr>
-                <td><?php echo htmlspecialchars($purchase['product_name'], ENT_QUOTES, 'UTF-8'); ?></td>
-                <td><?php echo htmlspecialchars($purchase['quantity'], ENT_QUOTES, 'UTF-8'); ?></td>
-                <td><?php echo htmlspecialchars(number_format($purchase['subtotal']), ENT_QUOTES, 'UTF-8'); ?> 円</td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
-    <p><strong>合計金額:</strong> <?php echo number_format($total); ?> 円</p>
-    
-    <h2>お客様情報</h2>
-    <p><strong>お名前:</strong> <?php echo htmlspecialchars($customer['name'], ENT_QUOTES, 'UTF-8'); ?></p>
-    <p><strong>住所:</strong> <?php echo htmlspecialchars($customer['address'], ENT_QUOTES, 'UTF-8'); ?></p>
-    
-    <h2>カード情報</h2>
-    <p><strong>カード種類:</strong> <?php echo htmlspecialchars($card['card_type'], ENT_QUOTES, 'UTF-8'); ?></p>
-    <p><strong>カード番号:</strong> <?php echo htmlspecialchars($card['card_no'], ENT_QUOTES, 'UTF-8'); ?></p>
-</body>
-</html>
+<?php require 'includes/footer.php'; ?>
