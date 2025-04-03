@@ -12,123 +12,140 @@
 <body>
 <main>
 <!-- 画像 -->
-  <section class="images">
-  <img class="main_img" src="common/images/sp_main.jpg" alt="メイン画像">
+  <section class="index_images">
+  <img class="index_main_img" src="common/images/sp_main.jpg" alt="メイン画像">
  
-  <div class="sub_img">
-    <img class="item1" src="common/images/sp_sub1.jpg" alt="サブ画像１">
-    <img class="item2" src="common/images/sp_sub2.jpg" alt="サブ画像２">
-    <img class="item3" src="common/images/sp_sub3.jpg" alt="サブ画像３">
+  <div class="index_sub_img">
+    <img class="index_item1" src="common/images/sp_sub1.jpg" alt="サブ画像１">
+    <img class="index_item2" src="common/images/sp_sub2.jpg" alt="サブ画像２">
+    <img class="index_item3" src="common/images/sp_sub3.jpg" alt="サブ画像３">
   </div>
  
 <!-- 私達の信念 -->
 
-  <div class="philosophy_content">
+  <div class="index_philosophy_content">
     <h2>Philosophy</h2>
-    <p class="belief">私たちの信念</p>
-    <p class="create">"Creating Connections"</p>
-    <p class="connect">ドーナッツでつながる</p>
+    <p class="index_belief">私たちの信念</p>
+    <p class="index_create">"Creating Connections"</p>
+    <p class="index_connect">ドーナッツでつながる</p>
   </div>
- <!-- <picture> -->
-   <!-- ブラウザ幅1023～768pxまでsampleの画像が表示 -->
-<!-- <source srcset="common/images/pc_backgroud.jpg" 
-media="(min-width: 768px)" type="image/png"class="back_pc"> -->
- <!-- ブラウザ幅767px～から最小幅までsample2の画像が表示 -->
- <!-- <img src="common/images/sp_backgroud.jpg" alt="背景画像" 
- class="back_sp">
-</picture> -->
+
 </section>
 
 <!-- ランキング -->
-<section class="ranking">
+<section class="index_ranking">
 <h2>人気ランキング</h2>
 
-<ol>
+<ol class="index_grid">
   <!-- 第１位 -->
-<li class="linkbox1">
+<li class="index_linkbox1">
 <!-- li要素にリンクをつける -->
 <a href="#">
  <!-- ////////////////////////////////////////////// -->
-  <img src="common/images/sp_rank1.jpg" alt="１位">
-  <img src="common/images/sp_1donuts.jpg" alt="１位画像">
-  <p>CCドーナツ 当店オリジナル（5個入り）</p>
+  <div class="index_rank1">
+  <img class="index_r1" src="common/images/sp_rank1.jpg" alt="１位">
+  <img class="index_r1_img" src="common/images/sp_1donuts.jpg" alt="１位画像">
+  </div>
+  <p class="index_name">CCドーナツ 当店オリジナル（5個入り）</p>
+  <div class="index_price">
   <p>税込  ￥1,500</p>
+  <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
+  </div>
 <!-- li要素にリンクをつける -->
   </a>
 <!-- /////////////////////////////////////////////// -->
-  <img src="common/images/sp_heart.jpg" alt="ハート">
-  <form action="" method="">
-    <input type="submit" value="カートに入れる">
+  <form action="detail.php" method="post">
+    <input class="index_submit" type="submit" value="カートに入れる">
   </form>
 </li>
 
-<li class="linkbox2">
+<li class="index_linkbox2">
   <!-- 第２位 -->
 <a href="#">
-  <img src="common/images/sp_rank2.jpg" alt="２位">
-  <img src="common/images/sp_7donuts.jpg" alt="２位画像">
-  <p>フルーツドーナッツセット(12個入り)</p>
+<div class="index_rank2">
+  <img class="index_r2" src="common/images/sp_rank2.jpg" alt="２位">
+  <img class="index_r2_img" src="common/images/sp_7donuts.jpg" alt="２位画像">
+  </div>
+  <p class="index_name">フルーツドーナッツセット(12個入り)</p>
+  <div class="index_price">
   <p>税込  ￥3,500</p>
+  <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
+  </div>
   </a>
-  <img src="common/images/sp_heart.jpg" alt="ハート">
   <form action="" method="">
-    <input type="submit" value="カートに入れる">
+    <input class="index_submit"  type="submit" value="カートに入れる">
   </form>
 </li>
 
-<li class="linkbox3">
+<li class="index_linkbox3">
   <!-- 第３位 -->
 <a href="#">
-  <img src="common/images/sp_rank3.jpg" alt="３位">
-  <img src="common/images/sp_8donuts.jpg" alt="３位画像">
-  <p>フルーツドーナッツセット(14個入り)</p>
+<div class="index_rank3">
+  <img class="index_r3" src="common/images/sp_rank3.jpg" alt="３位">
+  <img class="index_r3_img" src="common/images/sp_8donuts.jpg" alt="３位画像">
+  </div>
+  <p class="index_name">フルーツドーナッツセット(14個入り)</p>
+  <div class="index_price">
   <p>税込  ￥4,000</p>
+  <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
+  </div>
   </a>
-  <img src="common/images/sp_heart.jpg" alt="ハート">
   <form action="" method="">
-    <input type="submit" value="カートに入れる">
+    <input class="index_submit"  type="submit" value="カートに入れる">
   </form>
 </li>
 
-<li class="linkbox4">
+<li class="index_linkbox4">
   <!-- 第４位 -->
 <a href="#">
-  <img src="common/images/sp_rank4.jpg" alt="４位">
-  <img src="common/images/sp_2donuts.jpg" alt="４位画像">
-  <p>チョコレートデライト(5個入り)</p>
+<div class="index_rank4">
+  <img class="index_r4" src="common/images/sp_rank4.jpg" alt="４位">
+  <img class="index_r4_img" src="common/images/sp_2donuts.jpg" alt="４位画像">
+  </div>
+  <p class="index_name">チョコレートデライト(5個入り)</p>
+  <div class="index_price">
   <p>税込  ￥1,500</p>
+  <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
+  </div>
   </a>
-  <img src="common/images/sp_heart.jpg" alt="ハート">
   <form action="" method="">
-    <input type="submit" value="カートに入れる">
+    <input class="index_submit"  type="submit" value="カートに入れる">
   </form>
 </li>
 
-<li class="linkbox5">
+<li class="index_linkbox5">
   <!-- 第５位 -->
 <a href="#">
-  <img src="common/images/sp_rank5.jpg" alt="５位">
-  <img src="common/images/sp_9donuts.jpg" alt="５位画像">
-  <p>ベストセレクションボックス(4個入り)</p>
+<div class="index_rank5">
+  <img class="index_r5" src="common/images/sp_rank5.jpg" alt="５位">
+  <img class="index_r5_img" src="common/images/sp_9donuts.jpg" alt="５位画像">
+  </div>
+  <p class="index_name">ベストセレクションボックス(4個入り)</p>
+  <div class="index_price">
   <p>税込  ￥1,200</p>
+  <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
+  </div>
   </a>
-  <img src="common/images/sp_heart.jpg" alt="ハート">
   <form action="" method="">
-    <input type="submit" value="カートに入れる">
+    <input class="index_submit"  type="submit" value="カートに入れる">
   </form>
 </li>
 
-<li class="linkbox6">
+<li class="index_linkbox6">
   <!-- 第６位 -->
 <a href="#">
-  <img src="common/images/sp_rank6.jpg" alt="６位">
-  <img src="common/images/sp_6donuts.jpg" alt="６位画像">
-  <p>ストロベリークラッシュ(5個入り)</p>
+<div class="index_rank6">
+  <img class="index_r6" src="common/images/sp_rank6.jpg" alt="６位">
+  <img class="index_r6_img" src="common/images/sp_6donuts.jpg" alt="６位画像">
+  </div>
+  <p class="index_name">ストロベリークラッシュ(5個入り)</p>
+  <div class="index_price">
   <p>税込  ￥1,800</p>
+  <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
+  </div>
   </a>
-  <img src="common/images/sp_heart.jpg" alt="ハート">
   <form action="" method="">
-    <input type="submit" value="カートに入れる">
+    <input class="index_submit"  type="submit" value="カートに入れる">
   </form>
 </li>
 </ol>
@@ -136,5 +153,6 @@ media="(min-width: 768px)" type="image/png"class="back_pc"> -->
 </section>
 
 </main>
+<?php require 'includes/footer.php';?>
 </body>
 </html>
