@@ -12,10 +12,11 @@ foreach ($sql as $row) {
 		'password'=>$row['password']];
 }
 if (isset($_SESSION['customer'])) {
-	echo 'いらっしゃいませ、', $_SESSION['customer']['name'], 'さん。';
+	echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
 } else {
 	echo 'ログイン名またはパスワードが違います。';
 }
 ?>
 <a href="index.php">トップページへ戻る</a>;
+<a href="card-input.php">カード情報登録</a>;
 <?php require 'includes/footer.php'; ?>

@@ -1,16 +1,124 @@
 @charset "utf-8";
 
-/* * {
+* {
   font-family: Noto Sans JP;
-} */
+  line-height: 1.6;
+  font-size: 4.26vw;
+}
+
+.main_padding {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 
 /* ///////商品一覧///////// */
+
 h2 {
-  font-size: 20px;
+  font-size: 5.3vw;
   text-align: center;
   margin-top: 32px;
   border-bottom: solid 4px #FFD233;
-  display: inline;
+  width: 30vw;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* //////CCドーナツ/////// */
+.list {
+  width: 42vw;
+  height: 108vw;
+}
+
+.photo_donuts {
+  width: 42vw;
+}
+
+.syoihin {
+  color: #7F5539;
+  padding-top: 19.5px;
+}
+
+
+.price {
+  color: #BF0000;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+img.heart_logo {
+  display: block;
+  width: 5.3vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 20%;
+}
+
+.flex_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit {
+  width: 42vw;
+  color: #FFFFFF;
+  background-color: #7F5539;
+  border: none;
+  height: 9.6vw;
+  text-align: center;
+  font-size: 3.2vw;
+}
+
+/* /////////商品一覧grid ///////////*/
+.grid_syouhin {
+  height: 302vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 108vw 108vw 108vw;
+}
+
+.item01 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.item02 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.item03 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.item04 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.item05 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.item06 {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+/* //////バラエティーセットgrid/////// */
+.h2_2 {
+  font-size: 5.3vw;
+  text-align: center;
+  margin-top: 22vw;
+  border-bottom: solid 4px #FFD233;
+  width: 60vw;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* /////ブレイクポイント768px////*/
+@media screen and (min-width:768px) {}

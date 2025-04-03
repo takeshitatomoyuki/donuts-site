@@ -9,7 +9,7 @@
   
 <?php session_start(); ?>
 <?php
-$name=$address=$login=$password='';
+$name=$mail=$password='';
  if(isset($_SESSION['customer'])) {
   $name=$_SESSION['customer']['name'];
   $address=$_SESSION['customer']['mail'];

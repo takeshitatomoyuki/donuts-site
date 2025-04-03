@@ -1,6 +1,6 @@
-<?php session_start(); ?>
 
-<?php require 'includes\header.php'; ?>
+
+
 
 <!DOCTYPE html>
 <html lang="jp">
@@ -13,7 +13,16 @@
 </head>
 
 <body>
-
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}
+if (isset($_SESSION['customer'])) {
+    echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
+} else{
+  echo 'ようこそ ゲストさん。';
+}
+?>
 <?php
 if (!empty($_SESSION['product'])) {
 	echo '<table>';
@@ -39,14 +48,7 @@ if (!empty($_SESSION['product'])) {
 } else {
 	echo 'カートに商品がありません。';
 }
-
-unset($_SESSION['product'][$_REQUEST['id']]);
-echo 'カートから商品を削除しました。';
-echo '<hr>';
-
-
 ?>
-
 
 </body>
 
@@ -54,4 +56,3 @@ echo '<hr>';
 
 </html>
 
-<?php require 'includes\footer.php'; ?>

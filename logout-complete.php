@@ -1,5 +1,15 @@
 <?php require 'includes/header.php'; ?>
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}
+if (isset($_SESSION['customer'])) {
+    echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
+} else{
+  echo 'ようこそ ゲストさん。';
+}
+?>
+<?php
 if (isset($_SESSION['customer'])) {
 	unset($_SESSION['customer']);
 	echo 'ログアウトしました。';
