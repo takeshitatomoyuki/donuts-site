@@ -25,6 +25,7 @@ else {
     $card_exists = $sql->fetchColumn() > 0;
 
     if (!$card_exists) {
+        require 'cart.php';
         echo '<p>カード情報を登録してください。</p>';
         echo '<a href="card-input.php">カード情報を登録する</a>';
     } else {
