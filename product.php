@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="common/css/reset.css">
   <link rel="stylesheet" href="common/css/product.css">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
   <title>donuts-site_suzuki</title>
 </head>
 <body>
@@ -34,8 +37,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="method">
-  <input type="submit" value="カートに入れる" class="submit"> 
+<form action="detail.php" method="post">
+  <input type="submit" value="カートに入れる" class="submit" id="1"> 
 </form>
 </li>
 </div>
@@ -51,8 +54,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="method">
-  <input type="submit" value="カートに入れる" class="submit"> 
+<form action="detail.php" method="post">
+  <input type="submit" value="カートに入れる" class="submit" id="2"> 
 </form>
 </li>
 </div>
@@ -68,8 +71,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo ">
 </div>
 <!-- カートに入れるボタン -->
-<form action="method">
-  <input type="submit" value="カートに入れる" class="submit "> 
+<form action="detail.php" method="post">
+  <input type="submit" value="カートに入れる" class="submit " id="3"> 
 </form>
 </li>
 </div>
@@ -85,8 +88,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="method">
-  <input type="submit" value="カートに入れる" class="submit"> 
+<form action="detail.php" method="post">
+  <input type="submit" value="カートに入れる" class="submit" id="4"> 
 </form>
 </li>
 </div>
@@ -102,8 +105,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="method">
-  <input type="submit" value="カートに入れる" class="submit"> 
+<form action="detail.php" method="post">
+  <input type="submit" value="カートに入れる" class="submit" id="5"> 
 </form>
 </li>
 </div>
@@ -119,8 +122,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="method">
-  <input type="submit" value="カートに入れる" class="submit "> 
+<form action="detail.php" method="post">
+  <input type="submit" value="カートに入れる" class="submit" id="6" > 
 </form>
 </li>
 </div>
@@ -144,8 +147,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo ">
 </div>
 <!-- カートに入れるボタン -->
-<form action="method">
-  <input type="submit" value="カートに入れる" class="submit "> 
+<form action="detail.php" method="post">
+  <input type="submit" value="カートに入れる" class="submit " id="7"> 
 </form>
 </li>
 </div>
@@ -161,8 +164,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="method">
-  <input type="submit" value="カートに入れる" class="submit "> 
+<form action="detail.php" method="post">
+  <input type="submit" value="カートに入れる" class="submit " id="8"> 
 </form>
 </li>
 </div>
@@ -178,8 +181,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="method">
-  <input type="submit" value="カートに入れる" class="submit "> 
+<form action="detail.php" method="post">
+  <input type="submit" value="カートに入れる" class="submit " id="9"> 
 </form>
 </li>
 </div>
@@ -195,8 +198,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="method">
-  <input type="submit" value="カートに入れる" class="submit "> 
+<form action="detail.php" method="post">
+  <input type="submit" value="カートに入れる" class="submit "id="10"> 
 </form>
 </li>
 </div>
@@ -212,8 +215,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="method">
-  <input type="submit" value="カートに入れる" class="submit "> 
+<form action="detail.php" method="post">
+  <input type="submit" value="カートに入れる" class="submit " id="11"> 
 </form>
 </li>
 </div>
@@ -229,8 +232,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo ">
 </div>
 <!-- カートに入れるボタン -->
-<form action="method">
-  <input type="submit" value="カートに入れる" class="submit"> 
+<form action="detail.php" method="post">
+  <input type="submit" value="カートに入れる" class="submit" id="12"> 
 </form>
 </li>
 </div>
