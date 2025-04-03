@@ -30,4 +30,5 @@ try {
   error_log('購入エラー: ' . $e->getMessage()); // エラーログを出力
 }
 ?>
+<a href="index.php">トップページへ戻る</a>
 <?php require 'includes/footer.php'; ?>
