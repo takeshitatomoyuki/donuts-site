@@ -56,6 +56,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 <!-- カートに入れるボタン -->
 <form action="detail.php" method="post">
+<input type="hidden" name="id" value="2">
   <input type="submit" value="カートに入れる" class="submit" id="2"> 
 </form>
 </li>
@@ -73,6 +74,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 <!-- カートに入れるボタン -->
 <form action="detail.php" method="post">
+<input type="hidden" name="id" value="3">
   <input type="submit" value="カートに入れる" class="submit " id="3"> 
 </form>
 </li>
@@ -90,6 +92,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 <!-- カートに入れるボタン -->
 <form action="detail.php" method="post">
+<input type="hidden" name="id" value="4">
   <input type="submit" value="カートに入れる" class="submit" id="4"> 
 </form>
 </li>
@@ -107,6 +110,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 <!-- カートに入れるボタン -->
 <form action="detail.php" method="post">
+<input type="hidden" name="id" value="5">
   <input type="submit" value="カートに入れる" class="submit" id="5"> 
 </form>
 </li>
@@ -124,6 +128,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 <!-- カートに入れるボタン -->
 <form action="detail.php" method="post">
+<input type="hidden" name="id" value="6">
   <input type="submit" value="カートに入れる" class="submit" id="6" > 
 </form>
 </li>
@@ -149,6 +154,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 <!-- カートに入れるボタン -->
 <form action="detail.php" method="post">
+<input type="hidden" name="id" value="7">
   <input type="submit" value="カートに入れる" class="submit " id="7"> 
 </form>
 </li>
@@ -166,6 +172,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 <!-- カートに入れるボタン -->
 <form action="detail.php" method="post">
+<input type="hidden" name="id" value="8">
   <input type="submit" value="カートに入れる" class="submit " id="8"> 
 </form>
 </li>
@@ -183,6 +190,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 <!-- カートに入れるボタン -->
 <form action="detail.php" method="post">
+<input type="hidden" name="id" value="9">
   <input type="submit" value="カートに入れる" class="submit " id="9"> 
 </form>
 </li>
@@ -200,6 +208,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 <!-- カートに入れるボタン -->
 <form action="detail.php" method="post">
+<input type="hidden" name="id" value="10">
   <input type="submit" value="カートに入れる" class="submit "id="10"> 
 </form>
 </li>
@@ -217,6 +226,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 <!-- カートに入れるボタン -->
 <form action="detail.php" method="post">
+<input type="hidden" name="id" value="11">
   <input type="submit" value="カートに入れる" class="submit " id="11"> 
 </form>
 </li>
@@ -234,6 +244,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 <!-- カートに入れるボタン -->
 <form action="detail.php" method="post">
+<input type="hidden" name="id" value="12">
   <input type="submit" value="カートに入れる" class="submit" id="12"> 
 </form>
 </li>
