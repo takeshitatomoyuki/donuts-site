@@ -15,7 +15,7 @@
 /* ///////商品一覧///////// */
 
 h2 {
-  font-size: 20px;
+  font-size: 5.3vw;
   text-align: center;
   margin-top: 32px;
   border-bottom: solid 4px #FFD233;
@@ -28,7 +28,7 @@ h2 {
 /* //////CCドーナツ/////// */
 .list {
   width: 42vw;
-  height: 86.4vw;
+  height: 108vw;
 }
 
 .photo_donuts {
@@ -65,16 +65,17 @@ img.heart_logo {
   color: #FFFFFF;
   background-color: #7F5539;
   border: none;
-  height: 7vh;
+  height: 9.6vw;
   text-align: center;
+  font-size: 3.2vw;
 }
 
 /* /////////商品一覧grid ///////////*/
 .grid_syouhin {
-  height: 240vh;
+  height: 302vw;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-rows: 108vw 108vw 108vw;
 }
 
 .item01 {
@@ -109,12 +110,15 @@ img.heart_logo {
 
 /* //////バラエティーセットgrid/////// */
 .h2_2 {
-  font-size: 20px;
+  font-size: 5.3vw;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 22vw;
   border-bottom: solid 4px #FFD233;
   width: 60vw;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
+
+/* /////ブレイクポイント768px////*/
+@media screen and (min-width:768px) {}
