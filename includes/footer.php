@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="jp">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="common/css/reset.css">
-  <link rel="stylesheet" href="common/css/common.css">
-</head>
-
-<body>
-
-  <footer>
+ <footer>
     <div class="link_area">
       <ul class="footer_link">
         <a href="#">
@@ -27,13 +14,13 @@
     </div>
     <ul class="footer_sns">
       <a href="#">
-        <li><img src="common/images/instagram.png" alt="インスタグラムアイコン" class="footer_icon"></li>
+        <li><img src="common/images/pc_instagram_logo.png" alt="インスタグラムアイコン" class="footer_icon"></li>
       </a>
       <a href="#">
-        <li><img src="common/images/facebook.png" alt="フェイスブックアイコン" class="footer_icon"></li>
+        <li><img src="common/images/pc_facebook_logo.png" alt="フェイスブックアイコン" class="footer_icon"></li>
       </a>
       <a href="#">
-        <li><img src="common/images/x.png" alt="ツイッターアイコン" class="footer_icon"></li>
+        <li><img src="common/images/pc_x_logo.png" alt="ツイッターアイコン" class="footer_icon"></li>
       </a>
     </ul>
 

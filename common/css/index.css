@@ -269,7 +269,7 @@ li {
   /* 私達の信念 */
 
   .index_philosophy_content h2 {
-    font-size: 2.64vw;
+    font-size: 3vw;
     padding-top: 14.6vw;
     padding-bottom: 1.5vw;
   }
@@ -296,9 +296,12 @@ li {
   .index_ranking h2 {
     font-size: 2.7vw;
     width: 20vw;
+
     padding-bottom: 1vw;
     margin-top: 5.9vw;
     margin-bottom: 6.7vw;
+
+
   }
 
   /* ランキングボックス */
@@ -310,7 +313,11 @@ li {
   .index_linkbox6 {
     width: 23.4vw;
     height: 44.8vw;
+
     margin: 0 auto;
+
+
+
   }
 
   /* ランクと画像 */
@@ -372,10 +379,13 @@ li {
 
   /* カートに入れるボタン */
 
+
   .index_ranking form {
     width: 23.4vw;
     height: 3.8vw;
   }
+
+
 
   .index_submit {
     width: 19vw;
@@ -383,17 +393,24 @@ li {
     background-color: #7F5539;
     border: none;
     height: 3.8vw;
+
     display: block;
     text-align: center;
     margin: 0 auto;
   }
 
 
+  
+
+ 
+ 
+
   .index_submit:hover {
     color: #85125e;
     background-color: #e4d7d7d8;
 
   }
+
 
   /* /////////ランキングgrid ///////////*/
   .index_grid {
@@ -406,6 +423,12 @@ li {
     margin: 0 auto;
     margin-bottom: 11.7vw;
   }
+
+  .index_ranking form {
+    width: 19vw;
+    height: 3.8vw;
+  }
+  
 
   .index_linkbox1 {
     grid-row: 1/2;
