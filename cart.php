@@ -21,6 +21,8 @@ if (isset($_SESSION['customer'])) {
     echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
 } else{
   echo 'ようこそ ゲストさん。';
+	echo 'ログインされていません。';
+	echo '<a href="login-input.php">ログイン登録はこちら</a>';
 }
 ?>
 <?php
