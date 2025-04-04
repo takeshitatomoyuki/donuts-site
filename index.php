@@ -56,9 +56,9 @@
 <!-- li要素にリンクをつける -->
   </a>
 <!-- /////////////////////////////////////////////// -->
-  <form action="detail.php" method="post">
+  <form action="cart-input.php" method="post">
     <input type="hidden" name="id" value="1">
-    <input type="submit" value="カートに入れる" 
+   <input type="submit" value="カートに入れる" 
     class="index_submit" id="1">
   </form>
 </li>
@@ -76,7 +76,7 @@
   <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
 </div>
   </a>
-  <form action="detail.php" method="post">
+  <form action="cart-input.php" method="post">
    <input type="hidden" name="id" value="7">
    <input type="submit" value="カートに入れる" 
    class="index_submit" id="7">
@@ -96,7 +96,7 @@
   <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
 </div>
   </a>
-  <form action="detail.php" method="post">
+  <form action="cart-input.php" method="post">
    <input type="hidden" name="id" value="8">
    <input type="submit" value="カートに入れる" 
    class="index_submit" id="8">
@@ -116,7 +116,7 @@
   <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
 </div>
   </a>
-  <form action="detail.php" method="post">
+  <form action="cart-input.php" method="post">
    <input type="hidden" name="id" value="2">
    <input type="submit" value="カートに入れる" 
    class="index_submit" id="2">
@@ -136,7 +136,7 @@
   <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
 </div>
   </a>
-  <form action="detail.php" method="post">
+  <form action="cart-input.php" method="post">
    <input type="hidden" name="id" value="9">
    <input type="submit" value="カートに入れる" 
    class="index_submit" id="9">
@@ -156,7 +156,7 @@
   <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
 </div>
   </a>
-  <form action="detail.php" method="post">
+  <form action="cart-input.php" method="post">
    <input type="hidden" name="id" value="6">
    <input type="submit" value="カートに入れる" 
    class="index_submit" id="6">

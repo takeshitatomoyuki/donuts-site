@@ -232,9 +232,9 @@ li {
 
 @media screen and (min-width:769px) {
 
-  body {
+  /* body {
     max-width: 1200px;
-  }
+  } */
 
   /* 画像 */
   .index_philosophy_content {
@@ -269,9 +269,165 @@ li {
   /* 私達の信念 */
 
   .index_philosophy_content h2 {
-    font-size: 2.64vw;
+    font-size: 3vw;
     padding-top: 14.6vw;
     padding-bottom: 1.5vw;
   }
+
+  .index_philosophy_content .index_belief {
+    font-size: 1.7vw;
+    color: white;
+    padding-bottom: 3vw;
+  }
+
+  .index_philosophy_content .index_create {
+    font-size: 2vw;
+    color: white;
+    padding-bottom: 1.5vw;
+  }
+
+  .index_philosophy_content .index_connect {
+    font-size: 2vw;
+    color: white;
+  }
+
+  /* ランキング */
+
+  .index_ranking h2 {
+    font-size: 2.7vw;
+    width: 20vw;
+  }
+
+  /* ランキングボックス */
+  .index_linkbox1,
+  .index_linkbox2,
+  .index_linkbox3,
+  .index_linkbox4,
+  .index_linkbox5,
+  .index_linkbox6 {
+    width: 23.4vw;
+    height: 44.8vw;
+
+  }
+
+  /* ランクと画像 */
+
+  .index_r1,
+  .index_r2,
+  .index_r3,
+  .index_r4,
+  .index_r5,
+  .index_r6 {
+    width: 4.4vw;
+    height: 4.4vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .index_r1_img,
+  .index_r2_img,
+  .index_r3_img,
+  .index_r4_img,
+  .index_r5_img,
+  .index_r6_img {
+    width: 23.4vw;
+    height: 23.4vw;
+  }
+
+  /* 商品詳細 */
+  .index_linkbox1 p,
+  .index_linkbox2 p,
+  .index_linkbox3 p,
+  .index_linkbox4 p,
+  .index_linkbox5 p,
+  .index_linkbox6 p {
+    font-size: 2vw;
+    width: 23.4vw;
+    margin-top: 1.5vw;
+
+  }
+
+  .index_name {
+    color: #7f5539;
+  }
+
+  .index_price {
+    display: flex;
+    justify-content: space-between;
+    width: 23.4vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .index_price p {
+    color: #bf0000;
+  }
+
+  .index_heart {
+    width: 2vw;
+    height: 2vw;
+    margin-top: 1.7vw;
+  }
+
+  /* カートに入れるボタン */
+
+  .index_submit {
+    width: 19vw;
+    color: #FFFFFF;
+    background-color: #7F5539;
+    border: none;
+    height: 3.8vw;
+    text-align: center;
+
+  }
+
+  .index_submit:hover {
+    color: #85125e;
+    background-color: #e4d7d7d8;
+
+  }
+
+  .index_ranking form {
+    width: 19vw;
+    height: 3.8vw;
+  }
+
+  /* /////////ランキングgrid ///////////*/
+  .index_grid {
+    height: 95.5vw;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 50% 50%;
+    margin-left: vw;
+  }
+
+  .index_linkbox1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .index_linkbox2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .index_linkbox3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .index_linkbox4 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .index_linkbox5 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .index_linkbox6 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+
 
 }
