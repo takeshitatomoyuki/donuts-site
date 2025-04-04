@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>donuts-site</title>
+  <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="stylesheet" href="common/css/customer-confirm.css">
+  <link rel="stylesheet" href="common/css/common.css">
+</head>
+<body>
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // 入力データを取得
@@ -15,26 +26,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>確認画面</title>
-</head>
-<body>
-    <h2>入力内容の確認</h2>
+
+<main>
+  <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
+  <div class="customer_inner">
+    <h2 class="customer_title">入力内容の確認</h2>
     <form action="customer-complete.php" method="post">
-        <p>お名前</p>
+        <p class="confirm-subtitle">お名前</p>
         <p><?php echo $name; ?></p>
-        <p>お名前 (フリガナ)</p>
+        <p class="confirm-subtitle">お名前 (フリガナ)</p>
         <p><?php echo $kana; ?></p>
-        <p>郵便番号</p>
+        <p class="confirm-subtitle">郵便番号</p>
         <p><?php echo $post_code; ?></p>
-        <p>住所</p>
+        <p class="confirm-subtitle">住所</p>
         <p><?php echo $address; ?></p>
-        <p>メールアドレス</p>
+        <p class="confirm-subtitle">メールアドレス</p>
         <p><?php echo $mail; ?></p>
-        <p>パスワード</p>
+        <p class="confirm-subtitle">パスワード</p>
         <p><?php echo $password; ?></p>
 
         <!-- hidden フィールドでデータを complete.php に渡す -->
@@ -57,5 +65,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="hidden" name="password" value="<?php echo $password; ?>">
         <button type="submit">修正する</button>
     </form>
-</body>
-</html>
+</main>
+<?php require 'includes/footer.php'; ?>
