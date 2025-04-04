@@ -1,40 +1,32 @@
 <?php require 'includes/header.php'; ?>
+
 <?php
 if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
 if (isset($_SESSION['customer'])) {
     echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
-} else{
+} else {
   echo 'ようこそ ゲストさん。';
 }
 ?>
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="common/css/reset.css">
-  <link rel="stylesheet" href="common/css/common.css">
-  <link rel="stylesheet" href="common/css/login.css">
-</head>
-<body>
-<h1>ログイン</h1>
-<form action="login-complete.php" method="post">
-        <div class="form-group">
-            <label for="email">メールアドレス</label>
-            <input type="email" id="email" name="mail" required>
+
+<main>
+  <section class="login_sec">
+    <h1 class="login_title">ログイン</h1>
+    <form action="login-complete.php" method="post" class="login_form">
+      <div class="login_text_block">
+        <div class="login_block">
+          <span class="login_input_text">メールアドレス</span><br>
+          <input type="text" name="mail" class="login_mail"><br>
+          <span class="login_input_text">パスワード</span><br>
+          <input type="password" name="password" class="login_password"><br>
         </div>
-        <div class="form-group">
-            <label for="password">パスワード</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <div class="login_button">
-        <input type="submit" value="ログインする">
-        </div>
+      </div>
+      <input type="submit" value="ログインする" class="login_btn">
     </form>
-<a href="customer-input.php">会員登録がお済みでない方はこちら</a>
-</body>
-</html>
+    <p class="login_link"><a href="customer-input.php">会員登録がお済みでない方はこちら</a></p>
+  </section>
+</main>
+
 <?php require 'includes/footer.php'; ?>

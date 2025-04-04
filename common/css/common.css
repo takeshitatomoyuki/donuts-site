@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+html {
+  overflow-x: hidden;
+}
+
+
+
 .main_header {
   background-color: #EDE0D4;
   display: flex;
@@ -63,6 +69,22 @@
 #header_input_text {
   width: 100%;
   background-color: #fff;
+  animation: text_form 8s linear infinite;
+}
+
+@keyframes text_form {
+  40% {
+    transform: scaleX(6);
+    background-color: red;
+  }
+
+  80% {
+    transform: scale(1)rotate(600deg);
+  }
+
+  100% {
+    transform: scale (0);
+  }
 }
 
 
@@ -71,6 +93,7 @@
   width: 95vw;
   height: 37px;
   margin: 10px auto;
+
 }
 
 
