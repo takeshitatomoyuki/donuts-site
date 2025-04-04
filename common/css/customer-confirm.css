@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+main {
+  box-sizing: content-box;
+}
+.customer_inner {
+  padding: 0 10.6vw;
+}
+.customer_logo_box {
+  padding: 3.2vw 0 0 3.2vw;
+}
+.customer_logo {
+  display: block;
+  width: 16vw;
+}
+.customer_title {
+  text-align: center;
+  padding: 10.6vw 0;
+  font-size: 5.3vw;
+  color: #7F5539;
+}
+.confirm-subtitle {
+  font-size: 32px;
+}
+@media screen and (min-width:768px) {
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .customer_logo_box {
+    padding: min(1.6vw, 20px) 0 0 min(1.6vw);
+  }
+  .customer_logo {
+    width: 80px;
+  }
+  .customer_title {
+    font-size: min(2.6vw, 32px);
+    padding: 73px 0 80px;
+  }
+  
+}
