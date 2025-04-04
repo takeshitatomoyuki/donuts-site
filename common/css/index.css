@@ -296,6 +296,12 @@ li {
   .index_ranking h2 {
     font-size: 2.7vw;
     width: 20vw;
+
+    padding-bottom: 1vw;
+    margin-top: 5.9vw;
+    margin-bottom: 6.7vw;
+
+
   }
 
   /* ランキングボックス */
@@ -307,6 +313,10 @@ li {
   .index_linkbox6 {
     width: 23.4vw;
     height: 44.8vw;
+
+    margin: 0 auto;
+
+
 
   }
 
@@ -369,15 +379,31 @@ li {
 
   /* カートに入れるボタン */
 
+
+  .index_ranking form {
+    width: 23.4vw;
+    height: 3.8vw;
+  }
+
+
+
   .index_submit {
     width: 19vw;
     color: #FFFFFF;
     background-color: #7F5539;
     border: none;
     height: 3.8vw;
-    text-align: center;
 
+    display: block;
+    text-align: center;
+    margin: 0 auto;
   }
+
+
+  
+
+ 
+ 
 
   .index_submit:hover {
     color: #85125e;
@@ -385,19 +411,24 @@ li {
 
   }
 
-  .index_ranking form {
-    width: 19vw;
-    height: 3.8vw;
-  }
 
   /* /////////ランキングgrid ///////////*/
   .index_grid {
     height: 95.5vw;
+    width: 79vw;
     display: grid;
-    grid-template-columns: 33% 34% 33%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50% 50%;
-    margin-left: vw;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 11.7vw;
   }
+
+  .index_ranking form {
+    width: 19vw;
+    height: 3.8vw;
+  }
+  
 
   .index_linkbox1 {
     grid-row: 1/2;
