@@ -13,8 +13,9 @@ $_SESSION['product'][$id]=[
 	'price'=>$_REQUEST['price'], 
 	'count'=>$count+$_REQUEST['count']
 ];
+if (isset($_SESSION['customer'])) {
 echo '<p>カートに商品を追加しました。</p>';
-echo '<hr>';
+echo '<hr>';}
 require 'cart.php';
 ?>
 <a href="purchase-confirm.php">ご購入確認へ進む</a>
