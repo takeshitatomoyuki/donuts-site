@@ -33,7 +33,7 @@ $name=$mail=$password='';
   <li>
     <p class="customer_text">カード会社<span class="customer_span">(必須)</span></p>
     <label><input type="radio" name="card_type" value="JCB" checked="checked">JCB</label>
-    <label><input type="radio" name="card_type" value="Visa"> Visa</label>
+    <label><input type="radio" name="card_type" value="Visa">Visa</label>
     <label><input type="radio" name="card_type" value="Mastercard">Mastercard</label>
   </li>
   <li>
@@ -42,12 +42,17 @@ $name=$mail=$password='';
   </li>
   <li>
     <p class="customer_text">有効期限<span class="customer_span">(必須)</span></p>
-    <input type="text" name="card_month" value=""><p class="customer_text">月</p>
-    <input type="text" name="card_year" value=""><p class="customer_text">年</p>
+    <div class="card_month">
+      <input type="text" name="card_month" value="" class="input_short">
+      <p class="customer_text1">月</p>
+    </div>
+    <div class="card_month">
+      <input type="text" name="card_year" value="" class="input_short"><p class="customer_text1">年</p>
+    </div>
   </li>
   <li>
     <p class="customer_text">セキュリティコード<span class="customer_span">(必須)</span></p>
-    <input type="text" name="card_security_code" value="">
+    <input type="text" name="card_security_code" value="" class="input_short">
   </li>
   <li>
     <input type="submit" value="ご入力内容を確認する" class="customer_submit">
