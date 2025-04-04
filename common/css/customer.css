@@ -3,50 +3,46 @@
 main {
   box-sizing: content-box;
 }
-
 .customer_inner {
   padding: 0 10.6vw;
 }
-
 .customer_logo_box {
   padding: 3.2vw 0 0 3.2vw;
 }
-
 .customer_logo {
   display: block;
   width: 16vw;
 }
-
 .customer_title {
   text-align: center;
   padding: 10.6vw 0;
   font-size: 5.3vw;
   color: #7F5539;
 }
-
 .customer_text {
   padding-bottom: 8px;
   font-size: 3.2vw;
   color: #7F5539;
 }
-
+.customer_text1 {
+  padding-left: 2.4vw;
+  font-size: 3.2vw;
+  color: #7F5539;
+}
 .customer_span {
-  padding-left: 2.66vw;
+  padding-left: 2.4vw;
   font-size: 3.2vw;
   color: #BF0000;
 }
-
 .costomer_condition {
   padding-bottom: 8px;
   font-size: 2.1vw;
   color: #BF0000;
 }
-
 .customer_submit_box {
   display: flex;
   justify-content: center;
 }
-
 .customer_submit {
   text-align: center;
   display: block;
@@ -57,24 +53,32 @@ main {
   color: #fff;
   background-color: #7F5539;
 }
-
+.card_month {
+  display: flex;
+}
+label {
+  padding-left: 2.4vw;
+  font-size: 3.2vw;
+  color: #7F5539;
+}
 input[type="text"],
 input[type="email"],
 input[type="password"] {
+  display: block;
   height: 5.3vw;
   margin-bottom: 5.3vw;
   background-color: #fff;
   border: 1px solid #7F5539;
 }
-
 .customer_input_text {
   width: 100%;
 }
-
 .customer_post_code {
   width: 32vw;
 }
-
+.input_short {
+  width: 16vw;
+}
 @media screen and (min-width:768px) {
   main {
     max-width: 1200px;
@@ -90,14 +94,12 @@ input[type="password"] {
     font-size: min(2.6vw, 32px);
     padding: 73px 0 80px;
   }
-
   .customer_inner {
     width: min(50vw, 600px);
     box-sizing: content-box;
     margin: auto;
     padding: initial;
   }
-
   .customer_text {
     font-size: min(2vw, 24px);
   }
@@ -116,11 +118,9 @@ input[type="password"] {
   } .customer_input_text {
     width: min(50vw, 600px);
   }
-
   .customer_post_code {
     width: min(15.1vw, 182px);
   }
-
   .customer_submit {
     width: min(25vw, 300px);
     height: min(5vw, 60px);
