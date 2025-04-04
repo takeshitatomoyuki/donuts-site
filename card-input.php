@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>donuts-site</title>
   <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="stylesheet" href="common/css/common.css">
   <link rel="stylesheet" href="common/css/customer.css">
 </head>
 <body>
