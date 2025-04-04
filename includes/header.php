@@ -131,7 +131,7 @@ echo '</title>';
     <div class="main_header">
       <h1 class="header_main_logo"><a href="../index.php"></a><img src="common/images/logo.svg" alt="" class="header_logo_img"></a></h1>
       <div class="header_sub_header">
-        <?php if(isset($_SESSION['user'])):?>
+        <?php if(isset($_SESSION['customer'])):?>
 
         <a href="logout-input.php"><img src="common/images/logout.svg" alt=""></a>
         <a href="cart-show.php"><img src="common/images/cart.svg" alt=""></a>
