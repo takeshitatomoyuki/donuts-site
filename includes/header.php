@@ -133,7 +133,7 @@ echo '</title>';
 
 
     <div class="main_header">
-      <h1 class="header_main_logo"><img src="common/images/logo.svg" alt="" class="header_logo_img"></h1>
+      <h1 class="header_main_logo"><a href="../index.php"></a><img src="common/images/logo.svg" alt="" class="header_logo_img"></a></h1>
       <div class="header_sub_header">
         <?php if(isset($_SESSION['user'])):?>
 
