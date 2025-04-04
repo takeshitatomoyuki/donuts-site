@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewp"ort" content="width=device-width, initial-scale=1.0">
-  <title>donuts-site</title>
-  <link rel="stylesheet" href="common/css/reset.css">
-  <link rel="stylesheet" href="common/css/index.css">
-  <link rel="stylesheet" href="common/css/common.css">
-</head>
+
 <?php require 'includes/header.php';?>
-<body>
 <main>
-<!-- 画像 -->
   <section class="index_images">
   <img class="index_main_img" src="common/images/sp_main.jpg" alt="メイン画像">
  
@@ -56,7 +45,7 @@
 <!-- li要素にリンクをつける -->
   </a>
 <!-- /////////////////////////////////////////////// -->
-  <form action="detail.php" method="post">
+  <form action="detail.php" method="post" >
     <input type="hidden" name="id" value="1">
     <input type="submit" value="カートに入れる" 
     class="index_submit" id="1">
@@ -168,5 +157,3 @@
 
 </main>
 <?php require 'includes/footer.php';?>
-</body>
-</html>
