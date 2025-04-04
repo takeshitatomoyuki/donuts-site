@@ -156,7 +156,3 @@ echo '</title>';
 
 
   </header>
-
-</body>
-
-</html>

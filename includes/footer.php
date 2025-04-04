@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="jp">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="common/css/reset.css">
-  <link rel="stylesheet" href="common/css/common.css">
-</head>
-
-<body>
-
-  <footer>
+ <footer>
     <div class="link_area">
       <ul class="footer_link">
         <a href="#">
