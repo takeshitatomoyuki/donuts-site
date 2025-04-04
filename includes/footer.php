@@ -33,7 +33,7 @@
         <li><img src="common/images/pc_facebook_logo.png" alt="フェイスブックアイコン" class="footer_icon"></li>
       </a>
       <a href="#">
-        <li><img src="common/images/pc_x_logo" alt="ツイッターアイコン" class="footer_icon"></li>
+        <li><img src="common/images/pc_x_logo.png" alt="ツイッターアイコン" class="footer_icon"></li>
       </a>
     </ul>
 
