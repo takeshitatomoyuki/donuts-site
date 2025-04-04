@@ -27,13 +27,13 @@
     </div>
     <ul class="footer_sns">
       <a href="#">
-        <li><img src="common/images/instagram.png" alt="インスタグラムアイコン" class="footer_icon"></li>
+        <li><img src="common/images/pc_instagram_logo.png" alt="インスタグラムアイコン" class="footer_icon"></li>
       </a>
       <a href="#">
-        <li><img src="common/images/facebook.png" alt="フェイスブックアイコン" class="footer_icon"></li>
+        <li><img src="common/images/pc_facebook_logo.png" alt="フェイスブックアイコン" class="footer_icon"></li>
       </a>
       <a href="#">
-        <li><img src="common/images/x.png" alt="ツイッターアイコン" class="footer_icon"></li>
+        <li><img src="common/images/pc_x_logo" alt="ツイッターアイコン" class="footer_icon"></li>
       </a>
     </ul>
 
