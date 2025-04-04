@@ -1,5 +1,18 @@
 <?php require 'includes\header.php'; ?>
 <?php
+$pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 
+	'staff', 'password');
+$sql=$pdo->prepare('select * from product where id=?');
+$sql->execute([$_REQUEST['id']]);
+foreach ($sql as $row) {
+	echo '<p><img alt="image" src="image/', $row['id'], '.jpg"></p>';
+	echo '<form action="cart-input.php" method="post">';
+	echo '<p>商品番号：', $row['id'], '</p>';
+	echo '<p>商品名：', $row['name'], '</p>';
+	echo '<p>価格：', $row['price'], '</p>';
+	echo '<p>個数：<select name="count">';}
+	?>
+<?php
 $id=$_REQUEST['id'];
 if (!isset($_SESSION['product'])) {
 	$_SESSION['product']=[];
