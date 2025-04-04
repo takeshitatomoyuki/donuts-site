@@ -3,7 +3,7 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
@@ -90,10 +90,6 @@ echo '</title>';
 
 ?>
   
-</head>
-
-
-
 </head>
 
 <body>
