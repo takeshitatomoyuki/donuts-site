@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="common/css/reset.css">
-  <link rel="stylesheet" href="common/css/product.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-
-  <title>donuts-site_suzuki</title>
-</head>
-<body>
 <main>
 
   <!-- //////header//////// -->
@@ -23,7 +9,7 @@
 <!--/////////// 商品一覧/////////////// -->
 <div class="main_padding">
 <section>
-  <h2>商品一覧</h2>
+  <h2 class="product_h2">商品一覧</h2>
   <ul class="grid_syouhin">
 <!-- CCドーナツ当店オリジナル -->
  <div class="item01">
@@ -279,8 +265,4 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 </div>
 
 </main>
-</body>
-
-
-</html>
 <?php require 'includes/footer.php'; ?>
