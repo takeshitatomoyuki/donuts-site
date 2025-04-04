@@ -1,6 +1,5 @@
 <?php require 'includes\header.php'; ?>
 <?php
-if (isset($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], 'index.php') !== false) {
 $pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 
 	'staff', 'password');
 $sql=$pdo->prepare('select * from product where id=?');
@@ -11,7 +10,7 @@ foreach ($sql as $row) {
 	echo '<p>商品番号：', $row['id'], '</p>';
 	echo '<p>商品名：', $row['name'], '</p>';
 	echo '<p>価格：', $row['price'], '</p>';
-	echo '<p>個数：<select name="count">';}}
+	echo '<p>個数：<select name="count">';}
 	for ($i=1; $i<=10; $i++) {
 		echo '<option value="', $i, '">', $i, '</option>';
 	}
@@ -21,8 +20,6 @@ foreach ($sql as $row) {
 	echo '<input type="hidden" name="price" value="', $row['price'], '">';
 	echo '<p><input type="submit" value="カートに追加"></p>';
 	echo '</form>';
-	
-?>
 	?>
 <?php
 $id=$_REQUEST['id'];
