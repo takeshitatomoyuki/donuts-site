@@ -33,10 +33,30 @@
   display: block;
   border-bottom: 1px #E8C2CA solid;
   margin: 20px;
+  color: #7F5539;
 }
 
 .complete_sec {
   width: 295px;
   margin: auto;
   margin-bottom: 100px;
+}
+
+@media screen and (min-width:760px) {
+
+  .complete_text {
+    font-size: 32px;
+    margin-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .complete_subtext {
+    font-size: 24px;
+    width: 600px;
+    height: 184px;
+  }
+
+  .complete_sec {
+    width: 600px;
+  }
 }
