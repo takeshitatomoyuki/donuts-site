@@ -65,7 +65,6 @@ $name=$mail=$password='';
   <div class="customer_submit_box">
     <input type="submit" value="ご入力内容を確認する" class="customer_submit">
   </div>
+</form>
 </main>
 <?php require 'includes/footer.php'; ?>
-</body>
-</html>
