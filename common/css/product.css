@@ -6,18 +6,22 @@
   font-size: 4.26vw;
 }
 
+main {
+  margin-bottom: 80px;
+}
+
 .main_padding {
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 
 /* ///////商品一覧///////// */
 
-.h2 {
+.product_h2 {
   font-size: 5.3vw;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 104px;
   border-bottom: solid 4px #FFD233;
   width: 30vw;
   margin-bottom: 40px;
@@ -42,6 +46,7 @@
 .syoihin {
   color: #7F5539;
   padding-top: 19.5px;
+  margin: 0 auto;
 }
 
 
@@ -54,7 +59,7 @@
 img.heart_logo {
   display: block;
   width: 5.3vw;
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 20px;
   height: 20%;
 }
@@ -124,25 +129,37 @@ img.heart_logo {
   margin-right: auto;
 }
 
+/* /////////////////////////////////////// */
 /* /////ブレイクポイント768px////*/
+/* /////////////////////////////////////// */
+
 @media screen and (min-width:768px) {
   * {
-    font-size: 1.8vw;
+    font-size: 1.75vw;
   }
 
-  h2 {
-    font-size: 2.4vw;
+  main {
+    max-width: 1300px;
+    height: 3000px;
+    margin-bottom: 160px;
+    margin: 0 auto;
+  }
+
+  .main_padding {
+    padding-left: 83px;
+    padding-right: 113px;
+  }
+
+  .product_h2 {
+    font-size: 2.3vw;
     width: 15vw;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    border-bottom: solid 4px #FFD233;
   }
 
   /* ///////商品一覧/////// */
-  .main_padding {
-    padding-left: 143px;
-    padding-right: 143px;
-  }
 
   /* ///////CCドーナツ当店オリジナル///// */
   img.photo_donuts {
@@ -151,13 +168,16 @@ img.heart_logo {
 
   img.photo_donuts_pc {
     display: block;
-    width: 24vw;
-    margin: 0 auto;
+    width: 23.4vw;
+    height: 23.4vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .syoihin {
     margin: 0 auto;
     width: 24vw;
+    height: 6.4vw;
   }
 
   .price {
@@ -166,11 +186,11 @@ img.heart_logo {
   }
 
   img.heart_logo {
-    width: 1.8vw;
+    width: 1.75vw;
   }
 
   .flex_price {
-    width: 24vw;
+    width: 23.4vw;
     margin: 0 auto;
   }
 
@@ -180,14 +200,15 @@ img.heart_logo {
     text-align: center;
     margin: 0 auto;
     font-size: 1.5vw;
-    height: 4vw;
+    height: 3.8vw;
 
   }
 
   /* ////listサイズ//////// */
   .list {
-    width: 28vw;
-    height: 69vw;
+    width: 23.4vw;
+    height: 39vw;
+    margin: 0 auto;
   }
 
   /* ///////////商品一覧grid////////// */
@@ -195,8 +216,8 @@ img.heart_logo {
     height: 87vw;
     width: 83vw;
     display: grid;
-    grid-template-columns: 28vw 28vw 28vw;
-    grid-template-rows: 46vw 46vw;
+    grid-template-columns: 27.8vw 27.8vw 27.8vw;
+    grid-template-rows: 45vw 45vw;
   }
 
   .item01 {
@@ -231,7 +252,10 @@ img.heart_logo {
 
   /* /////////////バラエティーセット////// */
   .h2_2 {
-    font-size: 1.8vw;
+    font-size: 1.75vw;
     width: 18vw;
+    border-bottom: solid 4px #FFD233;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
