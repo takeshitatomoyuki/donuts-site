@@ -56,5 +56,3 @@ $name=$address=$address=$password='';
   </div>
 </main>
 <?php require 'includes/footer.php'; ?>
-</body>
-</html>
