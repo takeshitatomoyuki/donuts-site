@@ -14,7 +14,7 @@
 
 /* ///////商品一覧///////// */
 
-h2 {
+.h2 {
   font-size: 5.3vw;
   text-align: center;
   margin-top: 32px;
@@ -33,6 +33,10 @@ h2 {
 
 .photo_donuts {
   width: 42vw;
+}
+
+.photo_donuts_pc {
+  display: none;
 }
 
 .syoihin {
@@ -108,7 +112,7 @@ img.heart_logo {
   grid-column: 2/3;
 }
 
-/* //////バラエティーセットgrid/////// */
+/* ////////バラエティーセット////// */
 .h2_2 {
   font-size: 5.3vw;
   text-align: center;
@@ -121,4 +125,113 @@ img.heart_logo {
 }
 
 /* /////ブレイクポイント768px////*/
-@media screen and (min-width:768px) {}
+@media screen and (min-width:768px) {
+  * {
+    font-size: 1.8vw;
+  }
+
+  h2 {
+    font-size: 2.4vw;
+    width: 15vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ///////商品一覧/////// */
+  .main_padding {
+    padding-left: 143px;
+    padding-right: 143px;
+  }
+
+  /* ///////CCドーナツ当店オリジナル///// */
+  img.photo_donuts {
+    display: none;
+  }
+
+  img.photo_donuts_pc {
+    display: block;
+    width: 24vw;
+    margin: 0 auto;
+  }
+
+  .syoihin {
+    margin: 0 auto;
+    width: 24vw;
+  }
+
+  .price {
+    width: 11vw;
+    margin: 0 auto;
+  }
+
+  img.heart_logo {
+    width: 1.8vw;
+  }
+
+  .flex_price {
+    width: 24vw;
+    margin: 0 auto;
+  }
+
+  .submit {
+    display: block;
+    width: 19.5vw;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5vw;
+    height: 4vw;
+
+  }
+
+  /* ////listサイズ//////// */
+  .list {
+    width: 28vw;
+    height: 69vw;
+  }
+
+  /* ///////////商品一覧grid////////// */
+  .grid_syouhin {
+    height: 87vw;
+    width: 83vw;
+    display: grid;
+    grid-template-columns: 28vw 28vw 28vw;
+    grid-template-rows: 46vw 46vw;
+  }
+
+  .item01 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .item02 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .item03 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+
+  .item04 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .item05 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .item06 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+
+  /* /////////////バラエティーセット////// */
+  .h2_2 {
+    font-size: 1.8vw;
+    width: 18vw;
+  }
+}

@@ -16,7 +16,7 @@
 
   <!-- //////header//////// -->
    <header>
-<!-- <?php require 'includes/header.php';?> -->
+<?php require 'includes/header.php';?> 
 
 </header>
 
@@ -30,6 +30,8 @@
   <li class="list">
   <a href="#"> 
   <img src="common/images/sp_1donuts.jpg" alt="CCドーナツ当店オリジナルの写真" class="photo_donuts">
+  <img src="common/images/pc_1donuts.jpg"
+  alt="CCドーナツ当店オリジナルの写真PC" class="photo_donuts_pc">
 <p class="syoihin">
 CCドーナツ 当店オリジナル（5個入り）</p>
 <div class="flex_price">
@@ -49,6 +51,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <li class="list">
   <a href="#">
   <img src="common/images/sp_2donuts.jpg" alt="チョコレートデイライトの写真" class="photo_donuts">
+  <img src="common/images/pc_2donuts.jpg"
+  alt="チョコレートデイライトの写真PC" class="photo_donuts_pc">
 <p class="syoihin ">チョコレートデイライト（5個入り）</p>
 <div class="flex_price">
 <p class="price">税込 ￥1,600</p></a>
@@ -67,6 +71,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <li class="list">
   <a href="#">
   <img src="common/images/sp_3donuts.jpg" alt="キャラメルクリームの写真" class="photo_donuts">
+  <img src="common/images/pc_3donuts.jpg"
+  alt="キャラメルクリームの写真PC" class="photo_donuts_pc">
 <p class="syoihin">キャラメルクリーム（5個入り）</p>
 <div class="flex_price">
 <p class="price">税込 ￥1,600</p></a>
@@ -85,6 +91,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <li class="list">
   <a href="#">
   <img src="common/images/sp_4donuts.jpg" alt="プレーンクラシックの写真" class="photo_donuts ">
+  <img src="common/images/pc_4donuts.jpg"
+  alt="プレーンクラシックの写真PC" class="photo_donuts_pc">
 <p class="syoihin ">プレーンクラシック（5個入り）</p>
 <div class="flex_price">
 <p class="price">税込 ￥1,500</p></a>
@@ -103,6 +111,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <li class="list">
   <a href="#">
   <img src="common/images/sp_5donuts.jpg" alt="サマーシトラスの写真" class="photo_donuts">
+  <img src="common/images/pc_5donuts.jpg"
+  alt="サマーシトラスの写真PC" class="photo_donuts_pc">
 <p class="syoihin ">【新作】サマーシトラス（5個入り）</p>
 <div class="flex_price">
 <p class="price">税込 ￥1,600 </p></a>
@@ -121,6 +131,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <li class="list">
   <a href="#">
   <img src="common/images/sp_6donuts.jpg" alt="ストロベリークラッシュの写真" class="photo_donuts">
+  <img src="common/images/pc_6donuts.jpg"
+  alt="ストロベリークラッシュの写真PC" class="photo_donuts_pc">
 <p class="syoihin">ストロベリークラッシュ（5個入り）</p>
 <div class="flex_price">
 <p class="price">税込 ￥1,800 </p></a>
@@ -147,6 +159,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <li class="list">
   <a href="#">
   <img src="common/images/sp_7donuts.jpg" alt="フルーツドーナツ12個の写真" class="photo_donuts">
+  <img src="common/images/pc_7donuts.jpg"
+  alt="フルーツドーナツ12個の写真PC" class="photo_donuts_pc">
 <p class="syoihin">フルーツドーナツ（12個入り）</p>
 <div class="flex_price ">
 <p class="price">税込 ￥3,500 </p></a>
@@ -165,6 +179,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <li class="list">
   <a href="#">
   <img src="common/images/sp_8donuts.jpg" alt="フルーツドーナツの14個写真" class="photo_donuts ">
+  <img src="common/images/pc_8donuts.jpg"
+  alt="フルーツドーナツの14個の写真PC" class="photo_donuts_pc">
 <p class="syoihin">フルーツドーナツ（14個入り）</p>
 <div class="flex_price">
 <p class="price">税込 ￥4,000 </p></a>
@@ -183,6 +199,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <li class="list">
   <a href="#">
   <img src="common/images/sp_9donuts.jpg" alt="ベストセレクション写真" class="photo_donuts">
+  <img src="common/images/pc_9donuts.jpg"
+  alt="ベストセレクションの写真PC" class="photo_donuts_pc">
 <p class="syoihin ">ベストセレクション（4個入り）</p>
 <div class="flex_price ">
 <p class="price">税込 ￥1,200 </p></a>
@@ -201,6 +219,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <li class="list">
   <a href="#">
   <img src="common/images/sp_10donuts.jpg" alt="チョコクラッシュボックス写真" class="photo_donuts">
+  <img src="common/images/pc_10donuts.jpg"
+  alt="チョコクラッシュボックスの写真PC" class="photo_donuts_pc">
 <p class="syoihin">チョコクラッシュボックス（7個入り）</p>
 <div class="flex_price">
 <p class="price">税込 ￥2,400 </p></a>
@@ -219,6 +239,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <li class="list">
   <a href="#">
   <img src="common/images/sp_11donuts.jpg" alt="クリームボックス4個写真" class="photo_donuts">
+  <img src="common/images/pc_11donuts.jpg"
+  alt="クリームボックス4個の写真PC" class="photo_donuts_pc">
 <p class="syoihin">クリームボックス（4個入り）</p>
 <div class="flex_price">
 <p class="price">税込 ￥1,400 </p></a>
@@ -237,6 +259,8 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <li class="list">
   <a href="#">
   <img src="common/images/sp_12donuts.jpg" alt="クリームボックス9個写真" class="photo_donuts">
+  <img src="common/images/pc_12donuts.jpg"
+  alt="クリームボックス9個の写真PC" class="photo_donuts_pc">
 <p class="syoihin">クリームボックス（9個入り）</p>
 <div class="flex_price">
 <p class="price">税込 ￥2,800 </p></a>
@@ -256,4 +280,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 
 </main>
 </body>
+
+
 </html>
+<?php require 'includes/footer.php'; ?>
