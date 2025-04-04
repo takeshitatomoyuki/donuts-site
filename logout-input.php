@@ -9,7 +9,9 @@ if (isset($_SESSION['customer'])) {
   echo 'ようこそ ゲストさん。';
 }
 ?>
-<h1>ログアウト</h1>
+<h2 class="logout_title">ログアウト</h2>
+
+
 <p>ログアウトしますか？</p>
 <a href="logout-complete.php">ログアウトする</a>
 <?php require 'includes/footer.php'; ?>
