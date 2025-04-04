@@ -138,7 +138,7 @@ echo '</title>';
         <?php if(isset($_SESSION['user'])):?>
 
         <a href="logout-input.php"><img src="common/images/logout.svg" alt=""></a>
-        <a href="cart.php"><img src="common/images/cart.svg" alt=""></a>
+        <a href="cart-show.php"><img src="common/images/cart.svg" alt=""></a>
 
         <?php else: ?>
           <a href="login-input.php"><img src="common/images/login.svg" alt=""></a>
