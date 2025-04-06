@@ -2,8 +2,9 @@
 
 main {
   box-sizing: content-box;
+  font-family: "Noto Sans JP", sans-serif;
 }
-.customer_inner {
+.confirm_inner {
   padding: 0 10.6vw;
 }
 .customer_logo_box {
@@ -20,12 +21,40 @@ main {
   color: #7F5539;
 }
 .confirm-subtitle {
-  font-size: 32px;
+  font-size: 3.2vw;
+  color: #7F5539;
+}
+.confirm_text_box {
+  margin: 8px 0 20px;
+  padding: 4px;
+  font-size: 3.2vw;
+  border-left: 1px solid #7F5539;
+}
+.confirm_submit {
+  text-align: center;
+  display: block;
+  width: 53.3vw;
+  height: 12.8vw;
+  margin: 10.66vw auto 5vw;
+  font-size: 4.26vw;
+  color: #fff;
+  background-color: #7F5539;
+}
+.btn-edit {
+  display: block;
+  margin: 0 auto 10.6vw;
+  color: #7F5539;
+  border-bottom: 1px solid #7F5539;
 }
 @media screen and (min-width:768px) {
   main {
     max-width: 1200px;
     margin: auto;
+  }
+  .confirm_inner {
+    width: min(25vw, 300px);
+    margin: 0 auto; 
+    box-sizing: content-box;
   }
   .customer_logo_box {
     padding: min(1.6vw, 20px) 0 0 min(1.6vw);
@@ -37,5 +66,23 @@ main {
     font-size: min(2.6vw, 32px);
     padding: 73px 0 80px;
   }
-  
+  .confirm_text_box {
+    margin-bottom: 46px;
+    padding: 2.39px 0 6px 8px;
+    border-left: 2px solid #7F5539;
+  }
+  .confirm-subtitle,
+  .confirm_text_box,
+  .btn-edit {
+    font-size: min(2vw, 24px);
+  }
+  .confirm_submit {
+    width: min(25vw, 300px);
+    height: min(5vw, 60px);
+    margin: min(5vw, 60px) auto min(1.6vw, 20px);
+    font-size: min(1.66vw, 20px);
+  }
+  .btn-edit {
+    margin-bottom: min(9.16vw, 110px);
+  }
 }

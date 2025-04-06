@@ -1,26 +1,29 @@
+.nav {
+  border-bottom: 1px solid #7F5539;
+}
 .breadcrumb {
   display: flex;
   list-style: none;
   padding: 10px 16px;
   margin: 0;
-  background-color: #f1f1f1;
+  background-color: #fff;
   border-radius: 4px;
   font-family: sans-serif;
 }
 
 .breadcrumb li {
   display: inline;
-  font-size: 14px;
+  font-size: 3.2vw;
 }
 
 .breadcrumb li+li:before {
-  padding: 8px;
-  color: #666;
-  content: ">";
+  padding: 8px 0;
+  color: #7F5539;
+  content: "＞";
 }
 
 .breadcrumb li a {
-  color: #0275d8;
+  color: #7F5539;
   text-decoration: none;
 }
 
@@ -33,3 +36,15 @@
 body.top-page .breadcrumb {
   display: none;
 }
+
+@media screen and (min-width:768px) {
+  .breadcrumb{
+    width: min(100vw, 1200px);
+    margin: 0 auto;
+    padding: min(1vw, 12px) min(1.6vw, 20px);
+  }
+  .breadcrumb li  {
+    font-size: min(1vw, 12px);
+   }
+   
+ }

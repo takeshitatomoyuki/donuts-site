@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>donuts-site</title>
   <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="common/css/customer-confirm.css">
   <link rel="stylesheet" href="common/css/common.css">
 </head>
@@ -29,21 +32,22 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <main>
   <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
-  <div class="customer_inner">
-    <h2 class="customer_title">入力内容の確認</h2>
-    <form action="customer-complete.php" method="post">
+
+    <h2 class="customer_title">ご入力内容の確認</h2>
+
+    <form action="customer-complete.php" method="post" class="confirm_inner">
         <p class="confirm-subtitle">お名前</p>
-        <p><?php echo $name; ?></p>
+         <p class="confirm_text_box"><?php echo $name; ?></p>
         <p class="confirm-subtitle">お名前 (フリガナ)</p>
-        <p><?php echo $kana; ?></p>
+         <p class="confirm_text_box"><?php echo $kana; ?></p>
         <p class="confirm-subtitle">郵便番号</p>
-        <p><?php echo $post_code; ?></p>
+         <p class="confirm_text_box"><?php echo $post_code; ?></p>
         <p class="confirm-subtitle">住所</p>
-        <p><?php echo $address; ?></p>
+         <p class="confirm_text_box"><?php echo $address; ?></p>
         <p class="confirm-subtitle">メールアドレス</p>
-        <p><?php echo $mail; ?></p>
+         <p class="confirm_text_box"><?php echo $mail; ?></p>
         <p class="confirm-subtitle">パスワード</p>
-        <p><?php echo $password; ?></p>
+         <p class="confirm_text_box"><?php echo $password; ?></p>
 
         <!-- hidden フィールドでデータを complete.php に渡す -->
         <input type="hidden" name="name" value="<?php echo $name; ?>">
@@ -53,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="hidden" name="mail" value="<?php echo $mail; ?>">
         <input type="hidden" name="password" value="<?php echo $password; ?>">
 
-        <button type="submit">この内容で登録する</button>
+        <button type="submit" class="confirm_submit">この内容で登録する</button>
     </form>
     <form action="customer-input.php" method="post">
         <!-- 修正ボタンで再入力 -->
@@ -63,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="hidden" name="address" value="<?php echo $address; ?>">
         <input type="hidden" name="mail" value="<?php echo $mail; ?>">
         <input type="hidden" name="password" value="<?php echo $password; ?>">
-        <button type="submit">修正する</button>
+        <button type="submit" class="btn-edit">修正する</button>
     </form>
 </main>
 <?php require 'includes/footer.php'; ?>

@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>donuts-site</title>
+  <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common/css/customer-confirm.css">
+  <link rel="stylesheet" href="common/css/common.css">
+
+<main>
+  <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
 <?php session_start(); ?>
 
 <?php
@@ -48,6 +63,8 @@ if(empty($sql->fetchAll())) {
       </div>';
   }
 } else {
-  echo 'ログイン名がすでに使用されていますので、変更してください。';
+  echo '<p>ログイン名がすでに使用されていますので、変更してください。</p>';
 }
 ?>
+</main>
+<?php require 'includes/footer.php'; ?>

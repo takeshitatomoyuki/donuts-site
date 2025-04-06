@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>donuts-site</title>
+  <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common/css/customer-confirm.css">
+  <link rel="stylesheet" href="common/css/common.css">
+</head>
+<body>
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // 入力データを取得
@@ -15,26 +29,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>確認画面</title>
-</head>
-<body>
-    <h2>ご入力内容の確認</h2>
+<main>
+<h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
+    <h2 class="customer_title">ご入力内容の確認</h2>
 
-    <form action="card-complete.php" method="post">
-        <p>お名前</p>
-        <p><?php echo $card_name; ?></p>
-        <p>カード会社</p>
-        <p><?php echo $card_type; ?></p>
-        <p>カード番号</p>
-        <p><?php echo $card_no; ?></p>
-        <p>有効期限</p>
-        <p><?php echo $card_month,'/',$card_year; ?></p>
-        <p>セキュリティコード</p>
-        <p><?php echo $card_security_code; ?></p>
+    <form action="card-complete.php" method="post" class="confirm_inner">
+        <p class="confirm-subtitle">お名前</p>
+         <p class="confirm_text_box"><?php echo $card_name; ?></p>
+        <p class="confirm-subtitle">カード会社</p>
+         <p class="confirm_text_box"><?php echo $card_type; ?></p>
+        <p class="confirm-subtitle">カード番号</p>
+         <p class="confirm_text_box"><?php echo $card_no; ?></p>
+        <p class="confirm-subtitle">有効期限</p>
+         <p class="confirm_text_box"><?php echo $card_month,'/',$card_year; ?></p>
+        <p class="confirm-subtitle">セキュリティコード</p>
+         <p class="confirm_text_box"><?php echo $card_security_code; ?></p>
 
         <!-- hidden フィールドでデータを complete.php に渡す -->
         <input type="hidden" name="card_name" value="<?php echo $card_name; ?>">
@@ -44,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="hidden" name="card_year" value="<?php echo $card_year; ?>">
         <input type="hidden" name="card_security_code" value="<?php echo $card_security_code; ?>">
 
-        <button type="submit">この内容で確認する</button>
+        <button type="submit" class="confirm_submit">この内容で確認する</button>
     </form>
     <form action="card-input.php" method="post">
         <!-- 戻るボタンで再入力 -->
@@ -55,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="hidden" name="card_month" value="<?php echo $card_month; ?>">
         <input type="hidden" name="card_year" value="<?php echo $card_year; ?>">
         <input type="hidden" name="card_security_code" value="<?php echo $card_security_code; ?>">
-        <button type="submit">修正する</button>
+        <button type="submit" class="btn-edit">修正する</button>
     </form>
-</body>
-</html>
+</main>
+    <?php require 'includes/footer.php'; ?>
