@@ -15,12 +15,12 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 if (isset($_SESSION['customer'])) {
-    echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
+    // echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
 
     // ✅ カート情報もログイン時のみ表示
     if (!empty($_SESSION['product'])) {
         echo '<table>';
-        echo '<tr><th>商品番号</th><th>商品名</th>';
+        // echo '<tr><th>商品番号</th><th>商品名</th>';
         echo '<th>価格</th><th>個数</th><th>小計</th><th></th></tr>';
         $total = 0;
         foreach ($_SESSION['product'] as $id => $product) {
