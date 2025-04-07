@@ -139,15 +139,14 @@ img.heart_logo {
   }
 
   main {
-    max-width: 1300px;
+    max-width: 1200px;
     height: 3000px;
     margin-bottom: 160px;
     margin: 0 auto;
   }
 
   .main_padding {
-    padding-left: 83px;
-    padding-right: 113px;
+    padding: initial;
   }
 
   .product_h2 {
@@ -212,12 +211,16 @@ img.heart_logo {
   }
 
   /* ///////////商品一覧grid////////// */
+  .section_top {
+    margin: 0 auto;
+  }
   .grid_syouhin {
     height: 87vw;
     width: 83vw;
     display: grid;
     grid-template-columns: 27.8vw 27.8vw 27.8vw;
     grid-template-rows: 45vw 45vw;
+    margin: 0 auto;
   }
 
   .item01 {
