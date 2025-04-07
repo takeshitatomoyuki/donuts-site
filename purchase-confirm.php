@@ -41,18 +41,17 @@ else {
         require 'cart.php';
         echo '<hr>';
          // 購入手続きの表示
+        echo'<p>お届け先</p>';
          echo '<p>お名前：', htmlspecialchars($_SESSION['customer']['name'], ENT_QUOTES, 'UTF-8'), '</p>';
-         echo '<p>ご住所：', htmlspecialchars($_SESSION['customer']['address'], ENT_QUOTES, 'UTF-8'), '</p>';
-
-         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_name'], ENT_QUOTES, 'UTF-8'), '</p>';
-         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_type'], ENT_QUOTES, 'UTF-8'), '</p>';
-         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_no'], ENT_QUOTES, 'UTF-8'), '</p>';
-         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_month'], ENT_QUOTES, 'UTF-8'), '</p>';
-         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_year'], ENT_QUOTES, 'UTF-8'), '</p>';
-         echo '<p>ご住所：', htmlspecialchars($_SESSION['card']['card_security_code'], ENT_QUOTES, 'UTF-8'), '</p>';
+         echo '<p>ご住所：', htmlspecialchars($_SESSION['customer']['address'], ENT_QUOTES, 'UTF-8'), '</p>';   
+echo'<p>お支払い方法</p>';
+         echo '<p>：', htmlspecialchars($_SESSION['card']['card_name'], ENT_QUOTES, 'UTF-8'), '</p>';
+         echo '<p>お支払い：', htmlspecialchars($_SESSION['card']['card_type'], ENT_QUOTES, 'UTF-8'), '</p>';
+         echo '<p>カード種類：', htmlspecialchars($_SESSION['card']['card_no'], ENT_QUOTES, 'UTF-8'), '</p>';
+         echo '<p>カード番号：';
         
 
-        echo '<p>内容をご確認いただき、購入を確定してください。</p>';
+      
         echo '<a href="purchase-complete.php">購入を確定する</a>';
     }
 }
