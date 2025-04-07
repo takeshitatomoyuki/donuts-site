@@ -10,10 +10,10 @@ if (isset($_SESSION['customer'])) {
   echo 'ようこそ ゲストさん。';
 }
 ?>
-
+ <h2 class="login_title">ログイン</h2>
 <main>
   <section class="login_sec">
-    <h2 class="login_title">ログイン</h2>
+   
     <form action="login-complete.php" method="post" class="login_form">
       <div class="login_text_block">
         <div class="login_block">
