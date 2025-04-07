@@ -37,6 +37,7 @@ if (isset($_SESSION['customer'])) {
         }
         echo '<tr><td>合計</td><td></td><td></td><td></td><td>', $total, '</td><td></td></tr>';
         echo '</table>';
+        echo'<a href="purchase-confirm.php">ご購入確認へ進む</a>';
     } else {
         echo 'カートに商品がありません。';
     }
