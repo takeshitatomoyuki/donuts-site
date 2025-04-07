@@ -52,7 +52,13 @@
       <input type="hidden" name="id" value="', $row['id'], '">
       <input type="hidden" name="name" value="', $row['name'], '">
       <input type="hidden" name="price" value="', $row['price'], '"> 
-        <p><input type="text" class="detail_count">個<select name="count"></p>
+        <p><input type="text" class="detail_count">
+       <?php
+        for ($i=1; $i<=10; $i++) {
+	echo '<option value="', $i, '">', $i, '</option>';
+ 	}
+  ?>
+        個<select name="count"></p>
         <p><input type="submit" value="カートに入れる" class="detail_submit"></p></form>;
       </div>
     </div>
