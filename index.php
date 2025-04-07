@@ -9,7 +9,9 @@
      <img class="index_item1" src="common/images/sp_sub1.jpg" alt="サブ画像１">
      <img class="index_item2" src="common/images/sp_sub2.jpg" alt="サブ画像２">
     </div>
+    <a href="product.php">
      <img class="index_item3" src="common/images/sp_sub3.jpg" alt="サブ画像３">
+     </a>
   </div>
  
 <!-- 私達の信念 -->
@@ -31,7 +33,7 @@
   <!-- 第１位 -->
 <li class="index_linkbox1">
 <!-- li要素にリンクをつける -->
-<a href="#">
+<a href="detail.php">
  <!-- ////////////////////////////////////////////// -->
   <div class="index_rank1">
    <img class="index_r1" src="common/images/sp_rank1.jpg" alt="１位">
@@ -42,23 +44,19 @@
    <p>税込  ￥1,500</p>
    <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
   </div>
-<!-- li要素にリンクをつける -->
-  </a>
-<!-- /////////////////////////////////////////////// -->
-
-
-
-  <form action="cart-input.php" method="post">
-
-    <input type="hidden" name="id" value="1">
+  <div>
+   <input type="hidden" name="id" value="1">
    <input type="submit" value="カートに入れる" 
     class="index_submit" id="1">
-  </form>
+  </div>
+  <!-- li要素にリンクをつける -->
+  </a>
+  <!-- /////////////////////////////////////////////// -->
 </li>
 
 <li class="index_linkbox2">
   <!-- 第２位 -->
-<a href="#">
+  <a href="detail.php">
 <div class="index_rank2">
   <img class="index_r2" src="common/images/sp_rank2.jpg" alt="２位">
   <img class="index_r2_img" src="common/images/sp_7donuts.jpg" alt="２位画像">
@@ -68,17 +66,17 @@
   <p>税込  ￥3,500</p>
   <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
 </div>
-  </a>
-  <form action="cart-input.php" method="post">
+<div>
    <input type="hidden" name="id" value="7">
    <input type="submit" value="カートに入れる" 
    class="index_submit" id="7">
-  </form>
+</div>
+  </a>
 </li>
 
 <li class="index_linkbox3">
   <!-- 第３位 -->
-<a href="#">
+  <a href="detail.php">
 <div class="index_rank3">
   <img class="index_r3" src="common/images/sp_rank3.jpg" alt="３位">
   <img class="index_r3_img" src="common/images/sp_8donuts.jpg" alt="３位画像">
@@ -88,17 +86,17 @@
   <p>税込  ￥4,000</p>
   <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
 </div>
-  </a>
-  <form action="cart-input.php" method="post">
+  <div>
    <input type="hidden" name="id" value="8">
    <input type="submit" value="カートに入れる" 
    class="index_submit" id="8">
-  </form>
+   </div>
+   </a>
 </li>
 
 <li class="index_linkbox4">
   <!-- 第４位 -->
-<a href="#">
+  <a href="detail.php">
 <div class="index_rank4">
   <img class="index_r4" src="common/images/sp_rank4.jpg" alt="４位">
   <img class="index_r4_img" src="common/images/sp_2donuts.jpg" alt="４位画像">
@@ -108,17 +106,17 @@
   <p>税込  ￥1,500</p>
   <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
 </div>
-  </a>
-  <form action="cart-input.php" method="post">
+  <div>
    <input type="hidden" name="id" value="2">
    <input type="submit" value="カートに入れる" 
    class="index_submit" id="2">
-  </form>
+  </div>
+   </a>
 </li>
 
 <li class="index_linkbox5">
   <!-- 第５位 -->
-<a href="#">
+  <a href="detail.php">
 <div class="index_rank5">
   <img class="index_r5" src="common/images/sp_rank5.jpg" alt="５位">
   <img class="index_r5_img" src="common/images/sp_9donuts.jpg" alt="５位画像">
@@ -127,18 +125,18 @@
 <div class="index_price">
   <p>税込  ￥1,200</p>
   <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
-</div>
-  </a>
-  <form action="cart-input.php" method="post">
+</div> 
+<div>
    <input type="hidden" name="id" value="9">
    <input type="submit" value="カートに入れる" 
    class="index_submit" id="9">
-  </form>
+</div>
+   </a>
 </li>
 
 <li class="index_linkbox6">
   <!-- 第６位 -->
-<a href="#">
+  <a href="detail.php">
 <div class="index_rank6">
   <img class="index_r6" src="common/images/sp_rank6.jpg" alt="６位">
   <img class="index_r6_img" src="common/images/sp_6donuts.jpg" alt="６位画像">
@@ -147,13 +145,13 @@
 <div class="index_price">
   <p>税込  ￥1,800</p>
   <img class="index_heart" src="common/images/sp_heart.jpg" alt="ハート">
-</div>
-  </a>
-  <form action="cart-input.php" method="post">
+</div> 
+<div>
    <input type="hidden" name="id" value="6">
    <input type="submit" value="カートに入れる" 
    class="index_submit" id="6">
-  </form>
+</div>
+   </a>
 </li>
 </ol>
 
