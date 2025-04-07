@@ -1,4 +1,4 @@
- <?php require 'includes/header.php'; ?>
+<?php require 'includes/header.php'; ?>
 
 
 
@@ -28,26 +28,7 @@
       }
       ?>
   </div> 
-  <?php
-  $pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 
-	'staff', 'password');
- $sql=$pdo->prepare('select * from product where id=?');
- $sql->execute([$_REQUEST['id']]);
-  foreach ($sql as $row) {
-	echo '<p><img alt="image" src="image/', $row['id'], '.jpg"></p>';
- 	echo '<form action="cart-input.php" method="post">';
- 	echo '<p>商品番号：', $row['id'], '</p>';
-	echo '<p>商品名：', $row['name'], '</p>';
- 	echo '<p>価格：', $row['price'], '</p>';
- 	echo '<p>個数：<select name="count">';}
- 	for ($i=1; $i<=10; $i++) {
- 		echo '<option value="', $i, '">', $i, '</option>';
- 	}
- 	echo '</select></p>';
- 	echo '<input type="hidden" name="id" value="', $row['id'], '">';
- 	echo '<input type="hidden" name="name" value="', $row['name'], '">';
- 	echo '<input type="hidden" name="price" value="', $row['price'], '">';
-?>
+
   <main>
   <div class="detail_inner">
     <div class="detail_image_box">
@@ -61,12 +42,8 @@
        <p class="detail_heart_box"><img src="common/images/sp_heart.jpg" alt="ハート" class="detail_heart"></p>
       </div>
       <div class="detail_count_box">
-      <form action="cart-input.php" method="post">
-      <input type="hidden" name="id" value="', $row['id'], '">
-      <input type="hidden" name="name" value="', $row['name'], '">
-      <input type="hidden" name="price" value="', $row['price'], '"> 
-        <p><input type="text" class="detail_count">個<select name="count"></p>
-        <p><input type="submit" value="カートに入れる" class="detail_submit"></p></form>;
+        <p><input type="text" class="detail_count">個</p>
+        <p><input type="submit" value="カートに入れる" class="detail_submit"></p>
       </div>
     </div>
   </div>
