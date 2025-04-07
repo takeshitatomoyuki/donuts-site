@@ -8,6 +8,7 @@
 
 main {
   margin-bottom: 80px;
+  padding: 0 20px;
 }
 
 .main_padding {
@@ -30,16 +31,13 @@ main {
 }
 
 /* //////CCドーナツ/////// */
-.list {
-  width: 42vw;
-  height: 108vw;
-}
 
 .photo_donuts {
   width: 42vw;
 }
 
-.photo_donuts_pc {
+.photo_donuts_pc,
+.photo_donuts_pc1 {
   display: none;
 }
 
@@ -56,11 +54,10 @@ main {
   padding-bottom: 22px;
 }
 
-img.heart_logo {
+.heart_logo {
   display: block;
   width: 5.3vw;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  padding: 25px 0 20px;
   height: 20%;
 }
 
@@ -80,16 +77,18 @@ img.heart_logo {
 }
 
 /* /////////商品一覧grid ///////////*/
-.grid_syouhin {
-  height: 302vw;
+.grid_syouhin,
+.grid_syouhin1 {
+  width: 89.6vw;
+  height: 320.56vw;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 108vw 108vw 108vw;
+  grid-template-rows: 106.6vw 106.6vw 106.6vw;
 }
 
 .item01 {
-  grid-row: 1/2;
   grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .item02 {
@@ -103,20 +102,29 @@ img.heart_logo {
 }
 
 .item04 {
-  grid-row: 2/3;
   grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .item05 {
-  grid-row: 3/4;
   grid-column: 1/2;
+  grid-row: 3/4;
 }
 
 .item06 {
-  grid-row: 3/4;
   grid-column: 2/3;
+  grid-row: 3/4;
 }
-
+.item01,
+.item03,
+.item05 {
+  padding-right: 2.6vw;
+}
+.item02,
+.item04,
+.item06 {
+  padding-left: 2.6vw;
+}
 /* ////////バラエティーセット////// */
 .h2_2 {
   font-size: 5.3vw;
@@ -140,9 +148,9 @@ img.heart_logo {
 
   main {
     max-width: 1200px;
-    height: 3000px;
     margin-bottom: 160px;
     margin: 0 auto;
+    padding: initial;
   }
 
   .main_padding {
@@ -165,14 +173,16 @@ img.heart_logo {
     display: none;
   }
 
-  img.photo_donuts_pc {
+  img.photo_donuts_pc,
+  .photo_donuts_pc1 {
     display: block;
-    width: 23.4vw;
-    height: 23.4vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    width: min(26.6vw, 320px);
+    height: min(26.6vw, 320px);
 
+  }
+  .photo_donuts_pc1 {
+    margin-top: min(3.3vw, 40px);
+  }
   .syoihin {
     margin: 0 auto;
     width: 24vw;
@@ -180,12 +190,8 @@ img.heart_logo {
   }
 
   .price {
-    width: 11vw;
-    margin: 0 auto;
-  }
-
-  img.heart_logo {
-    width: 1.75vw;
+    font-size: min(2vw, 24px);
+    line-height: initial;
   }
 
   .flex_price {
@@ -214,15 +220,18 @@ img.heart_logo {
   .section_top {
     margin: 0 auto;
   }
-  .grid_syouhin {
-    height: 87vw;
-    width: 83vw;
+  .grid_syouhin,
+  .grid_syouhin1 {
+    max-width: 1140px;
+    max-height: 1146px;
     display: grid;
-    grid-template-columns: 27.8vw 27.8vw 27.8vw;
-    grid-template-rows: 45vw 45vw;
+    grid-template-columns:min(31.6vw, 380px) min(31.6vw, 380px)  min(31.6vw, 380px) ;
+    grid-template-rows: 50% 50%;
     margin: 0 auto;
   }
-
+  .grid_syouhin1 {
+    margin-bottom: min(13.3vw, 160px);
+  }
   .item01 {
     grid-row: 1/2;
     grid-column: 1/2;
@@ -253,6 +262,17 @@ img.heart_logo {
     grid-column: 3/4;
   }
 
+  .item01,
+  .item02,
+  .item03,
+  .item04,
+  .item05,
+  .item06 {
+    padding: 0 min(2.5vw, 30px);
+  }
+  .flex_price {
+    width: 100%;
+  }
   /* /////////////バラエティーセット////// */
   .h2_2 {
     font-size: 1.75vw;
@@ -260,5 +280,35 @@ img.heart_logo {
     border-bottom: solid 4px #FFD233;
     margin-top: 80px;
     margin-bottom: 80px;
+  }
+  .syoihin {
+    width: min(26.6vw, 320px);
+    height: initial;
+    margin: min(1.6vw, 20px) 0;
+    padding: initial;
+    font-size: min(2vw, 24px);
+  }
+  .flex_price {
+    height: min(2vw, 24px);
+  }
+  .heart_logo {
+    width: min(2vw, 24px);
+    height: 100%;
+  }
+  .price {
+    padding: initial;
+  }
+  .heart_logo {
+    padding: initial;
+  }
+  .submit {
+    width: min(21.6vw, 260px);
+    height: min(4.3vw, 52px);
+    margin: min(1.6vw, 20px) auto min(3.3vw, 40px);
+    color: #FFFFFF;
+    background-color: #7F5539;
+    border: none;
+    text-align: center;
+    font-size: min(1.6vw, 20px);
   }
 }
