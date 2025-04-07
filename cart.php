@@ -44,7 +44,9 @@ if (isset($_SESSION['customer'])) {
 } else {
     //echo 'ようこそ ゲストさん。<br>';
     //echo 'ログインされていません。<br>';
-    echo '<a href="login-input.php">ログイン登録はこちら</a>';
+    header("Location: login-input.php");
+    exit();
+   
 }
 ?>
 
