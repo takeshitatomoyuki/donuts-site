@@ -1,4 +1,10 @@
 <?php require 'includes\header.php'; ?>
+<?php require 'breadcrumb.php'; ?>
+<?php require 'customer-name.php'; ?>
+<head>
+  <link rel="stylesheet" href="common/css/breadcrumb.css">
+  <script src="common/js/breadcrumb.js"></script>
+</head>
 
 <?php
 $id=$_REQUEST['id'];
