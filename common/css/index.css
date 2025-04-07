@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body {
+  font-family: noto Sans jp;
+}
+
 img {
   max-width: 100%;
 }
@@ -175,12 +179,6 @@ img {
 
 }
 
-.index_submit:hover {
-  color: #85125e;
-  background-color: #e4d7d7d8;
-
-}
-
 .index_ranking form {
   width: 42vw;
   height: 7vh;
@@ -296,11 +294,9 @@ li {
   .index_ranking h2 {
     font-size: 2.7vw;
     width: 20vw;
-
     padding-bottom: 1vw;
     margin-top: 5.9vw;
     margin-bottom: 6.7vw;
-
 
   }
 
@@ -313,10 +309,7 @@ li {
   .index_linkbox6 {
     width: 23.4vw;
     height: 44.8vw;
-
     margin: 0 auto;
-
-
 
   }
 
@@ -385,32 +378,16 @@ li {
     height: 3.8vw;
   }
 
-
-
   .index_submit {
     width: 19vw;
     color: #FFFFFF;
     background-color: #7F5539;
     border: none;
     height: 3.8vw;
-
     display: block;
     text-align: center;
     margin: 0 auto;
   }
-
-
-  
-
- 
- 
-
-  .index_submit:hover {
-    color: #85125e;
-    background-color: #e4d7d7d8;
-
-  }
-
 
   /* /////////ランキングgrid ///////////*/
   .index_grid {
@@ -428,7 +405,6 @@ li {
     width: 19vw;
     height: 3.8vw;
   }
-  
 
   .index_linkbox1 {
     grid-row: 1/2;
@@ -459,6 +435,5 @@ li {
     grid-row: 2/3;
     grid-column: 3/4;
   }
-
 
 }

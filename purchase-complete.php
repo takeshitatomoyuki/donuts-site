@@ -23,12 +23,13 @@ try {
 
   $pdo->commit(); // すべて成功したら確定
   unset($_SESSION['product']);
-  echo '購入手続きが完了しました。ありがとうございます。';
+  echo '購入手続きが完了しました。';
+  echo '今後ともご愛顧の程、宜しくお願いいたします。';
 } catch (Exception $e) {
   $pdo->rollBack(); // エラーがあれば元に戻す
   echo '購入手続き中にエラーが発生しました。申し訳ございません。';
   error_log('購入エラー: ' . $e->getMessage()); // エラーログを出力
-}
+}  
 ?>
 <a href="index.php">トップページへ戻る</a>
 <?php require 'includes/footer.php'; ?>

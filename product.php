@@ -1,4 +1,4 @@
-<main>
+
 
   <!-- //////header//////// -->
    <header>
@@ -7,8 +7,9 @@
 </header>
 
 <!--/////////// 商品一覧/////////////// -->
+<main>
 <div class="main_padding">
-<section>
+<section class="section_top">
   <h2 class="product_h2">商品一覧</h2>
   <ul class="grid_syouhin">
 <!-- CCドーナツ当店オリジナル -->
@@ -136,7 +137,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 
 
 <!-- //////////////バラエティーセット///////////////// -->
-<section>
+<section class="section_bottom">
 <h2 class="h2_2">バラエティーセット</h2>
 <ul class="grid_syouhin">
 
