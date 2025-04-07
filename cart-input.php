@@ -1,5 +1,5 @@
 <?php require 'includes\header.php'; ?>
-	echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
+
 <?php
 $id=$_REQUEST['id'];
 if (!isset($_SESSION['product'])) {
