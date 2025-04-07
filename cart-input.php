@@ -26,6 +26,5 @@ echo '<hr>';
 require 'cart.php';
 ?>
 
-<a href="product.php">買い物を続ける</a>
-<a href="cart-show.php">カート一覧に戻る</a>
+
 <?php require 'includes\footer.php'; ?>
