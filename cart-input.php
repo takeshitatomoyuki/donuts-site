@@ -3,6 +3,7 @@
 <?php require 'customer-name.php'; ?>
 <head>
   <link rel="stylesheet" href="common/css/breadcrumb.css">
+	<link rel="stylesheet" href="common/css/customer-name.css">
   <script src="common/js/breadcrumb.js"></script>
 </head>
 
