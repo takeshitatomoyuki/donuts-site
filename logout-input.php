@@ -12,6 +12,8 @@ if (isset($_SESSION['customer'])) {
 <h2 class="logout_title">ログアウト</h2>
 
 
-<p>ログアウトしますか？</p>
-<a href="logout-complete.php">ログアウトする</a>
+<div class="logout_block">
+  <p>ログアウトしますか？</p>
+  <a href="logout-complete.php" class="logout_link">ログアウトする</a>
+</div>
 <?php require 'includes/footer.php'; ?>
