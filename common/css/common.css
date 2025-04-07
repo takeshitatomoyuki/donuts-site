@@ -341,19 +341,13 @@ footer {
 
   /* ditail */
   .detail_top {
-    padding: 10px 16px;
-    font-size: 3.2vw;
-    color: #7F5539;
-    border-bottom: 1px solid #7F5539;
+    padding: initial;
+    font-size: min(1vw, 12px);
   }
-
-  .detail_name {
-    margin-bottom: 5.3vw;
-    padding-bottom: 5.3vw;
-    font-size: 4.2vw;
-    font-weight: bold;
-    color: #7F5539;
-    border-bottom: 1px solid #EDE0D4;
-  }
+  .customer_name {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: min(1vw, 12px) min(1.6vw, 20px);
+  } 
 
 }
