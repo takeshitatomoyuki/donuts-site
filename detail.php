@@ -28,7 +28,13 @@
       }
       ?>
   </div> 
-
+  <?php
+  $pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 
+	'staff', 'password');
+ $sql=$pdo->prepare('select * from product where id=?');
+ $sql->execute([$_REQUEST['id']]);
+ foreach ($sql as $row){};
+?>
   <main>
   <div class="detail_inner">
     <div class="detail_image_box">
@@ -42,8 +48,12 @@
        <p class="detail_heart_box"><img src="common/images/sp_heart.jpg" alt="ハート" class="detail_heart"></p>
       </div>
       <div class="detail_count_box">
-        <p><input type="text" class="detail_count">個</p>
-        <p><input type="submit" value="カートに入れる" class="detail_submit"></p>
+      <form action="cart-input.php" method="post">
+      <input type="hidden" name="id" value="', $row['id'], '">
+      <input type="hidden" name="name" value="', $row['name'], '">
+      <input type="hidden" name="price" value="', $row['price'], '"> 
+        <p><input type="text" class="detail_count">個<select name="count"></p>
+        <p><input type="submit" value="カートに入れる" class="detail_submit"></p></form>;
       </div>
     </div>
   </div>
