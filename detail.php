@@ -22,7 +22,7 @@
         session_start();
       }
       if (isset($_SESSION['customer'])) {
-        echo '<p>ようこそ ', $_SESSION['customer']['name'], 'さん。</p>';
+        echo '<p class="customer_name">ようこそ ', $_SESSION['customer']['name'], 'さん。</p>';
       } else{
       echo '<p class="customer_name">ようこそ ゲストさん。</p>';
       }
