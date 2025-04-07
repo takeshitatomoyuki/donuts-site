@@ -1,0 +1,11 @@
+@charset "UTF-8";
+  /* ditail */
+  .detail_top {
+    padding: initial;
+    font-size: min(1vw, 12px);
+  }
+  .customer_name {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: min(1vw, 12px) min(1.6vw, 20px);
+  } 
