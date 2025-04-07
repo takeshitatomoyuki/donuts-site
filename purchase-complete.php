@@ -1,3 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>donuts-site</title>
+  <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="stylesheet" href="common/css/common.css">
+  <link rel="stylesheet" href="common/css/customer.css">
+</head>
+<body>
+  
+<?php if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}?>
+<?php
+$name=$mail=$password='';
+ if(isset($_SESSION['customer'])) {
+  $name=$_SESSION['customer']['name'];
+  $address=$_SESSION['customer']['mail'];
+  $password=$_SESSION['customer']['password'];
+ } 
+ ?>
+<main>
 <?php
 
 if (session_status() == PHP_SESSION_NONE) {
@@ -32,4 +56,5 @@ try {
 }  
 ?>
 <a href="index.php">トップページへ戻る</a>
+</main>
 <?php require 'includes/footer.php'; ?>
