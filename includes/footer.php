@@ -25,7 +25,7 @@
     </ul>
 
     <div class="footer_logo_area">
-      <img src="common/images/footer-logo.svg" alt="" class="footer_logo">
+      <a href="index.php"><img src="common/images/footer-logo.svg" alt="" class="footer_logo"></a>
     </div>
     <p class="footer_text">Copyright (C) c.c.donuts All Rights Reserved</p>
   </footer>
