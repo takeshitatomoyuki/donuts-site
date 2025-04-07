@@ -24,8 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 } else {
     // POSTでなければ入力画面に戻す
-    header("Location: card-input.php");
-    exit();
+  //  header("Location: card-input.php");
+  //  exit();
 }
 ?>
 
