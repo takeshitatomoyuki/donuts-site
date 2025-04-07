@@ -77,9 +77,10 @@ main {
 }
 
 /* /////////商品一覧grid ///////////*/
-.grid_syouhin {
+.grid_syouhin,
+.grid_syouhin1 {
   width: 89.6vw;
-  height: 1202.1px;
+  height: 320.56vw;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 106.6vw 106.6vw 106.6vw;
@@ -147,9 +148,9 @@ main {
 
   main {
     max-width: 1200px;
-    height: 3000px;
     margin-bottom: 160px;
     margin: 0 auto;
+    padding: initial;
   }
 
   .main_padding {
@@ -219,7 +220,8 @@ main {
   .section_top {
     margin: 0 auto;
   }
-  .grid_syouhin {
+  .grid_syouhin,
+  .grid_syouhin1 {
     max-width: 1140px;
     max-height: 1146px;
     display: grid;
@@ -227,7 +229,9 @@ main {
     grid-template-rows: 50% 50%;
     margin: 0 auto;
   }
-
+  .grid_syouhin1 {
+    margin-bottom: min(13.3vw, 160px);
+  }
   .item01 {
     grid-row: 1/2;
     grid-column: 1/2;

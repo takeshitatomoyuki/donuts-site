@@ -127,7 +127,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <!-- //////////////バラエティーセット///////////////// -->
 <section class="section_bottom">
 <h2 class="h2_2">バラエティーセット</h2>
-<ul class="grid_syouhin">
+<ul class="grid_syouhin1">
 
 <!-- フルーツドーナツ12個-->
 <li class="item01">
