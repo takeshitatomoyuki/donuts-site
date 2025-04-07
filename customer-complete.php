@@ -45,7 +45,7 @@ if(empty($sql->fetchAll())) {
       'address'=>$_REQUEST['address'],
       'mail'=>$_REQUEST['mail'],
       'password'=>$_REQUEST['password']];
-    echo 'お客様情報を更新しました。';
+    
   } else {
     $sql=$pdo->prepare('insert into customer values(null,?,?,?,?,?,?)');
     $sql->execute([
