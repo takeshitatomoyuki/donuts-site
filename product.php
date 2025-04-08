@@ -1,10 +1,7 @@
 
 
-  <!-- //////header//////// -->
-   <header>
+<!-- //////header//////// -->
 <?php require 'includes/header.php';?> 
-
-</header>
 
 <!--/////////// 商品一覧/////////////// -->
 <main>
