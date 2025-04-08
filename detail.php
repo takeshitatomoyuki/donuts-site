@@ -61,7 +61,7 @@ foreach ($sql as $row) {
   echo '<div class="detail_image_box">','<img src="common/images/sp_', $row['id'],'donuts.jpg" alt="１位画像" class="detail_image">','</div>';
 	echo '<div class="detail_commentary">','<p class="detail_name">', $row['name'], '</p>';
 
-  echo '<p class="detail_text">','当店のオリジナル商品、CCドーナツは、サクサクの食感が特徴のプレーンタイプのドーナツです。素材にこだわり、丁寧に揚げた生地は軽やかでサクッとした食感が楽しめます。一口食べれば、口の中に広がる甘くて香ばしい香りと、口どけの良い食感が感じられます。','</p>';
+  echo '<p class="detail_text">',$row['description'],'</p>';
   
 	echo '<div class="detail_price_box">','<p class="detail_price">','税込 ￥', number_format($row['price']), '</p>';
   echo '<p class="detail_heart_box">','<img src="common/images/sp_heart.jpg" alt="ハート" class="detail_heart">','</p>','</div>';
