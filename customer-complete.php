@@ -10,11 +10,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="common/css/customer-confirm.css">
   <link rel="stylesheet" href="common/css/common.css">
+  
+  <main>
+   <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
+   <div class="customer_inner">
+    <h2 class="customer_title">会員登録完了</h2>
 
-<main>
-  <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
+    <div class="customer_complete_box">
+      <p class="customer_complete_text">会員登録が完了しました</p>
+      <p><a class="customer_complete_link" href="login-input.php">ログイン画面へ進む</a></p>
+    </div>
+
 <?php session_start(); ?>
-
 <?php
 $pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8',
 'staff','password');
@@ -56,8 +63,7 @@ if(empty($sql->fetchAll())) {
       $_REQUEST['mail'],
       $_REQUEST['password']]);
       echo 
-      '<h2>会員登録完了</h2>
-      <div>
+      '<div>
         <p>会員登録が完了しました</p>。
         <a href="login-input.php">ログイン画面へ進む</a>
       </div>';

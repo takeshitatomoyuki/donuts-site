@@ -1,3 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="common/css/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="common/css/card-complete.css">
+    <title>donuts-site</title>
+</head>
+<body>
+    
+</body>
+</html>
+<main>
+  <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
+  <div class="customer_inner">
+    <h2 class="customer_title">会員登録</h2>
 <?php
 session_start();
 
@@ -67,3 +90,4 @@ if (empty($result)) {
     echo 'カード名がすでに使用されていますので、変更してください。';
 }
 ?>
+</main>

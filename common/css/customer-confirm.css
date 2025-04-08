@@ -46,6 +46,25 @@ main {
   color: #7F5539;
   border-bottom: 1px solid #7F5539;
 }
+
+/* customer_complete */
+.customer_complete_box {
+  width: 78.6vw;
+  height: 22.4vw;
+  margin: 0 auto 110.9vw;
+  padding: 6.4vw 0; 
+  text-align: center;
+  font-size: 3.2vw;
+  border: 1px solid #E8C2CA;
+}
+.customer_complete_text {
+  padding-bottom: 3.2vw;
+  color: #333;
+}
+.customer_complete_link {
+  color: #7F5539;
+  border-bottom: 1px solid #7F5539;
+}
 @media screen and (min-width:768px) {
   main {
     max-width: 1200px;
@@ -84,5 +103,21 @@ main {
   }
   .btn-edit {
     margin-bottom: min(9.16vw, 110px);
+  }
+
+  /*customer_complete*/
+  .customer_complete_box{
+    width: min(50vw, 600px);
+    height: min(20.1vw, 242px);
+    padding: min(6.6vw,80px);
+    font-size: min(2vw, 24px);
+  }
+  .customer_complete_text {
+    padding-bottom: 3.2vw;
+    color: #333;
+  }
+  .customer_complete_link {
+    color: #7F5539;
+    border-bottom: 1px solid #7F5539;
   }
 }
