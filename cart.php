@@ -25,7 +25,7 @@ if (isset($_SESSION['customer'])) {
         $total = 0;
         foreach ($_SESSION['product'] as $id => $product) {
             echo '<tr>';
-            echo '<td>', $id, '</td>';
+            // echo '<td>', $id, '</td>';
             echo '<td><a href="detail.php?id=', $id, '">', $product['name'], '</a></td>';
             echo '<td>', $product['price'], '</td>';
             echo '<td>', $product['count'], '</td>';

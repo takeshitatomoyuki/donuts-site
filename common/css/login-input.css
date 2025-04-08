@@ -1,22 +1,22 @@
 @charset "utf-8";
 
-
-
-.login_sec {
-  width: 90vw;
-  margin: 0 auto;
+main {
+  padding: 0 10.6vw;
 }
+
 
 .login_title {
   text-align: center;
   font-size: 20px;
   color: #7F5539;
-  margin: 32px 0;
+  margin: 8.53vw 0;
 }
 
 .login_form {
-  border: #d7d7d7 1px solid;
-  height: 228px;
+  width: 78.66vw;
+  height: 60.8vw;
+
+  border: #F7D1CD 1px solid;
 }
 
 .login_link {
@@ -25,36 +25,37 @@
   font-size: 12px;
   margin: 20px 0 20px auto;
   padding-bottom: 5px;
+  color: #7F5539;
 }
 
 .login_text_block {
-  width: 95%;
-  margin: 20px auto 0;
+  margin: 5.3vw 3.2vw 0;
+  color: #7F5539;
 }
 
 .login_mail {
   border: 1px solid #7F5539;
   width: 100%;
-  margin: 5px auto;
+  margin-bottom: 5.3vw;
 }
 
 .login_password {
   border: 1px solid #7F5539;
   width: 100%;
-  margin: 5px auto;
 }
 
 .login_input_text {
   font-size: 12px;
-  margin: 100px 5px;
+  /* margin: 100px 5px; */
+  padding-bottom: 2.1vw;
 }
 
 .login_btn {
   display: block;
-  width: 200px;
-  height: 48px;
+  width: 53.3vw;
+  height: 12.8vw;
   text-align: center;
-  margin: 40px auto 20px;
+  margin: 10.6vw auto 5.3vw;
   color: #fff;
   background-color: #7F5539;
 }
@@ -63,32 +64,59 @@
 
 
 @media screen and (min-width:760px) {
-
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: initial;
+  }
+  .login_title {
+    margin: min(6.6vw, 80px) 0;
+    font-size: min(2.6vw, 32px);
+  }
   .login_sec {
-    width: 600px;
+    width: min(50vw, 600px);
+    margin: 0 auto;
   }
 
   .login_form {
+    width: min(50vw, 600px);
+    height: min(29vw, 348px);
     margin: 0 auto;
   }
 
   .login_mail {
-    width: 70%;
+    width: min(33.3vw, 400px);
+    height: min(2.66vw, 32px);
+    margin-bottom: min(3.33vw, 40px);
   }
 
   .login_password {
-    width: 70%;
+    width: min(33.3vw, 400px);
+    height: min(2.66vw, 32px);
   }
 
   .login_text_block {
+    margin-top: min(3.33vw, 40px);
     text-align: center;
   }
-
-
-
-
-
-
-
+  .login_block {
+    width: min(33.3vw, 400px);
+    margin: 0 auto;
+  }
+  .login_input_text {
+    padding-bottom: min(0.66vw, 8px);
+    text-align: left;
+    font-size: min(2vw, 24px);
+  }
+  .login_btn {
+    width: min(25vw, 300px);
+    height: min(5vw, 60px);
+    margin: min(3.33vw, 40px) auto;
+  }
+  .login_link {
+    width: min(26.6vw, 320px);
+    margin-bottom: min(30.8vw, 370px);
+    font-size: min(1.6vw, 20px);
+  }
 
 }

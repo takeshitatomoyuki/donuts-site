@@ -1,0 +1,11 @@
+1. MySQLにログインして権限を確認
+まず、MySQLに root ユーザーなどでログインし、staff ユーザーの権限を確認します。
+SHOW GRANTS FOR 'staff'@'localhost';
+もし staff に donuts データベースへの権限が付与されていなければ、次の手順で修正します。
+
+
+2. 必要な権限を付与
+もし SHOW GRANTS の結果に donuts に関する権限がなければ、次のSQLで権限を追加します。
+GRANT ALL PRIVILEGES ON donuts.* TO 'staff'@'localhost';
+FLUSH PRIVILEGES;
+ALL PRIVILEGES の部分は、必要に応じて SELECT, INSERT, UPDATE などに変更してください。
