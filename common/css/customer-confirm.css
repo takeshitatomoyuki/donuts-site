@@ -109,11 +109,11 @@ main {
   .customer_complete_box{
     width: min(50vw, 600px);
     height: min(20.1vw, 242px);
-    padding: min(6.6vw,80px);
+    padding: min(5.8vw, 70px) 0;
     font-size: min(2vw, 24px);
   }
   .customer_complete_text {
-    padding-bottom: 3.2vw;
+    padding-bottom: min(3.2vw, 40px);
     color: #333;
   }
   .customer_complete_link {
