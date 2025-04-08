@@ -1,26 +1,17 @@
 <?php require 'includes/header.php'; ?>
-
-<?php
-if (session_status() == PHP_SESSION_NONE) {
-  session_start();
-}
-if (isset($_SESSION['customer'])) {
-    echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
-} else {
-  echo 'ようこそ ゲストさん。';
-}
-?>
- <h2 class="login_title">ログイン</h2>
+<?php require 'customer-name.php'; ?>
+<link rel="stylesheet" href="common/css/customer-name.css">
 <main>
+ <h2 class="login_title">ログイン</h2>
   <section class="login_sec">
    
     <form action="login-complete.php" method="post" class="login_form">
       <div class="login_text_block">
         <div class="login_block">
-          <span class="login_input_text">メールアドレス</span><br>
-          <input type="text" name="mail" class="login_mail"><br>
-          <span class="login_input_text">パスワード</span><br>
-          <input type="password" name="password" class="login_password"><br>
+          <p class="login_input_text">メールアドレス</p>
+          <p><input type="text" name="mail" class="login_mail"></p>
+          <p class="login_input_text">パスワード</p>
+          <p><input type="password" name="password" class="login_password"></p>
         </div>
       </div>
       <input type="submit" value="ログインする" class="login_btn">

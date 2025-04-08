@@ -60,6 +60,7 @@ main {
   width: 14.9vw;
   height: 9.6vw;
   margin-right: 1vw;
+  text-align: center;
   border: 1px solid #7F5539;
   vertical-align: bottom;
 }

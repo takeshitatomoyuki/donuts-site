@@ -30,7 +30,7 @@
   </div> 
 
   <main>
-  <div class="detail_inner">
+  <!-- <div class="detail_inner">
     <div class="detail_image_box">
       <img src="common/images/sp_1donuts.jpg" alt="１位画像" class="detail_image">
     </div>
@@ -46,7 +46,7 @@
         <p><input type="submit" value="カートに入れる" class="detail_submit"></p>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <?php
@@ -55,20 +55,27 @@ $pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8',
 $sql=$pdo->prepare('select * from product where id=?');
 $sql->execute([$_REQUEST['id']]);
 foreach ($sql as $row) {
-	echo '<p><img alt="image" src="image/', $row['id'], '.jpg"></p>';
+
 	echo '<form action="cart-input.php" method="post">';
-	echo '<p>商品番号：', $row['id'], '</p>';
-	echo '<p>商品名：', $row['name'], '</p>';
-	echo '<p>価格：', $row['price'], '</p>';
-	echo '<p>個数：<select name="count">';}
+  echo '<div class="detail_inner">';
+  echo '<div class="detail_image_box">','<img src="common/images/sp_', $row['id'],'donuts.jpg" alt="１位画像" class="detail_image">','</div>';
+	echo '<div class="detail_commentary">','<p class="detail_name">', $row['name'], '</p>';
+
+  echo '<p class="detail_text">','当店のオリジナル商品、CCドーナツは、サクサクの食感が特徴のプレーンタイプのドーナツです。素材にこだわり、丁寧に揚げた生地は軽やかでサクッとした食感が楽しめます。一口食べれば、口の中に広がる甘くて香ばしい香りと、口どけの良い食感が感じられます。','</p>';
+  
+	echo '<div class="detail_price_box">','<p class="detail_price">','税込 ￥', number_format($row['price']), '</p>';
+  echo '<p class="detail_heart_box">','<img src="common/images/sp_heart.jpg" alt="ハート" class="detail_heart">','</p>','</div>';
+	echo '<div class="detail_count_box">','<p>','<select name="count" class="detail_count">','</p>';
+}
 	for ($i=1; $i<=10; $i++) {
 		echo '<option value="', $i, '">', $i, '</option>';
 	}
-	echo '</select></p>';
+	echo '</select>','個','</p>';
 	echo '<input type="hidden" name="id" value="', $row['id'], '">';
 	echo '<input type="hidden" name="name" value="', $row['name'], '">';
 	echo '<input type="hidden" name="price" value="', $row['price'], '">';
-	echo '<p><input type="submit" value="カートに追加"></p>';
+	echo '<p>','<input type="submit" value="カートに追加" class="detail_submit">','</p>','</div>','</div>';
+  echo '</div>';
 	echo '</form>';
 	
 ?>

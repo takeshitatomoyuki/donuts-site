@@ -1,0 +1,18 @@
+INSERT INTO `product`(`name`, `price`, `description`) VALUES ('[CCドーナツ 当店オリジナル（5個入り）]','1500','[当店のオリジナル商品、CCドーナツは、サクサクの食感が特徴のプレーンタイプのドーナツです。素材にこだわり、丁寧に揚げた生地は軽やかでサクッとした食感が楽しめます。一口食べれば、口の中に広がる甘くて香ばしい香りと、口どけの良い食感が感じられます。]');
+INSERT INTO `product`(`name`, `price`, `description`) VALUES ('[チョコレートデライト（5個入り）]','1600','[新鮮で豊かなフルーツをたっぷりと使用した贅沢な12個入りセットです。このセットには、季節の最高のフルーツを厳選し、ドーナツに取り入れました。口に入れた瞬間にフルーツの風味と生地のハーモニーが広がります。色鮮やかな見た目も魅力の一つです。
+]');
+INSERT INTO `product`(`name`, `price`, `description`) VALUES ('[キャラメルクリーム（5個入り）]','1600','[value-4]');
+INSERT INTO `product`(`name`, `price`, `description`) VALUES ('[プレーンクラシック
+（5個入り）]','1500','[value-4]');
+INSERT INTO `product`(`name`, `price`, `description`) VALUES ('[【新作】サマーシトラス（5個入り）]','1600','[value-4]');
+INSERT INTO `product`(`name`, `price`, `description`) VALUES ('[ストロベリークラッ
+シュ（5個入り）]','1800','[value-4]');
+
+INSERT INTO `product`(`name`, `price`, `description`) VALUES ('[フルーツドーナツセット（12個入り）]','3500','[value-4]');
+INSERT INTO `product`(`name`, `price`, `description`) VALUES ('[フルーツドーナツセット（14個入り）]','4000','[value-4]');
+INSERT INTO `product`(`name`, `price`, `description`) VALUES ('[ベストセレクションボックス（4個入り）]','1200','[value-4]');
+INSERT INTO `product`(`name`, `price`, `description`) VALUES ('[チョコクラッシュボックス（7個入り）]','2400','[value-4]');
+INSERT INTO `product`(`name`, `price`, `description`) VALUES ('[クリームボックス（4
+個入り）]','1400','[value-4]');
+INSERT INTO `product`(`name`, `price`, `description`) VALUES ('[クリームボックス（9
+個入り）]','2800','[value-4]');
