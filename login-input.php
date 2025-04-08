@@ -1,3 +1,8 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}
+?>
 <?php require 'includes/header.php'; ?>
 <?php require 'customer-name.php'; ?>
 <link rel="stylesheet" href="common/css/customer-name.css">
