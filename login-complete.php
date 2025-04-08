@@ -1,6 +1,6 @@
 <?php
 require 'includes/header.php';
-require 'db-connect.php'; // ← DB接続ファイル（なければ作成）
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mail = $_POST['mail'] ?? '';
