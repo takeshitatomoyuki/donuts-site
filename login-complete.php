@@ -1,4 +1,5 @@
 <?php require 'includes/header.php'; ?>
+<link rel="stylesheet" href="common/css/customer-name.css">
 <?php
 unset($_SESSION['customer']);
 $pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 
@@ -12,9 +13,11 @@ foreach ($sql as $row) {
 		'password'=>$row['password']];
 }
 if (isset($_SESSION['customer'])) {
-	echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
+	echo '<div class="detail_top">';
+	echo '<p class="customer_name">ようこそ ', $_SESSION['customer']['name'], 'さん。</p>';
 } else {
-	echo 'ログイン名またはパスワードが違います。';
+	echo '<p class="customer_name">ログイン名またはパスワードが違います。</p>';
+	echo '</div>';
 }
 ?>
 
