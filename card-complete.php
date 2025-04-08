@@ -20,7 +20,8 @@
 <main>
   <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
   <div class="customer_inner">
-    <h2 class="customer_title">会員登録</h2>
+    <h2 class="customer_title">カード情報登録完了</h2>
+
 <?php
 session_start();
 

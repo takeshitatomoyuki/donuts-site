@@ -18,7 +18,7 @@
 
     <div class="customer_complete_box">
       <p class="customer_complete_text">会員登録が完了しました</p>
-      <p><a class="customer_complete_link" href="login-input.php">ログイン画面へ進む</a></p>
+      <a class="customer_complete_link" href="login-input.php">ログイン画面へ進む</a>
     </div>
 
 <?php session_start(); ?>
@@ -63,13 +63,13 @@ if(empty($sql->fetchAll())) {
       $_REQUEST['mail'],
       $_REQUEST['password']]);
       echo 
-      '<div>
-        <p>会員登録が完了しました</p>。
-        <a href="login-input.php">ログイン画面へ進む</a>
-      </div>';
+      '<div class="customer_complete_box">',
+        '<p class="customer_title">会員登録が完了しました</p>',
+        '<a class="customer_complete_link" href="login-input.php">','ログイン画面へ進む','</a>',
+      '</div>';
   }
 } else {
-  echo '<p>ログイン名がすでに使用されていますので、変更してください。</p>';
+  echo '<p class="customer_complete_text">','ログイン名がすでに使用されていますので、変更してください。','</p>';
 }
 ?>
 </main>
