@@ -13,112 +13,112 @@
   <ul class="grid_syouhin">
 <!-- CCドーナツ当店オリジナル -->
   <li class="item01">
-  <a href="#"> 
+  <a href="detail.php?id=1"> 
   <img src="common/images/sp_1donuts.jpg" alt="CCドーナツ当店オリジナルの写真" class="photo_donuts">
   <img src="common/images/pc_1donuts.jpg"
   alt="CCドーナツ当店オリジナルの写真PC" class="photo_donuts_pc">
 <p class="syoihin">
 CCドーナツ 当店オリジナル（5個入り）</p>
 <div class="flex_price">
-<p class="price">税込 ￥1,500</p></a>
+<p class="price">税込 ￥1,500</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="detail.php" method="post">
+
   <input type="hidden" name="id" value="1">
   <input type="submit" value="カートに入れる" class="submit" id="1"> 
-</form>
+</a>
 </li>
 
 <!-- チョコレートデイライト-->
 <li class="item02">
-  <a href="#">
+  <a href="detail.php?id=2">
   <img src="common/images/sp_2donuts.jpg" alt="チョコレートデイライトの写真" class="photo_donuts">
   <img src="common/images/pc_2donuts.jpg"
   alt="チョコレートデイライトの写真PC" class="photo_donuts_pc">
 <p class="syoihin ">チョコレートデイライト（5個入り）</p>
 <div class="flex_price">
-<p class="price">税込 ￥1,600</p></a>
+<p class="price">税込 ￥1,600</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="detail.php" method="post">
+
 <input type="hidden" name="id" value="2">
   <input type="submit" value="カートに入れる" class="submit" id="2"> 
-</form>
+</a>
 </li>
 
 <!-- キャラメルクリーム-->
 <li class="item03">
-  <a href="#">
+  <a href="detail.php?id=3">
   <img src="common/images/sp_3donuts.jpg" alt="キャラメルクリームの写真" class="photo_donuts">
   <img src="common/images/pc_3donuts.jpg"
   alt="キャラメルクリームの写真PC" class="photo_donuts_pc">
 <p class="syoihin">キャラメルクリーム（5個入り）</p>
 <div class="flex_price">
-<p class="price">税込 ￥1,600</p></a>
+<p class="price">税込 ￥1,600</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo ">
 </div>
 <!-- カートに入れるボタン -->
-<form action="detail.php" method="post">
+
 <input type="hidden" name="id" value="3">
   <input type="submit" value="カートに入れる" class="submit " id="3"> 
-</form>
+</a>
 </li>
 
 <!-- プレーンクラシック-->
 <li class="item04">
-  <a href="#">
+  <a href="detail.php?id=4">
   <img src="common/images/sp_4donuts.jpg" alt="プレーンクラシックの写真" class="photo_donuts ">
   <img src="common/images/pc_4donuts.jpg"
   alt="プレーンクラシックの写真PC" class="photo_donuts_pc1">
 <p class="syoihin ">プレーンクラシック（5個入り）</p>
 <div class="flex_price">
-<p class="price">税込 ￥1,500</p></a>
+<p class="price">税込 ￥1,500</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="detail.php" method="post">
+
 <input type="hidden" name="id" value="4">
   <input type="submit" value="カートに入れる" class="submit" id="4"> 
-</form>
+</a>
 </li>
 
 <!-- サマーシトラス-->
 <li class="item05">
-  <a href="#">
+  <a href="detail.php?id=5">
   <img src="common/images/sp_5donuts.jpg" alt="サマーシトラスの写真" class="photo_donuts">
   <img src="common/images/pc_5donuts.jpg"
   alt="サマーシトラスの写真PC" class="photo_donuts_pc1">
 <p class="syoihin ">【新作】サマーシトラス（5個入り）</p>
 <div class="flex_price">
-<p class="price">税込 ￥1,600 </p></a>
+<p class="price">税込 ￥1,600 </p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="detail.php" method="post">
+
 <input type="hidden" name="id" value="5">
   <input type="submit" value="カートに入れる" class="submit" id="5"> 
-</form>
+</a>
 </li>
 
 
 <!-- ストロベリークラッシュ-->
 <li class="item06">
-  <a href="#">
+  <a href="detail.php?id=6">
   <img src="common/images/sp_6donuts.jpg" alt="ストロベリークラッシュの写真" class="photo_donuts">
   <img src="common/images/pc_6donuts.jpg"
   alt="ストロベリークラッシュの写真PC" class="photo_donuts_pc1">
 <p class="syoihin">ストロベリークラッシュ（5個入り）</p>
 <div class="flex_price">
-<p class="price">税込 ￥1,800 </p></a>
+<p class="price">税込 ￥1,800 </p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="detail.php" method="post">
+
 <input type="hidden" name="id" value="6">
   <input type="submit" value="カートに入れる" class="submit" id="6" > 
-</form>
+</a>
 </li>
 </ul>
 </section>
@@ -131,25 +131,25 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 
 <!-- フルーツドーナツ12個-->
 <li class="item01">
-  <a href="#">
+  <a href="detail.php?id=7">
   <img src="common/images/sp_7donuts.jpg" alt="フルーツドーナツ12個の写真" class="photo_donuts">
   <img src="common/images/pc_7donuts.jpg"
   alt="フルーツドーナツ12個の写真PC" class="photo_donuts_pc">
 <p class="syoihin">フルーツドーナツ（12個入り）</p>
 <div class="flex_price ">
-<p class="price">税込 ￥3,500 </p></a>
+<p class="price">税込 ￥3,500 </p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo ">
 </div>
 <!-- カートに入れるボタン -->
-<form action="detail.php" method="post">
+
 <input type="hidden" name="id" value="7">
   <input type="submit" value="カートに入れる" class="submit " id="7"> 
-</form>
+</a>
 </li>
 
 <!-- フルーツドーナツ14個-->
 <li class="item02">
-  <a href="#">
+  <a href="detail.php?id=8">
   <img src="common/images/sp_8donuts.jpg" alt="フルーツドーナツの14個写真" class="photo_donuts ">
   <img src="common/images/pc_8donuts.jpg"
   alt="フルーツドーナツの14個の写真PC" class="photo_donuts_pc">
@@ -159,33 +159,33 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="detail.php" method="post">
+
 <input type="hidden" name="id" value="8">
   <input type="submit" value="カートに入れる" class="submit " id="8"> 
-</form>
+</a>
 </li>
 
 <!-- ベストセレクション-->
 <li class="item03">
-  <a href="#">
+  <a href="detail.php?id=9">
   <img src="common/images/sp_9donuts.jpg" alt="ベストセレクション写真" class="photo_donuts">
   <img src="common/images/pc_9donuts.jpg"
   alt="ベストセレクションの写真PC" class="photo_donuts_pc">
 <p class="syoihin ">ベストセレクション（4個入り）</p>
 <div class="flex_price ">
-<p class="price">税込 ￥1,200 </p></a>
+<p class="price">税込 ￥1,200 </p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="detail.php" method="post">
+
 <input type="hidden" name="id" value="9">
   <input type="submit" value="カートに入れる" class="submit " id="9"> 
-</form>
+</a>
 </li>
 
 <!-- チョコクラッシュボックス-->
 <li class="item04">
-  <a href="#">
+  <a href="detail.php?id=10">
   <img src="common/images/sp_10donuts.jpg" alt="チョコクラッシュボックス写真" class="photo_donuts">
   <img src="common/images/pc_10donuts.jpg"
   alt="チョコクラッシュボックスの写真PC" class="photo_donuts_pc1">
@@ -195,46 +195,46 @@ CCドーナツ 当店オリジナル（5個入り）</p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="detail.php" method="post">
+
 <input type="hidden" name="id" value="10">
   <input type="submit" value="カートに入れる" class="submit "id="10"> 
-</form>
+</a>
 </li>
 
 <!-- クリームボックス4個-->
 <li class="item05">
-  <a href="#">
+  <a href="detail.php?id=11">
   <img src="common/images/sp_11donuts.jpg" alt="クリームボックス4個写真" class="photo_donuts">
   <img src="common/images/pc_11donuts.jpg"
   alt="クリームボックス4個の写真PC" class="photo_donuts_pc1">
 <p class="syoihin">クリームボックス（4個入り）<br></p>
 <div class="flex_price">
-<p class="price">税込 ￥1,400 </p></a>
+<p class="price">税込 ￥1,400 </p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
-<form action="detail.php" method="post">
+
 <input type="hidden" name="id" value="11">
   <input type="submit" value="カートに入れる" class="submit " id="11"> 
-</form>
+</a>
 </li>
 
 <!-- クリームボックス9個-->
 <li class="item06">
-  <a href="#">
+  <a href="detail.php?id=12">
   <img src="common/images/sp_12donuts.jpg" alt="クリームボックス9個写真" class="photo_donuts">
   <img src="common/images/pc_12donuts.jpg"
   alt="クリームボックス9個の写真PC" class="photo_donuts_pc1">
 <p class="syoihin">クリームボックス（9個入り）<br></p>
 <div class="flex_price">
-<p class="price">税込 ￥2,800 </p></a>
+<p class="price">税込 ￥2,800 </p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo ">
 </div>
 <!-- カートに入れるボタン -->
-<form action="detail.php" method="post">
+
 <input type="hidden" name="id" value="12">
   <input type="submit" value="カートに入れる" class="submit" id="12"> 
-</form>
+</a>
 </li>
 
 </ul>

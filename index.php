@@ -33,7 +33,7 @@
   <!-- 第１位 -->
 <li class="index_linkbox1">
 <!-- li要素にリンクをつける -->
-<a href="detail.php">
+<a href="detail.php?id=1">
  <!-- ////////////////////////////////////////////// -->
   <div class="index_rank1">
    <img class="index_r1" src="common/images/sp_rank1.jpg" alt="１位">
@@ -56,7 +56,7 @@
 
 <li class="index_linkbox2">
   <!-- 第２位 -->
-  <a href="detail.php">
+  <a href="detail.php?id=7">
 <div class="index_rank2">
   <img class="index_r2" src="common/images/sp_rank2.jpg" alt="２位">
   <img class="index_r2_img" src="common/images/sp_7donuts.jpg" alt="２位画像">
@@ -76,7 +76,7 @@
 
 <li class="index_linkbox3">
   <!-- 第３位 -->
-  <a href="detail.php">
+  <a href="detail.php?id=8">
 <div class="index_rank3">
   <img class="index_r3" src="common/images/sp_rank3.jpg" alt="３位">
   <img class="index_r3_img" src="common/images/sp_8donuts.jpg" alt="３位画像">
@@ -96,7 +96,7 @@
 
 <li class="index_linkbox4">
   <!-- 第４位 -->
-  <a href="detail.php">
+  <a href="detail.php?id=2">
 <div class="index_rank4">
   <img class="index_r4" src="common/images/sp_rank4.jpg" alt="４位">
   <img class="index_r4_img" src="common/images/sp_2donuts.jpg" alt="４位画像">
@@ -116,7 +116,7 @@
 
 <li class="index_linkbox5">
   <!-- 第５位 -->
-  <a href="detail.php">
+  <a href="detail.php?id=9">
 <div class="index_rank5">
   <img class="index_r5" src="common/images/sp_rank5.jpg" alt="５位">
   <img class="index_r5_img" src="common/images/sp_9donuts.jpg" alt="５位画像">
@@ -136,7 +136,7 @@
 
 <li class="index_linkbox6">
   <!-- 第６位 -->
-  <a href="detail.php">
+  <a href="detail.php?id=6">
 <div class="index_rank6">
   <img class="index_r6" src="common/images/sp_rank6.jpg" alt="６位">
   <img class="index_r6_img" src="common/images/sp_6donuts.jpg" alt="６位画像">
