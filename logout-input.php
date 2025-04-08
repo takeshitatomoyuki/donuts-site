@@ -1,11 +1,6 @@
 <?php require 'includes/header.php'; ?>
-<?php
-if (isset($_SESSION['customer'])) {
-    echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
-} else{
-  echo 'ようこそ ゲストさん。';
-}
-?>
+<?php require 'customer-name.php'; ?>
+<link rel="stylesheet" href="common/css/customer-name.css">
 <h2 class="logout_title">ログアウト</h2>
 
 
