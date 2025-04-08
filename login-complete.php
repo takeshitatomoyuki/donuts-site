@@ -1,35 +1,33 @@
+<?php require 'includes/header.php'; ?>
 <?php
-require 'includes/header.php';
-
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $mail = $_POST['mail'] ?? '';
-    $password = $_POST['password'] ?? '';
-
-    $pdo = new PDO($connect, USER, PASS);
-    $sql = $pdo->prepare('SELECT * FROM customer WHERE mail = ?');
-    $sql->execute([$mail]);
-    $customer = $sql->fetch();
-
-    if ($customer && password_verify($password, $customer['password'])) {
-        // 認証成功 → セッションに保存
-        $_SESSION['customer_id'] = $customer['id'];
-        $_SESSION['customer_name'] = $customer['name'];
-        // ↓ログイン完了画面表示へ
-    } 
+unset($_SESSION['customer']);
+$pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 
+	'staff', 'password');
+$sql=$pdo->prepare('select * from customer where mail=? and password=?');
+$sql->execute([$_REQUEST['mail'], $_REQUEST['password']]);
+foreach ($sql as $row) {
+	$_SESSION['customer']=[
+		'id'=>$row['id'], 'name'=>$row['name'], 'kana'=>$row['kana'], 'post_code'=>$row['post_code'], 
+		'address'=>$row['address'], 'mail'=>$row['mail'], 
+		'password'=>$row['password']];
+}
+if (isset($_SESSION['customer'])) {
+	echo 'ようこそ ', $_SESSION['customer']['name'], 'さん。';
+} else {
+	echo 'ログイン名またはパスワードが違います。';
 }
 ?>
 
-<!-- ログイン完了画面 -->
-<link rel="stylesheet" href="common/css/customer-name.css">
-
+<span class="hri"></span>
 <p class="complete_text">ログイン完了</p>
 <section class="complete_sec">
+	
+	
 	<p class="complete_subtext">ログイン完了しました。</p>
+	
 	<div class="complete_linkblock">
 		<a href="index.php" class="complete_link">トップページへ戻る</a>
 		<a href="card-input.php" class="complete_link">カード情報登録</a>
 	</div>
 </section>
-
 <?php require 'includes/footer.php'; ?>
