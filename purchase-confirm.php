@@ -30,6 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 
 <main>
+  <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
+  <div class="customer_inner">
+    <h2 class="customer_title">ご購入確認</h2>
+    <p class="customer_subtitle">ご購入商品</p>
 
 <?php
 if (session_status() == PHP_SESSION_NONE) {
@@ -70,22 +74,23 @@ else {
     $card = $sql->fetch(PDO::FETCH_ASSOC);
     // カード情報をセッションに保存
     $_SESSION['card'] = $card;
-        echo '<hr>';
-        require 'cart.php';
-        echo '<hr>';
-         // 購入手続きの表示
-        echo'<p>お届け先</p>';
-         echo '<p>','お名前','</p>', htmlspecialchars($_SESSION['customer']['name'], ENT_QUOTES, 'UTF-8'), '</p>';
-         echo '<p>','ご住所','</p>', htmlspecialchars($_SESSION['customer']['address'], ENT_QUOTES, 'UTF-8'), '</p>';   
-echo'<p>お支払い方法</p>';
 
-         echo '<p>','お支払い','</p>','クレジットカード','</p>';
-         echo '<p>','カード種類','</p>', htmlspecialchars($_SESSION['card']['card_type'], ENT_QUOTES, 'UTF-8'), '</p>';
-         echo '<p>','カード番号','</p>',htmlspecialchars($_SESSION['card']['card_no'], ENT_QUOTES, 'UTF-8'), '</p>';
-        
+        require 'cart.php';
+         // 購入手続きの表示
+        echo'<p class="customer_subtitle">お届け先</p>';
+          echo '<ul>';
+           echo '<li>','<p>','お名前','</p>', htmlspecialchars($_SESSION['customer']['name'], ENT_QUOTES, 'UTF-8'), '</p>','</li>';
+           echo '<li>','<p>','ご住所','</p>', htmlspecialchars($_SESSION['customer']['address'], ENT_QUOTES, 'UTF-8'), '</p>','</li>'; 
+           echo '</ul>';  
+        echo'<p class="customer_subtitle">お支払い方法</p>';
+          echo '<ul>';
+           echo '<li>','<p>','お支払い','</p>','クレジットカード','</p>','</li>';
+           echo '<li>','<p>','カード種類','</p>', htmlspecialchars($_SESSION['card']['card_type'], ENT_QUOTES, 'UTF-8'), '</p>','</li>';
+           echo '<li>','<p>','カード番号','</p>',htmlspecialchars($_SESSION['card']['card_no'], ENT_QUOTES, 'UTF-8'), '</p>','</li>';
+           echo '</ul>';
 
       
-        echo '<a href="purchase-complete.php">購入を確定する</a>';
+        echo '<a href="purchase-complete.php" class="confirm_submit1">ご購入を確定する</a>';
     }
 }
 ?>
