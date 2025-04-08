@@ -72,7 +72,7 @@ if (isset($_REQUEST['card'])) {
         $_REQUEST['card_security_code']
     ]);
 
-    echo '<h2>カード情報登録完了</h2>
+    echo '
     <div>
         <p>クレジットカード情報を登録しました。</p>
         <a href="product.php">購入手続きを続ける</a>
