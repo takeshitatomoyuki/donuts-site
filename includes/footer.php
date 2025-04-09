@@ -1,5 +1,5 @@
 
-  <footer class="scroll">
+  <footer>
     <div class="link_area">
       <ul class="footer_link">
         <a href="#">
