@@ -22,11 +22,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $mail = htmlspecialchars($_POST["mail"], ENT_QUOTES, "UTF-8");
     $password = htmlspecialchars($_POST["password"], ENT_QUOTES, "UTF-8");
 
-} else {
+} 
+
+else {
     // POSTでなければ入力画面に戻す
     header("Location: customer-input.php");
     exit();
 }
+if(!preg_match('/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/', $password)) {
+    header("Location: customer-input.php?error=password");
+    exit();
+}
+
 ?>
 
 

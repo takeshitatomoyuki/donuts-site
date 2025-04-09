@@ -152,7 +152,7 @@ CCドーナツ 当店オリジナル（5個入り）</p>
   alt="フルーツドーナツの14個の写真PC" class="photo_donuts_pc">
 <p class="syoihin">フルーツドーナツ（14個入り）</p>
 <div class="flex_price">
-<p class="price">税込 ￥4,000 </p></a>
+<p class="price">税込 ￥4,000 </p>
 <img src="common/images/sp_heart.jpg" alt="お気に入りロゴ" class="heart_logo">
 </div>
 <!-- カートに入れるボタン -->
