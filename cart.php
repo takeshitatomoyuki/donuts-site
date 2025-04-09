@@ -21,8 +21,21 @@ if (isset($_SESSION['customer'])) {
     // ✅ カート情報もログイン時のみ表示
     if (!empty($_SESSION['product'])) {
         echo '<table>';
-        echo '<tbody>';
-        // echo '<tr><th>商品番号</th><th>商品名</th>';
+echo '<tbody>';
+$total = 0;
+foreach ($_SESSION['product'] as $id => $product) {
+    echo '<tr><td class="purchase_list_left">商品名</td><td class="purchase_list_right"><a href="detail.php?id=', $id, '">', $product['name'], '</a></td></tr>';
+    echo '<tr><td class="purchase_list_left">数量</td><td class="purchase_list_right">', $product['count'], '個</td></tr>';
+    echo '<tr>';
+    echo '<td class="purchase_list_left">小計</td>';
+    echo '<td class="purchase_list_right">税込 ￥', $product['price'] * $product['count'], '</td>';
+    echo '<td class="purchase_list_delete"><a href="cart-delete.php?id=', $id, '">削除</a></td>';
+    echo '</tr>';
+    
+    $subtotal = $product['price'] * $product['count'];
+    $total += $subtotal;
+}
+
 
         $total = 0;
         foreach ($_SESSION['product'] as $id => $product) {
@@ -43,6 +56,7 @@ if (isset($_SESSION['customer'])) {
         echo '<tr><td class="purchase_list_total">合計</td><td class="purchase_list_right1">', '税込 ￥',number_format($total), '</td><td></td></tr>';
         echo '</tbody>';
         echo '</table>';
+
        
     } else {
         echo 'カートに商品がありません。';
