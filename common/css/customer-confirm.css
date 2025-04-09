@@ -87,6 +87,18 @@ main {
   border-top:1px solid #E8C2CA;border-top:1px solid #E8C2CA;
   border-bottom:1px solid #E8C2CA;
 }
+.shipping_address1 {
+  text-align: center;
+  margin: 5.3vw 0;
+  padding: min(1.6vw, 20px) 0;
+  border-top:1px solid #BF0000;
+  border-bottom:1px solid #BF0000;
+}
+.purchase_red {
+  font-size: 3.2vw;
+  line-height: 1.5;
+  color: #BF0000;
+}
 .shipping_list {
   display: flex;
   height: 5.3vw;
@@ -233,6 +245,10 @@ table {
     width: min(60vw, 720px);
     margin: min(10.6vw, 40px) auto;
   }
+  .shipping_address1 {
+    width: min(60vw, 720px);
+    margin: min(10.6vw, 40px) auto;
+  }
   .purchase_list_left,
   .purchase_list_left1,
   .purchase_list_total {
@@ -241,6 +257,10 @@ table {
   .shipping_list {
     height: min(3.1vw, 38px);
     margin: min(0.6vw, 8px) 0;
+  }
+  .purchase_red {
+    font-size: min(2vw, 24px);
+    line-height: 1.6;
   }
   .confirm_submit1 {
     width: min(25vw, 300px);
