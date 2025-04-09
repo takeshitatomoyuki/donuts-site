@@ -19,13 +19,8 @@
 
   <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
  
-  <div class="card_complete_messa">
-  <div class="card_complete_inner">
-<p class="card_complete_regi">クレジットカード情報を登録しました。</p>
-<p class="card_complete_purch">購入手続きを続ける</p>
-</div>
-</div>
-    <h2 class="card_complete_title">カード情報登録完了</h2>
+  <h2 class="card_complete_title">カード情報登録完了</h2>
+ 
     <?php
 session_start();
 
@@ -59,12 +54,11 @@ $sql->execute([
     $_REQUEST['card_security_code']
 ]);
     echo '
-    <div>
-        <p>クレジットカード情報を登録しました。</p>
-        <a href="product.php">購入手続きを続ける</a>
-    </div>';
+    <div class="card_complete_inner">',
+        '<p class="card_complete_regi">','クレジットカード情報を登録しました。','</p>',
+        '<a class="card_complete_purch" href="product.php">','購入手続きを続ける','</a>',
+    '</div>';
 
 ?>
-
 </main>
 <?php require 'includes/footer.php'; ?>
