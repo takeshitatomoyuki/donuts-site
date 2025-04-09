@@ -7,7 +7,7 @@
   <script src="common/js/breadcrumb.js"></script>
 </head>
 <?php
-session_start(); // ← 忘れてたら追加！
+
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $id = $_POST['id'];
