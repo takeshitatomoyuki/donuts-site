@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.card_complete_title {
+  font-size: 5.3vw;
+  margin-top: 10.6vw;
+}
+
+.card_complete_messa {
+  width: 100%;
+  justify-content: center;
+}
+
+.card_complete_regi {
+  font-size: 3.2vw;
+  margin-top: 26.7vw;
+}
+
+.card_complete_purch {
+  font-size: 3.2vw;
+  margin: 5.3vw 0 103.3vw;
+}
+
+.card_complete_inner {
+  width: 78.7vw;
+  height: 22.4vw;
+  border: 2px solid #E8C2CA;
+}
