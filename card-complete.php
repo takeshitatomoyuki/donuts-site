@@ -38,51 +38,32 @@ if (!isset($_SESSION['customer'])) {
 }
 
 $id = $_SESSION['customer']['id']; // customer の ID を取得
-
-if (isset($_REQUEST['card'])) {
-    // カード情報の更新処理
-    $sql = $pdo->prepare('UPDATE card SET card_name=?, card_type=?, card_no=?, card_month=?, card_year=?, card_security_code=? WHERE id=?');
-    $sql->execute([
-        $_REQUEST['card_name'],
-        $_REQUEST['card_type'],
-        $_REQUEST['card_no'],
-        $_REQUEST['card_month'],
-        $_REQUEST['card_year'],
-        $_REQUEST['card_security_code'],
-        $id
-    ]);
-
-    $_SESSION['card'] = [
-        'id' => $id,
-        'card_name' => $_REQUEST['card_name'],
-        'card_type' => $_REQUEST['card_type'],
-        'card_no' => $_REQUEST['card_no'],
-        'card_month' => $_REQUEST['card_month'],
-        'card_year' => $_REQUEST['card_year'],
-        'card_security_code' => $_REQUEST['card_security_code']
-    ];
-
-    echo 'お客様情報を更新しました。';
-
-} else {
-    // カード情報の新規登録処理
-    $sql = $pdo->prepare('INSERT INTO card (id, card_name, card_type, card_no, card_month, card_year, card_security_code) VALUES (?, ?, ?, ?, ?, ?, ?)');
-    $sql->execute([
-        $id,
-        $_REQUEST['card_name'],
-        $_REQUEST['card_type'],
-        $_REQUEST['card_no'],
-        $_REQUEST['card_month'],
-        $_REQUEST['card_year'],
-        $_REQUEST['card_security_code']
-    ]);
-
+$sql = $pdo->prepare('
+    INSERT INTO card (id, card_name, card_type, card_no, card_month, card_year, card_security_code) 
+    VALUES (?, ?, ?, ?, ?, ?, ?) 
+    ON DUPLICATE KEY UPDATE 
+        card_name=VALUES(card_name), 
+        card_type=VALUES(card_type), 
+        card_no=VALUES(card_no), 
+        card_month=VALUES(card_month), 
+        card_year=VALUES(card_year), 
+        card_security_code=VALUES(card_security_code)
+');
+$sql->execute([
+    $id,
+    $_REQUEST['card_name'],
+    $_REQUEST['card_type'],
+    $_REQUEST['card_no'],
+    $_REQUEST['card_month'],
+    $_REQUEST['card_year'],
+    $_REQUEST['card_security_code']
+]);
     echo '
     <div>
         <p>クレジットカード情報を登録しました。</p>
         <a href="product.php">購入手続きを続ける</a>
     </div>';
-}
+
 ?>
 
 </main>
