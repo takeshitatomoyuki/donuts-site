@@ -34,13 +34,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 // ここからはHTML出力
 ?>
-<p>カートに商品を追加しました。</p>
-<hr>
-
-<?php require 'cart.php'; ?>
-<a href="purchase-confirm.php">ご購入確認へ進む</a>
-<a href="product.php">買い物を続ける</a>
-
-
+<?php
+if (isset($_GET['added'])) {
+    echo '<p>カートに商品を追加しました。</p><hr>';
+}
+require 'cart.php';
+echo '<a href="purchase-confirm.php">ご購入確認へ進む</a>';
+echo '<a href="product.php">買い物を続ける</a>';
+?>
 
 <?php require 'includes\footer.php'; ?>
