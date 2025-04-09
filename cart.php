@@ -19,38 +19,31 @@ if (isset($_SESSION['customer'])) {
     if (!empty($_SESSION['product'])) {
 
         $total = 0;
-    
+
         foreach ($_SESSION['product'] as $id => $product) {
-            // 商品画像の表示
             echo '<div class="detail_image_box">';
-            echo '<img src="common/images/sp_' . $id . 'donuts.jpg" alt="商品画像" class="detail_image">';
-            echo '</div>';
-    
-            // 商品情報の表示
-            echo '<table><tbody>';
-    
-            echo '<tr><td class="purchase_list_left">商品名</td>';
-            echo '<td class="purchase_list_right"><a href="detail.php?id=' . $id . '">' . $product['name'] . '</a></td></tr>';
-    
+echo '<img src="common/images/sp_' . $id . 'donuts.jpg" alt="商品画像" class="detail_image">';
+echo '</div>';
+            echo '<table><tbody><tr><td class="purchase_list_left">商品名</td>';
+            echo '<td class="purchase_list_right"><a href="detail.php?id=', $id, '">', $product['name'], '</a></td></tr>';
             echo '<tr><td class="purchase_list_left">数量</td>';
-            echo '<td class="purchase_list_right">' . $product['count'] . '個</td></tr>';
-    
-            $subtotal = $product['price'] * $product['count'];
+            echo '<td class="purchase_list_right">', $product['count'], '個</td></tr>';
             echo '<tr><td class="purchase_list_left">小計</td>';
-            echo '<td class="purchase_list_right">税込 ￥' . number_format($subtotal) . '</td>';
-            echo '<td class="purchase_list_delete"><a href="cart-delete.php?id=' . $id . '">削除</a></td></tr>';
-    
-            echo '</tbody></table>';
-    
+              echo '<tr><td class="purchase_list_left">数量</td>';
+            echo '<td class="purchase_list_right">税込 ￥', number_format($product['price'] * $product['count']), '</td>';
+            echo '<td class="purchase_list_delete"><a href="cart-delete.php?id=', $id, '">削除</a></td>';
+            echo '</tr></tbody></table>';
+
+            $subtotal = $product['price'] * $product['count'];
             $total += $subtotal;
         }
-    
-        // 合計表示
-        echo '<table><tbody>';
+
+        echo '<table>';
+        echo '<tbody>';
         echo '<tr><td class="purchase_list_total">合計</td>';
-        echo '<td class="purchase_list_right1">税込 ￥' . number_format($total) . '</td><td></td></tr>';
-        echo '</tbody></table>';
-    }
+        echo '<td class="purchase_list_right1">税込 ￥', number_format($total), '</td><td></td></tr>';
+        echo '</tbody>';
+        echo '</table>';
     } else {
         echo 'カートに商品がありません。';
     }
