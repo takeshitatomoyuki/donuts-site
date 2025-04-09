@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="jp">
 
 <head>
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="common/css/customer-confirm.css">
 </head>
 
-<body>
+<body> -->
 <?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -36,9 +36,27 @@ foreach ($_SESSION['product'] as $id => $product) {
     $total += $subtotal;
 }
 
-echo '<tr><td class="purchase_list_total">合計</td><td class="purchase_list_right">税込 ￥', $total, '</td><td></td></tr>';
-echo '</tbody>';
-echo '</table>';
+
+        $total = 0;
+        foreach ($_SESSION['product'] as $id => $product) {
+            echo '<tr>';
+            // echo '<td>', $id, '</td>';
+            echo '<tr>','<td class="purchase_list_left">','商品名','</td>','<td class="purchase_list_right"><a href="detail.php?id=', $id, '">', $product['name'], '</a></td>','</tr>';
+            echo '<tr>','<td class="purchase_list_left">','数量','</td>','<td class="purchase_list_right">', $product['count'],'個', '</td>','</tr>';
+            echo '<tr>','<td class="purchase_list_left">','小計','</td>','<td class="purchase_list_right">', '税込 ￥',number_format($product['price']),'</td>';
+            $subtotal = $product['price'] * $product['count'];
+            $total += $subtotal;
+            echo '<td class="purchase_list_delete"><a href="cart-delete.php?id=', $id, '">削除</a></td>';
+            echo '</tr>';
+            echo '</tbody>';
+        echo '</table>';
+        }
+        echo '<table>';
+        echo '<tbody>';
+        echo '<tr><td class="purchase_list_total">合計</td><td class="purchase_list_right1">', '税込 ￥',number_format($total), '</td><td></td></tr>';
+        echo '</tbody>';
+        echo '</table>';
+
        
     } else {
         echo 'カートに商品がありません。';
