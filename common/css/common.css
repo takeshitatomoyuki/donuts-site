@@ -312,6 +312,9 @@ footer {
 }
 
 @keyframes loading_anime {
+  0% {
+    opacity: 1;
+  }
 
   25% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
