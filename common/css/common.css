@@ -298,6 +298,102 @@ footer {
   color: #7f5539;
 }
 
+
+.loading {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  animation: loading_anime 3s infinite;
+}
+
+@keyframes loading_anime {
+
+  25% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    clip-path: polygon(100% 0, 100% 0, 100% 0, 0 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 100%, 0 100%, 100% 0, 0 100%);
+    opacity: 0;
+  }
+
+  /* 15% {
+    clip-path: ellipse(1500px 1500px at center);
+  }
+
+  20% {
+    clip-path: ellipse(700px 700px at top left);
+  }
+
+  50% {
+    clip-path: ellipse(250px 250px at bottom right);
+    opacity: 1;
+  }
+
+  75% {
+    clip-path: ellipse(250px 250px at center);
+    transform: scale(1);
+    opacity: 1;
+
+  }
+
+  100% {
+    clip-path: ellipse(250px 250px at center);
+    transform: scale(20);
+    opacity: 0.5;
+  } */
+  /* 
+  25% {
+    transform: scale(1.5);
+  }
+
+  50% {
+    transform: scale(10);
+  }
+
+  75% {
+    transform: scale(30);
+  }
+
+  100% {
+    transform: scale(100);
+  } */
+
+
+
+
+
+
+}
+
+.loading.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms;
+}
+
+.scroll {
+  overflow: hidden;
+
+}
+
+.scroll.hide {
+  overflow: visible;
+}
+
 @media screen and (min-width:770px) {
   .header_search {
     background-color: #b392b3;
@@ -344,10 +440,11 @@ footer {
     padding: initial;
     font-size: min(1vw, 12px);
   }
+
   .customer_name {
     max-width: 1200px;
     margin: 0 auto;
     padding: min(1vw, 12px) min(1.6vw, 20px);
-  } 
+  }
 
 }
