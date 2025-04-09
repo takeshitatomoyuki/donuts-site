@@ -34,5 +34,5 @@
 
 </body>
    <video src="common\images\donuts_loading.mov" autoplay loop muted playsinlin class="loading"></video>
-  <script src="common/js/loading.js"></script>
+  <script src="common\js\loading.js"></script>
 </html>
