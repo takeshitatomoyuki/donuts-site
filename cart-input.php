@@ -36,11 +36,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 <p>カートに商品を追加しました。</p>
 <hr>
-<?php
-if (isset($_GET['added'])) {
- require 'cart.php'; 
-}
-?>
+
+<?php require 'cart.php'; ?>
 <a href="purchase-confirm.php">ご購入確認へ進む</a>
 <a href="product.php">買い物を続ける</a>
 
