@@ -28,16 +28,25 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     ];
 
     // ✅ POSTの後はGETにリダイレクト
-    header("Location: cart-input.php?added=1");
+    header("Location: cart-input.php?added=1&id=" . urlencode($id));
     exit;
 }
 ?>
 
 <?php
 // ✅ ここを if文で囲んで表示制御！
+
 if (isset($_GET['added'])) {
     echo '<p>カートに商品を追加しました。</p>';
     echo '<hr>';
+    
+    $pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 
+        'staff', 'password');
+    $sql=$pdo->prepare('select * from product where id=?');
+    $sql->execute([$_REQUEST['id']]);
+    foreach ($sql as $row) {
+        echo '<div class="detail_image_box">','<img src="common/images/sp_', $row['id'],'donuts.jpg" alt="１位画像" class="detail_image">','</div>';
+    }
     require 'cart.php';
     echo '<a href="purchase-confirm.php">ご購入確認へ進む</a>';
     echo '<a href="product.php">買い物を続ける</a>';
