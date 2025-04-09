@@ -308,7 +308,7 @@ footer {
   z-index: 1000;
   width: 100vw;
   height: 100vh;
-  animation: loading_anime 3s infinite;
+  animation: loading_anime 3s linear;
 }
 
 @keyframes loading_anime {
@@ -382,7 +382,6 @@ footer {
 .loading.hide {
   opacity: 0;
   pointer-events: none;
-  transition: opacity 500ms;
 }
 
 .scroll {
