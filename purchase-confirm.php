@@ -60,11 +60,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $card_exists = $sql->fetchColumn() > 0;
         if (!$card_exists) {
             require 'cart.php';
-            echo '<p>お名前：', htmlspecialchars($_SESSION['customer']['name'], ENT_QUOTES, 'UTF-8'), '</p>';
-            echo '<p>ご住所：', htmlspecialchars($_SESSION['customer']['address'], ENT_QUOTES, 'UTF-8'), '</p>';
-            echo '<p>お支払方法が登録されておりません。</p>';
-            echo '<p>クレジットカード情報を登録してください。</p>';
-            echo '<a href="card-input.php">カード情報を登録する</a>';
+            echo'<p class="purchase_subtitle">お届け先</p>';
+            echo '<ul class="shipping_address">';
+            echo '<li class="shipping_list">','<p class="purchase_list_left">','お名前','</p>', '<p class="purchase_list_right">',htmlspecialchars($_SESSION['customer']['name'], ENT_QUOTES, 'UTF-8'), '</p>','</li>';
+               echo '<li class="shipping_list">','<p class="purchase_list_left">','ご住所','</p>','<p class="purchase_list_right">', htmlspecialchars($_SESSION['customer']['address'], ENT_QUOTES, 'UTF-8'), '</p>','</li>';
+               echo '</ul>';
+            echo'<p class="purchase_subtitle">お支払い方法</p>';
+            echo '<ul class="shipping_address1">';
+            echo '<p class="purchase_red">お支払方法が登録されておりません。</p>';
+            echo '<p class="purchase_red">クレジットカード情報を登録してください。</p>';
+            echo '</ul>';
+            echo '<a href="card-input.php" class="confirm_submit1">カード情報を登録する</a>';
         } else {
             $sql = $pdo->prepare('SELECT * FROM card WHERE id = ?');
         $sql->execute([$customer_id]);
