@@ -28,11 +28,11 @@ else {
     // POSTでなければ入力画面に戻す
     header("Location: customer-input.php");
     exit();
-};
-if(preg_match('/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/', $password)){
-    header("Location: customer-input.php");
+}
+if(!preg_match('/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/', $password)) {
+    header("Location: customer-input.php?error=password");
     exit();
-};
+}
 
 ?>
 
