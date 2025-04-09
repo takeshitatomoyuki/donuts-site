@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="common/css/reset.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common/css/reset.css">
     <link rel="stylesheet" href="common/css/common.css">
     <link rel="stylesheet" href="common/css/card-complete.css">
     <title>donuts-site</title>
@@ -18,9 +16,16 @@
 </body>
 </html>
 <main>
+
   <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
-  <div class="customer_inner">
-    <h2 class="customer_title">カード情報登録完了</h2>
+ 
+  <div class="card_complete_messa">
+  <div class="card_complete_inner">
+<p class="card_complete_regi">クレジットカード情報を登録しました。</p>
+<p class="card_complete_purch">購入手続きを続ける</p>
+</div>
+</div>
+    <h2 class="card_complete_title">カード情報登録完了</h2>
     <?php
 session_start();
 
@@ -81,3 +86,4 @@ if (isset($_REQUEST['card'])) {
 ?>
 
 </main>
+<?php require 'includes/footer.php'; ?>
