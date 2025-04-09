@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="scroll">
 
 <head>
   <meta charset="UTF-8">

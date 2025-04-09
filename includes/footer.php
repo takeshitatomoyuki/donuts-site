@@ -1,4 +1,5 @@
- <footer class="scroll">
+
+  <footer>
     <div class="link_area">
       <ul class="footer_link">
         <a href="#">
@@ -29,9 +30,9 @@
     </div>
     <p class="footer_text">Copyright (C) c.c.donuts All Rights Reserved</p>
   </footer>
-  <video src="common\images\donuts_loading.mov" autoplay loop muted playsinlin class="loading"></video>
-  <script src="common\js\loading.js"></script>
+
 
 </body>
-
+   <video src="common\images\donuts_loading.mov" autoplay loop muted playsinlin class="loading"></video>
+  <script src="common\js\loading.js"></script>
 </html>

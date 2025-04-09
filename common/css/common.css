@@ -308,10 +308,13 @@ footer {
   z-index: 1000;
   width: 100vw;
   height: 100vh;
-  animation: loading_anime 3s  linear;
+  animation: loading_anime 3s linear;
 }
 
 @keyframes loading_anime {
+  0% {
+    opacity: 1;
+  }
 
   25% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -382,7 +385,6 @@ footer {
 .loading.hide {
   opacity: 0;
   pointer-events: none;
-  transition: opacity 500ms;
 }
 
 .scroll {
