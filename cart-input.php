@@ -7,7 +7,7 @@
   <script src="common/js/breadcrumb.js"></script>
 </head>
 <?php
-
+session_start(); // ← 忘れてたら追加！
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $id = $_POST['id'];
@@ -27,20 +27,22 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         'count' => $count + $_POST['count']
     ];
 
-    // ✅ ここでリダイレクト
+    // ✅ POSTの後はGETにリダイレクト
     header("Location: cart-input.php?added=1");
     exit;
 }
+?>
 
-// ここからはHTML出力
-?>
 <?php
+// ✅ ここを if文で囲んで表示制御！
 if (isset($_GET['added'])) {
-    echo '<p>カートに商品を追加しました。</p><hr>';
+    echo '<p>カートに商品を追加しました。</p>';
+    echo '<hr>';
+    require 'cart.php';
+    echo '<a href="purchase-confirm.php">ご購入確認へ進む</a>';
+    echo '<a href="product.php">買い物を続ける</a>';
 }
-require 'cart.php';
-echo '<a href="purchase-confirm.php">ご購入確認へ進む</a>';
-echo '<a href="product.php">買い物を続ける</a>';
 ?>
+
 
 <?php require 'includes\footer.php'; ?>
