@@ -29,8 +29,9 @@ echo '</div>';
             echo '<tr><td class="purchase_list_left">数量</td>';
             echo '<td class="purchase_list_right">', $product['count'], '個</td></tr>';
             echo '<tr><td class="purchase_list_left">小計</td>';
-              echo '<tr><td class="purchase_list_left">数量</td>';
             echo '<td class="purchase_list_right">税込 ￥', number_format($product['price'] * $product['count']), '</td>';
+            echo '<tr><td class="purchase_list_left">数量</td>';
+            echo '<td class="purchase_list_right">', $product['count'], '個</td></tr>';
             echo '<td class="purchase_list_delete"><a href="cart-delete.php?id=', $id, '">削除</a></td>';
             echo '</tr></tbody></table>';
 
