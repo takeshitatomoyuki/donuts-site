@@ -62,12 +62,8 @@ else {
     $card_exists = $sql->fetchColumn() > 0;
 
     if (!$card_exists) {
-        require 'cart.php';
-        echo '<p>お名前：', htmlspecialchars($_SESSION['customer']['name'], ENT_QUOTES, 'UTF-8'), '</p>';
-        echo '<p>ご住所：', htmlspecialchars($_SESSION['customer']['address'], ENT_QUOTES, 'UTF-8'), '</p>';
-        echo '<p>お支払方法が登録されておりません。</p>';
-        echo '<p>クレジットカード情報を登録してください。</p>';
-        echo '<a href="card-input.php">カード情報を登録する</a>';
+        header("Location: card-input.php");
+        exit;
     } else {
         $sql = $pdo->prepare('SELECT * FROM card WHERE id = ?');
     $sql->execute([$customer_id]);
