@@ -32,7 +32,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <main>
   <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
   <div class="purchase_inner">
-      <div class="customer_inner">
         <h2 class="customer_title">ご購入確認</h2>
         <p class="purchase_subtitle">ご購入商品</p>
       
