@@ -1,7 +1,14 @@
 @charset "utf-8";
 
+h1 {
+  width: 16vw;
+  height: 13.3vw;
+  margin: 3.2vw 0 0 3.2vw;
+}
+
 .card_complete_title {
   font-size: 5.3vw;
+  color: #7F5539;
   text-align: center;
   margin-top: 10.6vw;
 }
@@ -29,6 +36,16 @@
 }
 
 @media screen and (min-width:769px) {
+
+  main {
+    max-width: 1200px;
+  }
+
+  h1 {
+    width: 5.8vw;
+    height: 4.9vw;
+    margin: 1.5vw 0 0 7.5vw;
+  }
 
   .card_complete_title {
     font-size: 2.7vw;
