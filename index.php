@@ -2,7 +2,7 @@
 <?php require 'includes/header.php';?>
 <main>
   <section class="index_images">
-  <img class="index_main_img" src="common/images/sp_main.jpg" alt="メイン画像">
+   <img id="index_main_img" src="common/images/pc_hero.jpg" alt="メイン画像"> 
  
   <div class="index_sub_img">
     <div class="index_up_sub_img">
