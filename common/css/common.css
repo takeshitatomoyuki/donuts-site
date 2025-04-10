@@ -450,3 +450,77 @@ footer {
   }
 
 }
+
+
+.index_submit:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 3px #000;
+  border-radius: 10px;
+  animation: hover_anime 0.5s infinite linear;
+  background: repeating-linear-gradient(45deg, rgba(0, 145, 234, 1), rgba(0, 145, 234, 1) 10px, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 20px);
+  color: yellow;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000,
+    -1px 1px 0 #000, 1px -1px 0 #000,
+    0px 1px 0 #000, 0 -1px 0 #000,
+    -1px 0 0 #000, 1px 0 0 #000;
+}
+
+@keyframes hover_anime {
+
+  /* hover1 */
+  /* 0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(360deg);
+  } */
+
+  /* hover2 */
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  25% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  75% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateY(10px);
+
+  }
+
+
+  /* hover3 */
+  /* 0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.01);
+    filter: blur(1px);
+  }
+
+  50% {
+    transform: scale(0.99);
+    filter: blur(0);
+  }
+
+  75% {
+    transform: scale(1.01);
+    filter: blur(1px);
+  }
+
+  100% {
+    transform: scale(0.99);
+  } */
+}
