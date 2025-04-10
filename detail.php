@@ -35,7 +35,6 @@ $breadcrumb_items = [
     ['label' => '商品一覧', 'url' => $base_path . 'product.php'],
     ['label' => $product_name]
 ];
-
 include 'breadcrumb.php';
 ?>
 
