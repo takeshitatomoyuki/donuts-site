@@ -112,7 +112,7 @@ echo '</title>';
         <!-- 自分のページのみ先頭の「../」消して下さい -->
     
       <ul class="menu">
-               <a href="#" ><img src="common/images/logo.svg" alt=""class="drawer_img"></a>
+               <a href="index.php" ><img src="common/images/logo.svg" alt=""class="drawer_img"></a>
         <li class="drawer_textlink"><a href="index.php">TOP</a></li>
         <li class="drawer_textlink"><a href="product.php">商品一覧</a></li>
         <li class="drawer_textlink"><a href="#">よくある質問</a></li>
