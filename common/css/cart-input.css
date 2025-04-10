@@ -76,7 +76,10 @@ main {
     background-color: #7F5539;
     color: #fff;
 }
-
+.cart_show_pace {
+    width: 100%;
+    height: 5.3vw;
+}
 @media screen and (min-width:768px) {
     main {
         margin: 0 auto;
@@ -154,7 +157,7 @@ main {
     .cart_submit1 {
         width: min(21.6vw, 260px);
         height: min(4.3vw, 52px);
-        padding: 1.3vw 0;
+        padding: min(1vw, 12px) 0;
         font-size: min(1.6vw, 20px);
     }
     .cart_submit1 {

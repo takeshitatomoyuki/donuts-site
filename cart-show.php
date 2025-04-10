@@ -8,6 +8,7 @@
 </head>
 
 <main>
+  <div class="cart_show_pace"></div>
       <?php
       // require 'cart.php';
       if (isset($_SESSION['customer'])) {
