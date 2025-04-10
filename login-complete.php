@@ -2,8 +2,11 @@
 <link rel="stylesheet" href="common/css/customer-name.css">
 <?php
 unset($_SESSION['customer']);
-$pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 
-	'staff', 'password');
+//$pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'staff', 'password');
+	//$pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'staff', 'password');
+	$pdo = new PDO('mysql:host=localhost;dbname=ss896700_donuts charset=utf8','ss896700_cca','ccadonuts');
+
+
 $sql=$pdo->prepare('select * from customer where mail=? and password=?');
 $sql->execute([$_REQUEST['mail'], $_REQUEST['password']]);
 foreach ($sql as $row) {
