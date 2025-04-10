@@ -3,6 +3,14 @@
 <link rel="stylesheet" href="common/css/customer-name.css">
 <main>
  <h2 class="login_title">ログイン</h2>
+
+ <?php
+// エラーメッセージの表示（表示後に削除）
+if (isset($_SESSION['login_error'])) {
+	echo '<p class="error">' . $_SESSION['login_error'] . '</p>';
+	unset($_SESSION['login_error']);
+}
+?>
   <section class="login_sec">
    
     <form action="login-complete.php" method="post" class="login_form">
