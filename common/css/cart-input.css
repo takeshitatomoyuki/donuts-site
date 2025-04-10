@@ -14,11 +14,15 @@ main {
 .cart_image {
     width: 100%;
 }
-.cart_product_name,
-.cart_product_name1 {
+.cart_product_name {
    margin: 5.3vw 0;
    font-size: 4.2vw;
    font-weight: bold;
+   color: #7F5539; 
+}
+.cart_product_name1 {
+    margin: 5.3vw 0;
+   font-size: 4.2vw;
    color: #7F5539; 
 }
 .cart_price {
