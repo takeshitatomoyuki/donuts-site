@@ -96,7 +96,7 @@ foreach ($sql as $row) {
 	echo '<input type="hidden" name="id" value="', $row['id'], '">';
 	echo '<input type="hidden" name="name" value="', $row['name'], '">';
 	echo '<input type="hidden" name="price" value="', $row['price'], '">';
-	echo '<p>','<input type="submit" value="カートに追加" class="detail_submit">','</p>','</div>','</div>';
+	echo '<p>','<input type="submit" value="カートに入れる" class="detail_submit">','</p>','</div>','</div>';
   echo '</div>';
 	echo '</form>';
 	
