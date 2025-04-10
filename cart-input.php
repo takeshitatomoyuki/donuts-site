@@ -8,6 +8,14 @@
   <script src="common/js/breadcrumb.js"></script>
 </head>
 <?php
+$base_path = './';
+$breadcrumb_items = [
+    ['label' => 'TOP', 'url' => $base_path . 'index.php'],
+    ['label' => 'カート'] // 最後はリンクなし
+];
+include 'breadcrumb.php';
+?>
+<?php
 
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {

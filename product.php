@@ -1,7 +1,17 @@
 
 
 <!-- //////header//////// -->
+<head>
+  <link rel="stylesheet" href="common/css/breadcrumb.css">
+  <script src="common/js/breadcrumb.js"></script>
+</head>
 <?php require 'includes/header.php';?> 
+<nav class="nav">
+      <ol class="breadcrumb">
+        <li><a href="index.php">TOP</a></li>
+        <li id="category">商品一覧</a></li>
+       
+      </ol>
 
 <!--/////////// 商品一覧/////////////// -->
 <main>
