@@ -8,7 +8,14 @@ img {
   max-width: 100%;
 }
 
+/* メイン画像 */
+.index_main_sp_img {
+  display: block !important;
+}
 
+.index_main_pc_img {
+  display: none !important;
+}
 
 /* サブ画像 */
 .index_item1 {
@@ -233,6 +240,15 @@ li {
   } */
 
   /* 画像 */
+
+  /* メイン画像 */
+  .index_main_sp_img {
+    display: none !important;
+  }
+
+  .index_main_pc_img {
+    display: block !important;
+  }
 
 
   .index_philosophy_content {

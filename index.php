@@ -2,8 +2,8 @@
 <?php require 'includes/header.php';?>
 <main>
   <section class="index_images">
-   <img id="index_main_img" src="common/images/pc_hero.jpg" alt="メイン画像"> 
- 
+   <img class="index_main_sp_img" src="common/images/sp_main.jpg" alt="SPメイン画像"> 
+   <img class="index_main_pc_img" src="common/images/pc_hero.jpg" alt="PCメイン画像">
   <div class="index_sub_img">
     <div class="index_up_sub_img">
      <img class="index_item1" src="common/images/sp_sub1.jpg" alt="サブ画像１">
