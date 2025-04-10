@@ -15,9 +15,15 @@ foreach ($sql as $row) {
 if (isset($_SESSION['customer'])) {
 	echo '<div class="detail_top">';
 	echo '<p class="customer_name">ようこそ ', $_SESSION['customer']['name'], 'さん。</p>';
-} else {
-	echo '<p class="customer_name">ログイン名またはパスワードが違います。</p>';
 	echo '</div>';
+} else {
+	// エラーメッセージをセッションに保存
+	$_SESSION['login_error'] = 'ログイン名またはパスワードが違います。';
+
+	// login-input.php にリダイレクト
+	header('Location: login-input.php');
+	exit(); // リダイレクト後の処理を防ぐため必ず exit()
+	
 }
 ?>
 
