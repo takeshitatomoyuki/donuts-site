@@ -1,11 +1,21 @@
 
-<?php require 'includes\header.php'; ?>
+<?php require 'includes/header.php'; ?>
+
 <head>
   <link rel="stylesheet" href="common/css/breadcrumb.css">
 	<link rel="stylesheet" href="common/css/customer-name.css">
     <link rel="stylesheet" href="common/css/cart-input.css">
   <script src="common/js/breadcrumb.js"></script>
 </head>
+<?php
+$base_path = './';
+$breadcrumb_items = [
+    ['label' => 'TOP', 'url' => $base_path . 'index.php'],
+    ['label' => 'カート'] // 最後はリンクなし
+];
+include 'breadcrumb.php';
+?>
+<?php require 'customer-name.php'; ?>
 
 <main>
   <div class="cart_show_pace"></div>

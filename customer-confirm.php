@@ -38,7 +38,7 @@ if(!preg_match('/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/', $password)) {
 
 
 <main>
-  <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
+  <h1 class="customer_logo_box"><a href="index.php"><img src="common/images/logo.svg" alt="" class="customer_logo"></a></h1>
 
     <h2 class="customer_title">ご入力内容の確認</h2>
 

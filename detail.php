@@ -9,13 +9,35 @@
 
 <body> 
 
-    <nav class="nav">
-      <ol class="breadcrumb">
-        <li><a href="index.php">TOP</a></li>
-        <li id="category"><a href="product.php">商品一覧</a></li>
-        <li id="product"><a href="product.php">商品名</a></li>
-      </ol>
-    </nav>
+<?php
+$base_path = './';
+
+// 1. DB接続
+$db = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'staff', 'password');
+
+// 2. ID取得
+$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+
+// 3. 商品名をDBから取得
+$product_name = '商品詳細'; // デフォルト
+if ($id > 0) {
+    $stmt = $db->prepare('SELECT name FROM product WHERE id = ?');
+    $stmt->execute([$id]);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    if ($row) {
+        $product_name = $row['name'];
+    }
+}
+
+// 4. パンくず配列にセット
+$breadcrumb_items = [
+    ['label' => 'TOP', 'url' => $base_path . 'index.php'],
+    ['label' => '商品一覧', 'url' => $base_path . 'product.php'],
+    ['label' => $product_name]
+];
+include 'breadcrumb.php';
+?>
+
     <div class="detail_top">
       <?php
       if (session_status() == PHP_SESSION_NONE) {
