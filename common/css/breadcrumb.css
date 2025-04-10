@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .nav {
   border-bottom: 1px solid #7F5539;
 }
@@ -6,7 +7,7 @@
   list-style: none;
   padding: 10px 16px;
   margin: 0;
-  background-color: #fff;
+  color: #7F5539;
   border-radius: 4px;
   font-family: sans-serif;
 }
@@ -14,6 +15,7 @@
 .breadcrumb li {
   display: inline;
   font-size: 3.2vw;
+  color: #7F5539;
 }
 
 .breadcrumb li+li:before {

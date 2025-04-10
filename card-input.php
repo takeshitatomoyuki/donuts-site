@@ -23,7 +23,7 @@ $name=$mail=$password='';
  ?>
 
 <main>
-  <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
+  <h1 class="customer_logo_box"><a href="index.php"><img src="common/images/logo.svg" alt="" class="customer_logo"></a></h1>
     <div class="customer_inner">
       <h2 class="customer_title">カード情報登録</h2>
   <form action="card-confirm.php" method="post">

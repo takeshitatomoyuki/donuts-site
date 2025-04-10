@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="common/css/reset.css">
     <link rel="stylesheet" href="common/css/common.css">
     <link rel="stylesheet" href="common/css/card-complete.css">
-    <title>donuts-site</title>
+    <title>donuts-site/card-complete</title>
 </head>
 <body>
     
@@ -17,7 +17,7 @@
 </html>
 <main>
 
-  <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
+  <h1 class="customer_logo_box"><a href="index.php"><img src="common/images/logo.svg" alt="" class="customer_logo"></a></h1>
  
   <h2 class="card_complete_title">カード情報登録完了</h2>
  
