@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="common/css/reset.css">
     <link rel="stylesheet" href="common/css/common.css">
     <link rel="stylesheet" href="common/css/card-complete.css">
-    <title>donuts-site</title>
+    <title>donuts-site/card-complete</title>
 </head>
 <body>
     

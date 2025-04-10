@@ -14,8 +14,10 @@
 .card_complete_purch {
   font-size: 3.2vw;
   color: #7F5539;
+  border-bottom: 1px solid #7f5539;
+  width: 29vw;
   display: block;
-  margin-bottom: 5.3vw;
+  margin: 0 auto 5.3vw;
 }
 
 .card_complete_inner {
@@ -24,4 +26,30 @@
   height: 23vw;
   border: 2px solid #E8C2CA;
   margin: 21.3vw auto 101.3vw;
+}
+
+@media screen and (min-width:769px) {
+
+  .card_complete_title {
+    font-size: 2.7vw;
+    margin: 5.4vw auto 5.8vw;
+  }
+
+  .card_complete_regi {
+    font-size: 1.8vw;
+    margin: 5.8vw 0 2.9vw;
+  }
+
+  .card_complete_purch {
+    font-size: 1.7vw;
+    width: 16vw;
+    margin: 0 auto 5.7vw;
+  }
+
+  .card_complete_inner {
+    width: 43.9vw;
+    height: 17.7vw;
+    margin: 0 auto 48.5vw;
+  }
+
 }
