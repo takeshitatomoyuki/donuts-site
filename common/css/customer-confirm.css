@@ -163,7 +163,11 @@ table {
   color: #fff;
   background-color: #7F5539;
 }
-
+.cart_input_list_left,
+.cart_input_list_right,
+.cart_input_list {
+  display: none;
+}
 @media screen and (min-width:768px) {
   main {
     max-width: 1200px;
