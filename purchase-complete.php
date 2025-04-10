@@ -24,9 +24,9 @@ $name=$mail=$password='';
   $password=$_SESSION['customer']['password'];
  } 
  ?>
-  <img src="common\images\logo.svg" alt="ロゴ画像" class="purchase_img">
+  
 <main>
-
+ <h1 class="customer_logo_box"><a href="index.php"><img src="common/images/logo.svg" alt="" class="customer_logo"></a></h1>
  <section class="purchase_sec">
    
    <h2 class="purchase_title">ご購入完了</h2>
