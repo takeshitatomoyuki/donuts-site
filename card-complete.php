@@ -16,9 +16,10 @@
 </body>
 </html>
 <main>
-
-  <h1 class="customer_logo_box"><img src="common/images/logo.svg" alt="" class="customer_logo"></h1>
- 
+<div class="card_complete_log">
+  <h1 class="customer_logo_box"><a href="index.php">
+    <img src="common/images/logo.svg" alt="" class="customer_logo"></a></h1>  
+</div>
   <h2 class="card_complete_title">カード情報登録完了</h2>
  
     <?php
