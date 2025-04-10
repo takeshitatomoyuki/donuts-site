@@ -1,6 +1,5 @@
-<?php require 'includes\header.php'; ?>
-<?php require 'breadcrumb.php'; ?>
-<?php require 'customer-name.php'; ?>
+<?php require 'includes/header.php'; ?>
+
 <head>
   <link rel="stylesheet" href="common/css/breadcrumb.css">
 	<link rel="stylesheet" href="common/css/customer-name.css">
@@ -15,9 +14,9 @@ $breadcrumb_items = [
 ];
 include 'breadcrumb.php';
 ?>
+<?php require 'customer-name.php'; ?>
+
 <?php
-
-
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $id = $_POST['id'];
 
