@@ -23,8 +23,11 @@
 
 <?php session_start(); ?>
 <?php
-$pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8',
-'staff','password');
+//$pdo=new PDO('mysql:host=localhost;dbname=donuts;charset=utf8',
+//'staff','password');
+$pdo = new PDO('mysql:host=localhost;dbname=ss896700_donuts;charset=utf8', 'ss896700_cca', 'ccadonuts');
+
+
 if(isset($_SESSION['customer'])) {
   $id=$_SESSION['customer']['id'];
   $sql=$pdo->prepare('select * from customer where id!=? and mail=?');

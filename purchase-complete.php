@@ -36,7 +36,10 @@ $name=$mail=$password='';
     session_start();
    }
    
-   $pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'staff', 'password');
+   //$pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'staff', 'password');
+   $pdo = new PDO('mysql:host=localhost;dbname=ss896700_donuts;charset=utf8', 'ss896700_cca', 'ccadonuts');
+
+
    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
    
    try {

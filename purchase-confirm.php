@@ -50,7 +50,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       } 
       else {
         // データベース接続
-        $pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'staff', 'password');
+        //$pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'staff', 'password');
+        $pdo = new PDO('mysql:host=localhost;dbname=ss896700_donuts;charset=utf8', 'ss896700_cca', 'ccadonuts');
+
+
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         // 現在のログインユーザーの ID
         $customer_id = $_SESSION['customer']['id'];
