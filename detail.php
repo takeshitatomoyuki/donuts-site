@@ -15,7 +15,7 @@ $base_path = './';
 // 1. DB接続
 //$db = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'staff', 'password');
 
-$pdo = new PDO('mysql:host=localhost;dbname=ss896700_donuts;charset=utf8', 'ss896700_cca', 'ccadonuts');
+$db = new PDO('mysql:host=localhost;dbname=ss896700_donuts;charset=utf8', 'ss896700_cca', 'ccadonuts');
 
 
 // 2. ID取得
