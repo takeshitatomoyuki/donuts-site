@@ -60,4 +60,4 @@ include 'breadcrumb.php';
         echo '<p><a class="cart_submit1" href="product.php">買い物を続ける</a></p>';
       ?>
 </main>
-<?php require 'includes\footer.php'; ?>
+<?php require 'includes/footer.php'; ?>

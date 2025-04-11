@@ -92,4 +92,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </main>
 
 
-<?php require 'includes\footer.php'; ?>
+<?php require 'includes/footer.php'; ?>
